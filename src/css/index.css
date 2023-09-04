@@ -26,6 +26,10 @@
     .title{
         font-size: 24px!important;
     }
+    .branches {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
 }
 @media (max-width: 350px){
     .test{
