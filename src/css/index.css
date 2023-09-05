@@ -7,9 +7,13 @@
 .test{
     min-height: 320px!important;
 }
+.translate:hover{
+    transform: translateY(-10%);
+    transition: ease-in-out .5s;
+}
 @media (max-width: 450px){
     .logo{
-        width: 170px;
+        width: 190px;
         height: 40px;
     }
     .talk-btn{
@@ -91,5 +95,8 @@
 @media (min-width: 768px) and (max-width: 950px){
     .count{
         font-size: 30px!important;
+    }
+    #navbar-sticky ul li{
+        padding: 5px;
     }
 }
