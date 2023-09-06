@@ -13,7 +13,7 @@
 }
 @media (max-width: 450px){
     .logo{
-        width: 190px;
+        width: 150px;
         height: 40px;
     }
     .talk-btn{
@@ -92,11 +92,37 @@
         margin: 6.3%;
     }
 }
-@media (min-width: 768px) and (max-width: 950px){
+@media (min-width: 768px) and (max-width: 1095px){
     .count{
         font-size: 30px!important;
     }
     #navbar-sticky ul li{
         padding: 5px;
+    }
+    nav{
+        padding: 0;
+    }
+}
+@media (min-width: 768px) and (max-width: 855px){
+    .logo{
+        width: 150px;
+    }
+    #navbar-sticky ul li{
+        padding: 2px;
+        font-size: 14px;
+    }
+    .talk-btn{
+        margin: 0;
+        padding: 7px;
+    }
+}
+@media (min-width: 1000px){
+    .lg-pl-10{
+        padding-left: 3.4%;
+    }
+}
+@media (max-width: 800px){
+    iframe{
+        height: 350px;
     }
 }
