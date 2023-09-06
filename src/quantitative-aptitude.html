@@ -12,13 +12,41 @@
         <link rel="stylesheet" href="./css/index.css">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
         <title>Quantitative Aptitude Free Practice Questions | Mock Tests | PacketPrep</title> 
+        <style>
+            @media (min-width: 768px) and (max-width: 1095px){
+                #navbar-sticky ul li{
+                    padding: 5px;
+                }
+                nav{
+                    padding: 0;
+                }
+            }
+            @media (min-width: 768px) and (max-width: 855px){
+                .logo{
+                    width: 150px;
+                }
+                #navbar-sticky ul li{
+                    padding: 2px;
+                    font-size: 14px;
+                }
+                .talk-btn{
+                    margin: 0;
+                    padding: 7px;
+                }
+            }
+            @media (min-width: 1000px){
+                .lg-pl-10{
+                    padding-left: 3.4%;
+                }
+            }
+        </style>
     </head>
    
     <body>
 
         <header>
-            <nav class="lg:px-20 fixed w-full z-20 top-0 left-0" style="background-color: #135ca1;">
-                <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <nav class="fixed w-full z-20 top-0 left-0" style="background-color: #135ca1;">
+                <div class="max-w-screen-xl p-4 sm:px-16 flex flex-wrap items-center justify-between mx-auto">
                 <a href="./index.html" class="flex items-center ">
                     <img src="../assets/pp_logo.webp" class="logo" width="200px" height="auto"  alt="Logo">
                 </a>
@@ -90,10 +118,10 @@
 
         <main>
           <!--hero section-->
-          <section class="sm:px-4 bg-blue-50">
-            <div class="max-w-screen-xl sm:flex items-center justify-between mx-auto  pt-24 pb-8">
+          <section class="bg-blue-50">
+            <div class="max-w-screen-xl px-4 sm:px-16 sm:flex items-center justify-between mx-auto pt-24 pb-8">
                 <!--text-->
-                <div class=" lg:px-10 md:px-5">
+                <div class="">
                     <div class="grid lg:grid-cols-2 md:grid-cols-1 lg:m-10 m-5">
                         <div class="my-auto">
                             <div class="pb-4 lg:text-6xl text-3xl text-gray-800 font-semibold">
@@ -113,161 +141,217 @@
           </section>
 
           <!--free practice blocks-->
-          <section class="bg-white py-20 px-20 mx-4">
-            <div class="text-center text-4xl pb-4 font-semibold">Free Quant Practice Tests</div>
-            <div class="text-center text-sm text-gray-800 font-semibold pb-8 ">THE BEST HANDPICKED TESTS FOR PRACTICE</div>
+          <section class="bg-white py-8 max-w-screen-xl">
+            <h2 class="text-center text-4xl pb-4 font-semibold">Free Quant Practice Tests</h2>
+            <h2 class="text-center text-sm text-gray-800 font-semibold pb-6">THE BEST HANDPICKED TESTS FOR PRACTICE</h2>
 
-            <span>
-                <a href="/profit-and-loss-aptitude-questions" class=" w-full font-semibold text-gray-700 hover:bg-gray-900 hover:text-white p-3 border border-black rounded-lg mt-3 ml-3"> Profit and Loss</a> 
-
-            </span>
-            <a href="/ratio-proportion-aptitude-questions" class=" w-full font-semibold text-gray-700 hover:bg-gray-900 hover:text-white p-3  border border-black rounded-lg  mt-3 ml-3"> Ratio and Proportion</a> 
-            <a href="/simplifications-aptitude-questions" class=" w-full font-semibold text-gray-700 hover:bg-gray-900 hover:text-white p-3  border border-black rounded-lg  mt-3 ml-3"> Simplification</a> 
-            <a href="/square-roots-and-cube-roots-aptitude-questions" class=" w-full font-semibold text-gray-700 hover:bg-gray-900 hover:text-white p-3  border border-black rounded-lg  mt-3 ml-3"> Squareroots and Cuberoots</a> 
-            <a href="/averages-aptitude-questions" class=" w-full font-semibold text-gray-700 hover:bg-gray-900 hover:text-white p-3  border border-black rounded-lg  mt-3 ml-3"> Averages</a> 
-            <a href="/problems-on-ages-aptitude-questions" class=" w-full font-semibold text-gray-700 hover:bg-gray-900 hover:text-white p-3  border border-black rounded-lg  mt-3 ml-3"> Problems on Ages</a> 
-            <a href="/percentages-aptitude-questions" class=" w-full font-semibold text-gray-700 hover:bg-gray-900 hover:text-white p-3  border border-black rounded-lg  mt-3 ml-3"> Percentages</a> <a href="/time-and-distance-aptitude-questions" class=" w-full font-semibold text-gray-700 hover:bg-gray-900 hover:text-white p-3  border border-black rounded-lg  mt-3 ml-3"> Time and Distance</a> 
-            <!-- <a href="/time-and-work-aptitude-questions" class=" w-full font-semibold text-gray-700 hover:bg-gray-900 hover:text-white p-3  border border-black rounded-lg my-4 mx-1"> Time and Work</a> 
-            <a href="/problems-on-trains-aptitude-questions" class=" w-full font-semibold text-gray-700 hover:bg-gray-900 hover:text-white p-3  border border-black rounded-lg my-4 mx-1"> Problems on Trains</a> 
-            <a href="/simple-and-compound-interest-aptitude-questions" class=" w-full font-semibold text-gray-700 hover:bg-gray-900 hover:text-white p-3  border border-black rounded-lg my-4 mx-1"> Simple and Compound Interest</a> 
-            <a href="/2d-and-3d-geometry-aptitude-questions" class=" w-full font-semibold text-gray-700 hover:bg-gray-900 hover:text-white p-3  border border-black rounded-lg my-4 mx-1"> 2D &amp; 3D Geometry</a> 
-            <a href="/calendar-and-clocks-aptitude-questions" class=" w-full font-semibold text-gray-700 hover:bg-gray-900 hover:text-white p-3  border border-black rounded-lg my-4 mx-1"> Calendar and Clocks</a> 
-            <a href="/data-interpretation-aptitude-questions" class=" w-full font-semibold text-gray-700 hover:bg-gray-900 hover:text-white p-3  border border-black rounded-lg my-4 mx-1"> Data Interpretation</a> 
-            <a href="/decimal-fractions-aptitude-questions" class=" w-full font-semibold text-gray-700 hover:bg-gray-900 hover:text-white p-3  border border-black rounded-lg my-4 mx-1"> Decimal Fractions</a> 
-            <a href="/lcm-and-hcf-aptitude-questions" class=" w-full font-semibold text-gray-700 hover:bg-gray-900 hover:text-white p-3  border border-black rounded-lg my-4 mx-1"> LCM and HCF</a> <a href="/number-system-aptitude-questions" class=" w-full font-semibold text-gray-700 hover:bg-gray-900 hover:text-white p-3  border border-black rounded-lg my-4 mx-1"> Number System</a> 
-            <a href="/reading-comprehension-aptitude-questions" class=" w-full font-semibold text-gray-700 hover:bg-gray-900 hover:text-white p-3  border border-black rounded-lg my-4 mx-1"> Reading Comprehension</a> -->
-            
+            <div class="max-w-screen-xl mx-auto p-4 sm:px-16">
+                <div class="flex space-x-2 flex-wrap justify-center lg-pl-10">
+                    <div class="inline my-4">
+                        <h3 class="inline">
+                            <a href="#" class="w-full font-semibold text-gray-700 hover:bg-gray-900 hover:text-white p-3 border border-black rounded-lg mt-3 ml-3 p-3 mb-2 text-wrap text-left  "> Profit and Loss</a> 
+                        </h3>
+                    </div>
+                    <div class="inline my-4">
+                        <h3 class="inline">
+                            <a href="#" class="w-full font-semibold text-gray-700 hover:bg-gray-900 hover:text-white p-3 border border-black rounded-lg mt-3 ml-3 p-3 mb-2 text-wrap text-left  "> Ratio and Proportion</a> 
+                        </h3>
+                    </div>
+                    <div class="inline my-4">
+                        <h3 class="inline">
+                            <a href="#" class="w-full font-semibold text-gray-700 hover:bg-gray-900 hover:text-white p-3 border border-black rounded-lg mt-3 ml-3 p-3 mb-2 text-wrap text-left  "> Simplification</a> 
+                        </h3>
+                    </div>
+                    <div class="inline my-4">
+                        <h3 class="inline">
+                            <a href="#" class="w-full font-semibold text-gray-700 hover:bg-gray-900 hover:text-white p-3 border border-black rounded-lg mt-3 ml-3 p-3 mb-2 text-wrap text-left  ">Squareroots and Cuberoots</a> 
+                        </h3>
+                    </div>
+                    <div class="inline my-4">
+                        <h3 class="inline">
+                            <a href="#" class="w-full font-semibold text-gray-700 hover:bg-gray-900 hover:text-white p-3 border border-black rounded-lg mt-3 ml-3 p-3 mb-2 text-wrap text-left  "> Averages</a> 
+                        </h3>
+                    </div>
+                    <div class="inline my-4">
+                        <h3 class="inline">
+                            <a href="#" class="w-full font-semibold text-gray-700 hover:bg-gray-900 hover:text-white p-3 border border-black rounded-lg mt-3 ml-3 p-3 mb-2 text-wrap text-left  "> Problem on Ages</a> 
+                        </h3>
+                    </div>
+                    <div class="inline my-4">
+                        <h3 class="inline">
+                            <a href="#" class="w-full font-semibold text-gray-700 hover:bg-gray-900 hover:text-white p-3 border border-black rounded-lg mt-3 ml-3 p-3 mb-2 text-wrap text-left  "> Percentages</a> 
+                        </h3>
+                    </div>
+                    <div class="inline my-4">
+                        <h3 class="inline">
+                            <a href="#" class="w-full font-semibold text-gray-700 hover:bg-gray-900 hover:text-white p-3 border border-black rounded-lg mt-3 ml-3 p-3 mb-2 text-wrap text-left  "> Time and Distance</a> 
+                        </h3>
+                    </div>
+                    <div class="inline my-4">
+                        <h3 class="inline">
+                            <a href="#" class="w-full font-semibold text-gray-700 hover:bg-gray-900 hover:text-white p-3 border border-black rounded-lg mt-3 ml-3 p-3 mb-2 text-wrap text-left  "> Time and Work</a> 
+                        </h3>
+                    </div>
+                    <div class="inline my-4">
+                        <h3 class="inline">
+                            <a href="#" class="w-full font-semibold text-gray-700 hover:bg-gray-900 hover:text-white p-3 border border-black rounded-lg mt-3 ml-3 p-3 mb-2 text-wrap text-left  "> Problems on Trains</a> 
+                        </h3>
+                    </div>
+                    <div class="inline my-4">
+                        <h3 class="inline">
+                            <a href="#" class="w-full font-semibold text-gray-700 hover:bg-gray-900 hover:text-white p-3 border border-black rounded-lg mt-3 ml-3 p-3 mb-2 text-wrap text-left  "> Simple and Compound Interest</a> 
+                        </h3>
+                    </div>
+                    <div class="inline my-4">
+                        <h3 class="inline">
+                            <a href="#" class="w-full font-semibold text-gray-700 hover:bg-gray-900 hover:text-white p-3 border border-black rounded-lg mt-3 ml-3 p-3 mb-2 text-wrap text-left  "> 2D & 3D Geometry</a> 
+                        </h3>
+                    </div>
+                    <div class="inline my-4">
+                        <h3 class="inline">
+                            <a href="#" class="w-full font-semibold text-gray-700 hover:bg-gray-900 hover:text-white p-3 border border-black rounded-lg mt-3 ml-3 p-3 mb-2 text-wrap text-left  "> Calender and Clocks</a> 
+                        </h3>
+                    </div>
+                    <div class="inline my-4">
+                        <h3 class="inline">
+                            <a href="#" class="w-full font-semibold text-gray-700 hover:bg-gray-900 hover:text-white p-3 border border-black rounded-lg mt-3 ml-3 p-3 mb-2 text-wrap text-left  "> Data Interpretation</a> 
+                        </h3>
+                    </div>
+                    <div class="inline my-4">
+                        <h3 class="inline">
+                            <a href="#" class="w-full font-semibold text-gray-700 hover:bg-gray-900 hover:text-white p-3 border border-black rounded-lg mt-3 ml-3 p-3 mb-2 text-wrap text-left  "> Decimal Fractions</a> 
+                        </h3>
+                    </div>
+                    <div class="inline my-4">
+                        <h3 class="inline">
+                            <a href="#" class="w-full font-semibold text-gray-700 hover:bg-gray-900 hover:text-white p-3 border border-black rounded-lg mt-3 ml-3 p-3 mb-2 text-wrap text-left  "> LCM and HCF</a> 
+                        </h3>
+                    </div>
+                    <div class="inline my-4">
+                        <h3 class="inline">
+                            <a href="#" class="w-full font-semibold text-gray-700 hover:bg-gray-900 hover:text-white p-3 border border-black rounded-lg mt-3 ml-3 p-3 mb-2 text-wrap text-left  "> Number System</a> 
+                        </h3>
+                    </div>
+                    <div class="inline my-4">
+                        <h3 class="inline">
+                            <a href="#" class="w-full font-semibold text-gray-700 hover:bg-gray-900 hover:text-white p-3 border border-black rounded-lg mt-3 ml-3 p-3 mb-2 text-wrap text-left  "> Reading Comprehension</a> 
+                        </h3>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!--free lectures-->
-        <section class="py-10 px-4 sm:px-16 bg-gray-50">
+        <section class="py-10 bg-gray-50">
             <div class="text-center text-4xl pb-4 font-semibold">Free Quant Video Lectures</div>
             <div class="text-center text-sm text-gray-800 font-semibold pb-8 ">THE BEST HANDPICKED VIDEOS FOR PRACTICE</div>
             <!--video-->
-            <div class="embed-responsive embed-responsive-16by9 mt-4"> 
-                <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLPiOSvowot1Kwf5rR42pG54sW6QddeNRP" width="100%" height="500px" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe> 
+            <div class="max-w-screen-xl mx-auto p-4 sm:px-16">
+                <div class="embed-responsive embed-responsive-16by9 mt-2 mx-5"> 
+                    <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLPiOSvowot1Kwf5rR42pG54sW6QddeNRP" width="100%" height="500px" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe> 
+                </div>
             </div>
+            
 
         </section>
 
         <!--courses-->
-        <section class="py-10 px-4 sm:px-16 bg-blue-100">
+        <section class="py-10 bg-blue-100">
             <div class="text-center font-semibold text-sm text-gray-800 pb-5">CAREFULLY CRAFTED VIDEO LESSONS & PRACTICE QUESTIONS</div>
-            <div class="text-center font-semibold text-3xl pb-20">Premium Quantitative Aptitude Course</div>
-            <div class="grid lg:grid-cols-2 grid-cols-1 gap-10">
-                <div>
-                    <ul>
-                        <li class="pb-5"><svg width="35px" height="35px" class="inline" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="0.4" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#6b9cff"></path> <path d="M10.5795 15.5801C10.3795 15.5801 10.1895 15.5001 10.0495 15.3601L7.21945 12.5301C6.92945 12.2401 6.92945 11.7601 7.21945 11.4701C7.50945 11.1801 7.98945 11.1801 8.27945 11.4701L10.5795 13.7701L15.7195 8.6301C16.0095 8.3401 16.4895 8.3401 16.7795 8.6301C17.0695 8.9201 17.0695 9.4001 16.7795 9.6901L11.1095 15.3601C10.9695 15.5001 10.7795 15.5801 10.5795 15.5801Z" fill="#3275fb"></path> </g></svg><p class="inline text-lg pl-2"> Byte sized concept lectures</p></li>
-                        <li class="pb-5"><svg width="35px" height="35px" class="inline" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="0.4" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#6b9cff"></path> <path d="M10.5795 15.5801C10.3795 15.5801 10.1895 15.5001 10.0495 15.3601L7.21945 12.5301C6.92945 12.2401 6.92945 11.7601 7.21945 11.4701C7.50945 11.1801 7.98945 11.1801 8.27945 11.4701L10.5795 13.7701L15.7195 8.6301C16.0095 8.3401 16.4895 8.3401 16.7795 8.6301C17.0695 8.9201 17.0695 9.4001 16.7795 9.6901L11.1095 15.3601C10.9695 15.5001 10.7795 15.5801 10.5795 15.5801Z" fill="#3275fb"></path> </g></svg><p class="inline text-lg pl-2"> Topic-wise Practice Questions</p></li>
-                        <li class="pb-5"><svg width="35px" height="35px" class="inline" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="0.4" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#6b9cff"></path> <path d="M10.5795 15.5801C10.3795 15.5801 10.1895 15.5001 10.0495 15.3601L7.21945 12.5301C6.92945 12.2401 6.92945 11.7601 7.21945 11.4701C7.50945 11.1801 7.98945 11.1801 8.27945 11.4701L10.5795 13.7701L15.7195 8.6301C16.0095 8.3401 16.4895 8.3401 16.7795 8.6301C17.0695 8.9201 17.0695 9.4001 16.7795 9.6901L11.1095 15.3601C10.9695 15.5001 10.7795 15.5801 10.5795 15.5801Z" fill="#3275fb"></path> </g></svg><p class="inline text-lg pl-2"> Full-length Mock Tests</p></li>
-                        <li class="pb-5"><svg width="35px" height="35px" class="inline" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="0.4" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#6b9cff"></path> <path d="M10.5795 15.5801C10.3795 15.5801 10.1895 15.5001 10.0495 15.3601L7.21945 12.5301C6.92945 12.2401 6.92945 11.7601 7.21945 11.4701C7.50945 11.1801 7.98945 11.1801 8.27945 11.4701L10.5795 13.7701L15.7195 8.6301C16.0095 8.3401 16.4895 8.3401 16.7795 8.6301C17.0695 8.9201 17.0695 9.4001 16.7795 9.6901L11.1095 15.3601C10.9695 15.5001 10.7795 15.5801 10.5795 15.5801Z" fill="#3275fb"></path> </g></svg><p class="inline text-lg pl-2"> Detailed Performance Reports</p></li>
-                        <li class="pb-5"><svg width="35px" height="35px" class="inline" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="0.4" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#6b9cff"></path> <path d="M10.5795 15.5801C10.3795 15.5801 10.1895 15.5001 10.0495 15.3601L7.21945 12.5301C6.92945 12.2401 6.92945 11.7601 7.21945 11.4701C7.50945 11.1801 7.98945 11.1801 8.27945 11.4701L10.5795 13.7701L15.7195 8.6301C16.0095 8.3401 16.4895 8.3401 16.7795 8.6301C17.0695 8.9201 17.0695 9.4001 16.7795 9.6901L11.1095 15.3601C10.9695 15.5001 10.7795 15.5801 10.5795 15.5801Z" fill="#3275fb"></path> </g></svg><p class="inline text-lg pl-2"> Concept breakup for each Assessment</p></li>
-                        <li class="pb-5"><svg width="35px" height="35px" class="inline" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="0.4" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#6b9cff"></path> <path d="M10.5795 15.5801C10.3795 15.5801 10.1895 15.5001 10.0495 15.3601L7.21945 12.5301C6.92945 12.2401 6.92945 11.7601 7.21945 11.4701C7.50945 11.1801 7.98945 11.1801 8.27945 11.4701L10.5795 13.7701L15.7195 8.6301C16.0095 8.3401 16.4895 8.3401 16.7795 8.6301C17.0695 8.9201 17.0695 9.4001 16.7795 9.6901L11.1095 15.3601C10.9695 15.5001 10.7795 15.5801 10.5795 15.5801Z" fill="#3275fb"></path> </g></svg><p class="inline text-lg pl-2"> Option to retry the tests</p></li>
-                        <li class="pb-5"><svg width="35px" height="35px" class="inline" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="0.4" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#6b9cff"></path> <path d="M10.5795 15.5801C10.3795 15.5801 10.1895 15.5001 10.0495 15.3601L7.21945 12.5301C6.92945 12.2401 6.92945 11.7601 7.21945 11.4701C7.50945 11.1801 7.98945 11.1801 8.27945 11.4701L10.5795 13.7701L15.7195 8.6301C16.0095 8.3401 16.4895 8.3401 16.7795 8.6301C17.0695 8.9201 17.0695 9.4001 16.7795 9.6901L11.1095 15.3601C10.9695 15.5001 10.7795 15.5801 10.5795 15.5801Z" fill="#3275fb"></path> </g></svg><p class="inline text-lg pl-2"> Comment section for doubts</p></li>
-                    </ul>
-                </div>
-                <div class="bg-white p-5 rounded-lg h-80">
-                    <div class="pb-5">
-                        <img src="../assets/7djGt90.png" width="140" height="100" alt="">
+            <div class="text-center font-semibold text-3xl pb-10">Premium Quantitative Aptitude Course</div>
+
+            <div class="max-w-screen-xl mx-auto p-4 sm:px-16">
+                <div class="grid lg:grid-cols-2 grid-cols-1 gap-10 mx-5">
+                    <div>
+                        <ul>
+                            <li class="pb-5 hover:scale-110 duration-200 ease-in-out"><svg width="35px" height="35px" class="inline" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="0.4" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#6b9cff"></path> <path d="M10.5795 15.5801C10.3795 15.5801 10.1895 15.5001 10.0495 15.3601L7.21945 12.5301C6.92945 12.2401 6.92945 11.7601 7.21945 11.4701C7.50945 11.1801 7.98945 11.1801 8.27945 11.4701L10.5795 13.7701L15.7195 8.6301C16.0095 8.3401 16.4895 8.3401 16.7795 8.6301C17.0695 8.9201 17.0695 9.4001 16.7795 9.6901L11.1095 15.3601C10.9695 15.5001 10.7795 15.5801 10.5795 15.5801Z" fill="#3275fb"></path> </g></svg><p class="inline text-lg pl-2"> Byte sized concept lectures</p></li>
+                            <li class="pb-5 hover:scale-110 duration-200 ease-in-out"><svg width="35px" height="35px" class="inline" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="0.4" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#6b9cff"></path> <path d="M10.5795 15.5801C10.3795 15.5801 10.1895 15.5001 10.0495 15.3601L7.21945 12.5301C6.92945 12.2401 6.92945 11.7601 7.21945 11.4701C7.50945 11.1801 7.98945 11.1801 8.27945 11.4701L10.5795 13.7701L15.7195 8.6301C16.0095 8.3401 16.4895 8.3401 16.7795 8.6301C17.0695 8.9201 17.0695 9.4001 16.7795 9.6901L11.1095 15.3601C10.9695 15.5001 10.7795 15.5801 10.5795 15.5801Z" fill="#3275fb"></path> </g></svg><p class="inline text-lg pl-2"> Topic-wise Practice Questions</p></li>
+                            <li class="pb-5 hover:scale-110 duration-200 ease-in-out"><svg width="35px" height="35px" class="inline" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="0.4" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#6b9cff"></path> <path d="M10.5795 15.5801C10.3795 15.5801 10.1895 15.5001 10.0495 15.3601L7.21945 12.5301C6.92945 12.2401 6.92945 11.7601 7.21945 11.4701C7.50945 11.1801 7.98945 11.1801 8.27945 11.4701L10.5795 13.7701L15.7195 8.6301C16.0095 8.3401 16.4895 8.3401 16.7795 8.6301C17.0695 8.9201 17.0695 9.4001 16.7795 9.6901L11.1095 15.3601C10.9695 15.5001 10.7795 15.5801 10.5795 15.5801Z" fill="#3275fb"></path> </g></svg><p class="inline text-lg pl-2"> Full-length Mock Tests</p></li>
+                            <li class="pb-5 hover:scale-110 duration-200 ease-in-out"><svg width="35px" height="35px" class="inline" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="0.4" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#6b9cff"></path> <path d="M10.5795 15.5801C10.3795 15.5801 10.1895 15.5001 10.0495 15.3601L7.21945 12.5301C6.92945 12.2401 6.92945 11.7601 7.21945 11.4701C7.50945 11.1801 7.98945 11.1801 8.27945 11.4701L10.5795 13.7701L15.7195 8.6301C16.0095 8.3401 16.4895 8.3401 16.7795 8.6301C17.0695 8.9201 17.0695 9.4001 16.7795 9.6901L11.1095 15.3601C10.9695 15.5001 10.7795 15.5801 10.5795 15.5801Z" fill="#3275fb"></path> </g></svg><p class="inline text-lg pl-2"> Detailed Performance Reports</p></li>
+                            <li class="pb-5 hover:scale-110 duration-200 ease-in-out"><svg width="35px" height="35px" class="inline" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="0.4" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#6b9cff"></path> <path d="M10.5795 15.5801C10.3795 15.5801 10.1895 15.5001 10.0495 15.3601L7.21945 12.5301C6.92945 12.2401 6.92945 11.7601 7.21945 11.4701C7.50945 11.1801 7.98945 11.1801 8.27945 11.4701L10.5795 13.7701L15.7195 8.6301C16.0095 8.3401 16.4895 8.3401 16.7795 8.6301C17.0695 8.9201 17.0695 9.4001 16.7795 9.6901L11.1095 15.3601C10.9695 15.5001 10.7795 15.5801 10.5795 15.5801Z" fill="#3275fb"></path> </g></svg><p class="inline text-lg pl-2"> Concept breakup for each Assessment</p></li>
+                            <li class="pb-5 hover:scale-110 duration-200 ease-in-out"><svg width="35px" height="35px" class="inline" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="0.4" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#6b9cff"></path> <path d="M10.5795 15.5801C10.3795 15.5801 10.1895 15.5001 10.0495 15.3601L7.21945 12.5301C6.92945 12.2401 6.92945 11.7601 7.21945 11.4701C7.50945 11.1801 7.98945 11.1801 8.27945 11.4701L10.5795 13.7701L15.7195 8.6301C16.0095 8.3401 16.4895 8.3401 16.7795 8.6301C17.0695 8.9201 17.0695 9.4001 16.7795 9.6901L11.1095 15.3601C10.9695 15.5001 10.7795 15.5801 10.5795 15.5801Z" fill="#3275fb"></path> </g></svg><p class="inline text-lg pl-2"> Option to retry the tests</p></li>
+                            <li class="pb-5 hover:scale-110 duration-200 ease-in-out"><svg width="35px" height="35px" class="inline" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="0.4" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#6b9cff"></path> <path d="M10.5795 15.5801C10.3795 15.5801 10.1895 15.5001 10.0495 15.3601L7.21945 12.5301C6.92945 12.2401 6.92945 11.7601 7.21945 11.4701C7.50945 11.1801 7.98945 11.1801 8.27945 11.4701L10.5795 13.7701L15.7195 8.6301C16.0095 8.3401 16.4895 8.3401 16.7795 8.6301C17.0695 8.9201 17.0695 9.4001 16.7795 9.6901L11.1095 15.3601C10.9695 15.5001 10.7795 15.5801 10.5795 15.5801Z" fill="#3275fb"></path> </g></svg><p class="inline text-lg pl-2"> Comment section for doubts</p></li>
+                        </ul>
                     </div>
-                    <div class="flex flex-row pb-5">
-                        <div class="w-full border-l-4 pl-2 text-blue-600 font-semibold text-2xl border-blue-700">Logical Reasoning Course</div>
-                        <div class="flex flex-row">
-                            <div>
-                                <svg fill="#3b7af7" class="inline"  width="20px" height="20px" viewBox="-96 0 512 512" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M308 96c6.627 0 12-5.373 12-12V44c0-6.627-5.373-12-12-12H12C5.373 32 0 37.373 0 44v44.748c0 6.627 5.373 12 12 12h85.28c27.308 0 48.261 9.958 60.97 27.252H12c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h158.757c-6.217 36.086-32.961 58.632-74.757 58.632H12c-6.627 0-12 5.373-12 12v53.012c0 3.349 1.4 6.546 3.861 8.818l165.052 152.356a12.001 12.001 0 0 0 8.139 3.182h82.562c10.924 0 16.166-13.408 8.139-20.818L116.871 319.906c76.499-2.34 131.144-53.395 138.318-127.906H308c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12h-58.69c-3.486-11.541-8.28-22.246-14.252-32H308z"></path></g></svg>
-                            </div>
-                            <div>
-                                <p class="text-blue-600 inline text-2xl font-semibold">1000</p>
+                    <div class="bg-white p-5 rounded-lg my-auto translate">
+                        <div class="pb-5">
+                            <img src="../assets/7djGt90.png" width="140" height="100" alt="">
+                        </div>
+                        <div class="flex flex-row pb-5">
+                            <div class="w-full border-l-4 pl-2 text-blue-600 font-semibold text-2xl border-blue-700">Quantitative Aptitude Course</div>
+                            <div class="flex flex-row">
+                                <div>
+                                    <svg fill="#3b7af7" class="inline"  width="20px" height="20px" viewBox="-96 0 512 512" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M308 96c6.627 0 12-5.373 12-12V44c0-6.627-5.373-12-12-12H12C5.373 32 0 37.373 0 44v44.748c0 6.627 5.373 12 12 12h85.28c27.308 0 48.261 9.958 60.97 27.252H12c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h158.757c-6.217 36.086-32.961 58.632-74.757 58.632H12c-6.627 0-12 5.373-12 12v53.012c0 3.349 1.4 6.546 3.861 8.818l165.052 152.356a12.001 12.001 0 0 0 8.139 3.182h82.562c10.924 0 16.166-13.408 8.139-20.818L116.871 319.906c76.499-2.34 131.144-53.395 138.318-127.906H308c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12h-58.69c-3.486-11.541-8.28-22.246-14.252-32H308z"></path></g></svg>
+                                </div>
+                                <div>
+                                    <p class="text-blue-600 inline text-2xl font-semibold">1000</p>
+                                </div>
                             </div>
                         </div>
+                        <div class="pb-2">
+                            This course dramatically improves your chances of passing logical reasoning with top scores. The course includes detailed explanation of important concepts, practice questions, tips and tricks.
+                            <a href="#" class="text-lg text-blue-600 cursor-pointer block">Know more > </a>
+                        </div>
                     </div>
-                    <div class="pb-5">
-                        This course dramatically improves your chances of passing logical reasoning with top scores. The course includes detailed explanation of important concepts, practice questions, tips and tricks.
-                    </div>
-                    <div class="text-lg text-blue-600 cursor-pointer"><p class="inline">Know more</p> <svg fill="#4f96f3" class="inline" width="15px" height="15px" viewBox="-64 0 512 512" xmlns="http://www.w3.org/2000/svg" stroke="#4569f7"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M365.52 209.85L59.22 67.01c-16.06-7.49-35.15-.54-42.64 15.52L3.01 111.61c-7.49 16.06-.54 35.15 15.52 42.64L236.96 256.1 18.49 357.99C2.47 365.46-4.46 384.5 3.01 400.52l13.52 29C24 445.54 43.04 452.47 59.06 445l306.47-142.91a32.003 32.003 0 0 0 18.48-29v-34.23c-.01-12.45-7.21-23.76-18.49-29.01z"></path></g></svg></div>
                 </div>
             </div>
+            
         </section>
-
         
         <!--faq-->
-        <section class="px-4 sm:px-16 py-4" >
-            <h1 class="text-center text-3xl font-semibold my-4 title">Frequently Asked</h1>
-            <div id="accordion-color" class="mx-4 my-8 bg-white" data-accordion="collapse" data-active-classes="bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-white">
-                <!--first-->
-                <h2 id="accordion-color-heading-1">
-                <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-md focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-color-body-1" aria-expanded="false" aria-controls="accordion-color-body-1">
-                    <span>Why choose PacketPrep for job guaranteed training?</span>
-                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
-                    </svg>
-                </button>
-                </h2>
-                <div id="accordion-color-body-1" class="hidden" aria-labelledby="accordion-color-heading-1">
-                <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
-                    <p class="mb-2 text-gray-500 dark:text-gray-400">
-                        <p><b>To build your dream career! </b><br>Our students can be confident that they will have a job after completing a high-quality training programme with us. Students are free to attend as many interviews as they like until they are hired. We also have a pay-after-placement option available.</p>
-                    </p>
-                    
-                </div>
-                </div>
-                <!--second-->
-                <h2 id="accordion-color-heading-2">
-                <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-color-body-2" aria-expanded="false" aria-controls="accordion-color-body-2">
-                    <span>Is PacketPrep the best institute for Full-stack java training with placement?</span>
-                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
-                    </svg>
-                </button>
-                </h2>
-                <div id="accordion-color-body-2" class="hidden" aria-labelledby="accordion-color-heading-2">
-                <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
-                    <p class="mb-2 text-gray-500 dark:text-gray-400">Full-stack java course content in our institute is designed as per the current requirements of the IT industry. When students get quality training from our industry experts they become trained professionals. Our trainers provide personal care to each student based on their training needs.</p>
-                </div>
-                </div>
-                <!--third-->
-                <h2 id="accordion-color-heading-3">
-                <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-color-body-3" aria-expanded="false" aria-controls="accordion-color-body-3">
-                    <span>How does PacketPrep pay after placement work?</span>
-                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
-                    </svg>
-                </button>
-                </h2>
-                <div id="accordion-color-body-3" class="hidden" aria-labelledby="accordion-color-heading-3">
-                <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
-                    <p class="mb-2 text-gray-500 dark:text-gray-400"><b> Get trained, Get Placed. Pay after placement</b><br>Enrol by paying a nominal amount of the entire amount as an upfront fee and sign the agreement copy. During training, you will not be charged anything. Once you have completed your training, you will be placed. After placement, clear the balance amount.</p>
-                </div>
-                </div>
-                <!--fourth-->
-                <h2 id="accordion-color-heading-4">
-                <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-color-body-4" aria-expanded="false" aria-controls="accordion-color-body-4">
-                    <span>Does PacketPrep provide classroom &amp; online training?</span>
-                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
-                    </svg>
-                </button>
-                </h2>
-                <div id="accordion-color-body-4" class="hidden" aria-labelledby="accordion-color-heading-4">
-                <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
-                    <p class="mb-2 text-gray-500 dark:text-gray-400">Yes. Our online training is of the same high quality as our classroom training. With a smaller or limited student batch, more time will be spent on various training activities that are suited to the students' needs, allowing them to get personal care.</p>
-                </div>
-                </div>
-                <!--fifth-->
-                <h2 id="accordion-color-heading-5">
-                <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-color-body-5" aria-expanded="false" aria-controls="accordion-color-body-5">
-                    <span>How long is the placement support given?</span>
-                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
-                    </svg>
-                </button>
-                </h2>
-                <div id="accordion-color-body-5" class="hidden" aria-labelledby="accordion-color-heading-5">
-                <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
-                    <p class="mb-2 text-gray-500 dark:text-gray-400">Job placement support is provided to you to assist you in finding suitable position for yourself and to assist you in preparing for interviews. We assist you with interview preparation, job hunting, and other prep as required. With One year support, you'll have the opportunity to attend an interview with 30 to 60 companies.</p>
-                </div>
+        <section >
+            <h1 class="text-center text-3xl font-semibold mt-8 title">Frequently Asked Questions</h1>
+            
+            <div class="max-w-screen-xl mx-auto pb23293-4 sm:px-16">
+                <div id="accordion-color" class="my-8 bg-white mx-5" data-accordion="collapse" data-active-classes="bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-white">
+                    <!--first-->
+                    <h2 id="accordion-color-heading-1">
+                    <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-md focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-color-body-1" aria-expanded="false" aria-controls="accordion-color-body-1">
+                        <span> Where can I find genuine study material for quantitative aptitude? </span>
+                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                        </svg>
+                    </button>
+                    </h2>
+                    <div id="accordion-color-body-1" class="hidden" aria-labelledby="accordion-color-heading-1">
+                    <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+                        <p class="mb-2 text-gray-500 dark:text-gray-400">
+                            <p>Packet Prep, a premier Training and Placement centre, offers genuine and high-quality Quantitative Aptitude study material online and offline. Our course material enables you to prepare for all corporate company exams using the most effective and time-saving shortcuts, methods, and formulae, ensuring your success in real-time exams.</p>
+                        </p>
+                        
+                    </div>
+                    </div>
+                    <!--second-->
+                    <h2 id="accordion-color-heading-2">
+                    <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-color-body-2" aria-expanded="false" aria-controls="accordion-color-body-2">
+                        <span>Are these questions from previous company exams?</span>
+                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                        </svg>
+                    </button>
+                    </h2>
+                    <div id="accordion-color-body-2" class="hidden" aria-labelledby="accordion-color-heading-2">
+                    <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+                        <p class="mb-2 text-gray-500 dark:text-gray-400">Yes. We have most of the companies’ previous questions. We developed similar models to help you get clarity in concepts to practice and ace the tests. </p>
+                    </div>
+                    </div>
+                    <!--third-->
+                    <h2 id="accordion-color-heading-3">
+                    <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-color-body-3" aria-expanded="false" aria-controls="accordion-color-body-3">
+                        <span>Is Packet Prep material sufficient for clearing company placements?</span>
+                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                        </svg>
+                    </button>
+                    </h2>
+                    <div id="accordion-color-body-3" class="hidden" aria-labelledby="accordion-color-heading-3">
+                    <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
+                        <p class="mb-2 text-gray-500 dark:text-gray-400"> Yes. All of the course material is available under one roof as a complete Packet. Our skilled professional team has hand-picked repeated questions from previous company placements.</p>
+                    </div>
+                    </div>
                 </div>
             </div>
+            
 
         </section>
         
@@ -275,31 +359,33 @@
 
         <footer>
             <!--attend drives-->
-            <div class="text-white p-4 sm:px-16" style="background-color: #135ca1;">
-                <div class="sm:flex justify-between m-4 ">
+            <div class="text-white" style="background-color: #135ca1;">
+                <div class="max-w-screen-xl mx-auto p-4 sm:px-16">
+                    <div class="sm:flex justify-between mx-5">
 
-                    <div class="col-span-2 sm:col-span-1 sm-text-center my-2">
-                        <h1 class="text-3xl font-semibold pb-4">Attend placement drives with us</h1>
-                        <p class="">Enrol for fullstack java with pay after placement</p>
+                        <div class="col-span-2 sm:col-span-1 sm-text-center my-2">
+                            <h1 class="text-3xl font-semibold pb-4">Attend placement drives with us</h1>
+                            <p class="">Enrol for fullstack java with pay after placement</p>
+                        </div>
+                        
+                        <div class="col-span-2 sm:col-span-1 justify-center my-4 ml-auto text-center btn">
+                            <button class="rounded-full bg-blue-200 text-blue-900 font-semibold px-12 py-4 mb-2  translate">
+                                <a href="#">Apply Now</a>
+                            </button>
+                            <button class="rounded-full bg-white text-gray-800 font-semibold px-12 py-4 my-2  translate">
+                                <a href="#">Learn More</a>
+                            </button>
+                        </div>
+    
                     </div>
-                    
-                    <div class="col-span-2 sm:col-span-1 justify-center my-4 ml-auto text-center btn">
-                        <button class="rounded-full bg-blue-200 text-blue-900 font-semibold px-12 py-4 mb-2  transform hover:scale-110 duration-200 ease-in">
-                            <a href="#">Apply Now</a>
-                        </button>
-                        <button class="rounded-full bg-white text-gray-800 font-semibold px-12 py-4 my-2  transform hover:scale-110 duration-200 ease-in">
-                            <a href="#">Learn More</a>
-                        </button>
-                    </div>
-
                 </div>
 
             </div>
 
             <!--links -->
-            <div class="bg-blue-900 text-white p-4" style="background-color: #245079;">
+            <div class="text-white" style="background-color: #245079;">
                 <div class="max-w-screen-xl mx-auto p-4 sm:px-16">
-                    <div class="grid grid-cols-4 gap-2 justify-between">
+                    <div class="grid grid-cols-4 gap-2 justify-between max-w-screen-xl px-6">
                         <!--logo and address-->
                         <div class="col-span-4 sm:col-span-1">
                             <div class="">
@@ -383,11 +469,12 @@
                                 <li class="my-2 text-md"><a href="./free.html" class="text-slate-300 hover:text-white"> Free GRE & IELTS Tests</a></li>
                             </ol>
                         </div>
-    
                     </div>
-    
+
+                    <div class="max-w-screen-xl px-6">
+                        
                     <!---branches-->
-                    <div class="flex justify-center mt-5 w-full bg-blue-100 rounded shadow-lg mb-4">
+                    <div class="flex justify-center mt-5 w-full bg-blue-100 rounded shadow-lg mb-4 max-w-screen-xl px-4 sm:px-16">
                         <div class="py-1 rounded text-center text-blue-900 font-semibold text-sm p-2">
                             Our Branches :   Madhapur (Hyderabad),   Visakhapatnam,   Kakinada,   Vijayawada,   Guntur,   Tirupati
                         </div>
@@ -399,18 +486,18 @@
                     <div class="md:flex justify-between mt-4">
                         <div class="sm:w-1/2 grid grid-cols-7 my-2">
                             <div class="col-span-2 text-start">
-                                <a href="./policy.html" class="text-sm">Privacy Policy</a>
+                                <a href="./policy.html" class="text-sm hover:text-gray-500 duration-200 ease-in">Privacy Policy</a>
                             </div>
                             <div class="col-span-2">
-                                <a href="./terms.html" class="text-sm">Terms & Services</a>
+                                <a href="./terms.html" class="text-sm hover:text-gray-500 duration-200 ease-in">Terms & Services</a>
                             </div>
                             <div class="col-span-3 pl-8">
-                                <a href="./refund.html" class="text-sm">Refund & Cancellation</a>
+                                <a href="./refund.html" class="text-sm hover:text-gray-500 duration-200 ease-in">Refund & Cancellation</a>
                             </div>
                         </div>
     
                         <div class="col-span-6 place-content-end flex flex-wrap gap-4 justify-center sm:justify-end my-2">
-                            <a href="#" target="_blank" aria-label="facebook">
+                            <a href="#" target="_blank" aria-label="facebook" class="hover:scale-110 duration-200 ease-in-out">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="1.5em"
                                     viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                                     <path
@@ -418,17 +505,17 @@
                                         fill="white" />
                                 </svg>
                             </a>
-                            <a href="#" target="_blank" aria-label="instagram" class="ms-2">
+                            <a href="#" target="_blank" aria-label="instagram" class="ms-2  hover:scale-110 duration-200 ease-in-out">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512">
                                     <path
                                         d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
                                         fill="white" />
                                 </svg>
                             </a>
-                            <a href="#" target="_blank" aria-label="Telegram" class="ms-2">
+                            <a href="#" target="_blank" aria-label="Telegram" class="ms-2 hover:scale-110 duration-200 ease-in-out">
                                 <svg style="color: white" xmlns="http://www.w3.org/2000/svg"  height="1.5em"  fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16"> <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z" fill="white"></path> </svg>
                             </a>
-                            <a href="#" target="_blank" aria-label="youtube" class="ms-2">
+                            <a href="#" target="_blank" aria-label="youtube" class="ms-2 hover:scale-110 duration-200 ease-in-out">
                                 <svg style="color: white" xmlns="http://www.w3.org/2000/svg" height="1.5em" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16"> <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" fill="white"></path> </svg>
                             </a>
                         </div>
@@ -440,6 +527,8 @@
                         © 2021 Quedb Edtech Private Limited. All rights reserved.
                     </p>
                     <p class="text-sm px-4 sm:px-16 mx-auto text-center">When you visit or interact with our sites, services or tools, we or our authorised service providers may use cookies for storing information to help provide you with a better, faster and safer experience and for marketing purposes.</p>
+                    </div>
+    
     
                 </div>
             </div>
