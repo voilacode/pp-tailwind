@@ -112,70 +112,72 @@
 </head>
 <body>
     <header>
-        <nav class="md:px-20 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600" style="background-color: #135ca1;">
+        <nav class="lg:px-20 fixed w-full z-20 top-0 left-0" style="background-color: #135ca1;">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="./index.html" class="flex items-center ">
-                <img src="../assets/pp_logo.webp" class="logo" width="200px" height="100px" class="h-8 mr-3"  alt="Flowbite Logo">
+                <img src="../assets/pp_logo.webp" class="logo" width="200px" height="auto"  alt="Logo">
             </a>
             <div class="flex md:order-2">
-                <button type="button" class="text-white bg-red-600 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 md:py-2 text-center mr-3 md:mr-0 talk-btn">Talk to us</button>
-                <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
-                <span class="sr-only">Open main menu</span>
+                <button type="button" class="text-white bg-red-600 focus:ring-4 focus:outline-none font-medium rounded-lg text-md hover:bg-red-800 hover:outline-1 px-4 md:py-2 text-center mr-3 md:mr-0 talk-btn ">Talk to us</button>
+                <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden  bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+                
                 <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
                 </svg>
             </button>
             </div>
             <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-            <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0  dark:border-gray-700">
-            <li>
-                <a href="#" class="block py-2 pl-3 pr-4 text-white rounded md:p-0" aria-current="page">Home</a>
-            </li>
-            <li>
-                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-white rounded md:p-0 md:w-auto ">Job Training <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-          </svg></button>
-                    <!-- Dropdown menu -->
-                    <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
-                          <li>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Fullstack Java with Placement</a>
-                          </li>
-                          <li>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Curriculum</a>
-                          </li>
-                          <li>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Fee Structure</a>
-                          </li>
-                        </ul>
-                    </div>
-            </li>
-            <li>
-                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-white rounded md:p-0 md:w-aut">Resources <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-          </svg></button>
-                    <!-- Dropdown menu -->
-                    <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
-                          <li>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Telegram Channel</a>
-                          </li>
-                          <li>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Learning Portal</a>
-                          </li>
-                          <li>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Free Practice Tests</a>
-                          </li>
-                        </ul>
-                        <div class="py-1">
-                          <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Free IELTS & GRE Test</a>
+                <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium lg:text-lg rounded-lg md:flex-row md:space-x-4 md:mt-0 md:border-0  dark:border-gray-700">
+                <li class="hover:bg-blue-500 px-4 py-2 rounded">
+                    <button class="hover:bg-sky-800/75 hover:bg-opacity-75 rounded">
+                        <a href="./index.html" class="block py-2 pl-3 pr-4 text-white rounded md:p-0  transition duration-200 ease-in" aria-current="page">Home</a>
+                    </button>
+                </li>
+                <li class="hover:bg-blue-500 px-4 py-2 rounded">
+                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-white rounded md:p-0  transition duration-200 ease-in">Job Training <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+            </svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Fullstack Java with Placement</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Curriculum</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Fee Structure</a>
+                            </li>
+                            </ul>
                         </div>
-                    </div>
                 </li>
-                <li>
-                <a href="#" class="block py-2 pl-3 pr-4 text-white rounded md:p-0">Hire from us!</a>
-                </li>
-            </ul>
+                <li class="hover:bg-blue-500 px-4 py-2 rounded">
+                    <button id="dropdownNavbarLink1" data-dropdown-toggle="dropdownNavbar1" class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-white rounded md:p-0 md:w-auto transition duration-200 ease-in">Resources <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+            </svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownNavbar1" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-400"    aria-labelledby="dropdownLargeButton">
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Telegram Channel</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Learning Portal</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Free Practice Tests</a>
+                            </li>
+                            </ul>
+                            <div class="py-1">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Free IELTS & GRE Test</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="hover:bg-blue-500 px-4 py-2 rounded">
+                    <a href="#" class="block py-2 pl-3 pr-4 text-white rounded md:p-0  transition duration-200 ease-in">Hire from us!</a>
+                    </li>
+                </ul>
             </div>
             </div>
         </nav> 
@@ -303,9 +305,10 @@
                 <div id="answer3" class="hidden mx-5 border-none p-3 text-gray-600 text-lg">Yes. Our experts handpick questions that repeatedly appear, helping you learn shortcuts and simple strategies that will help you improve your logical thinking speed and clear any company placements.</div>
             </div>
         </div>
+        <!-- footer -->
         <footer>
             <!--attend drives-->
-            <div class="bg-blue-800 text-white p-4 sm:px-16">
+            <div class="text-white p-4 sm:px-16" style="background-color: #135ca1;">
                 <div class="sm:flex justify-between m-4 ">
 
                     <div class="col-span-2 sm:col-span-1 sm-text-center my-2">
@@ -314,10 +317,10 @@
                     </div>
                     
                     <div class="col-span-2 sm:col-span-1 justify-center my-4 ml-auto text-center btn">
-                        <button class="rounded-full bg-blue-200 text-blue-900 font-semibold px-12 py-4 mb-2">
+                        <button class="rounded-full bg-blue-200 text-blue-900 font-semibold px-12 py-4 mb-2  transform hover:scale-110 duration-200 ease-in">
                             <a href="#">Apply Now</a>
                         </button>
-                        <button class="rounded-full bg-white text-gray-800 font-semibold px-12 py-4 my-2">
+                        <button class="rounded-full bg-white text-gray-800 font-semibold px-12 py-4 my-2  transform hover:scale-110 duration-200 ease-in">
                             <a href="#">Learn More</a>
                         </button>
                     </div>
@@ -327,7 +330,7 @@
             </div>
 
             <!--links -->
-            <div class="bg-blue-900 text-white p-4">
+            <div class="bg-blue-900 text-white p-4" style="background-color: #245079;">
                 <div class="max-w-screen-xl mx-auto p-4 sm:px-16">
                     <div class="grid grid-cols-4 gap-2 justify-between">
                         <!--logo and address-->
@@ -374,11 +377,11 @@
                         <div class="col-span-2 sm:col-span-1">
                             <h2 class="text-white text-xl font-semibold font-sans mb-4">Our Company</h2> 
                             <ol>
-                                <li class="my-2 text-md"><a href="./about.html" class="text-slate-300">About</a></li> 
-                                <li class="my-2 text-md"><a href="./review.html" class="text-slate-300">Reviews</a></li>
-                                <li class="my-2 text-md"><a href="./testimonials.html" class="text-slate-300"> Testimonials</a></li>
-                                <li class="my-2 text-md"><a href="./blogs.html" class="text-slate-300"> Blog</a></li>
-                                <li class="my-2 text-md"><a href="./contact.html" class="text-slate-300">  Contact </a></li>
+                                <li class="my-2 text-md"><a href="./about.html" class="text-slate-300 hover:text-white">About</a></li> 
+                                <li class="my-2 text-md"><a href="./review.html" class="text-slate-300 hover:text-white">Reviews</a></li>
+                                <li class="my-2 text-md"><a href="./testimonials.html" class="text-slate-300 hover:text-white"> Testimonials</a></li>
+                                <li class="my-2 text-md"><a href="./blogs.html" class="text-slate-300 hover:text-white"> Blog</a></li>
+                                <li class="my-2 text-md"><a href="./contact.html" class="text-slate-300 hover:text-white">  Contact </a></li>
                             </ol>
                         </div>
     
@@ -387,18 +390,18 @@
                             <h2 class="text-white text-xl font-semibold font-sans mb-4">Prepare</h2> 
                             <div class="grid grid-cols-2 gap-4">
                                 <ol class="col-span-2 md:col-span-1">
-                                    <li class="mb-2 text-md"><a href="./quant.html" class="text-slate-300">Quantitative Aptitude</a></li> 
-                                    <li class="my-2 text-md"><a href="./logical.html" class="text-slate-300">Logical Reasoning</a></li>
-                                    <li class="my-2 text-md"><a href="./verbal.html" class="text-slate-300"> Verbal Ability</a></li>
-                                    <li class="my-2 text-md"><a href="./interview.html" class="text-slate-300"> Interview Skills</a></li>
-                                    <li class="my-2 text-md"><a href="./programming.html" class="text-slate-300">  Programming Concepts</a></li>
-                                    <li class="mt-2 text-md"><a href="./coding.html" class="text-slate-300"> Coding for Interviews </a></li>
+                                    <li class="mb-2 text-md"><a href="./quant.html" class="text-slate-300 hover:text-white">Quantitative Aptitude</a></li> 
+                                    <li class="my-2 text-md"><a href="./logical.html" class="text-slate-300 hover:text-white">Logical Reasoning</a></li>
+                                    <li class="my-2 text-md"><a href="./verbal.html" class="text-slate-300 hover:text-white"> Verbal Ability</a></li>
+                                    <li class="my-2 text-md"><a href="./interview.html" class="text-slate-300 hover:text-white"> Interview Skills</a></li>
+                                    <li class="my-2 text-md"><a href="./programming.html" class="text-slate-300 hover:text-white">  Programming Concepts</a></li>
+                                    <li class="mt-2 text-md"><a href="./coding.html" class="text-slate-300 hover:text-white"> Coding for Interviews </a></li>
                                 </ol>
                                 <ol class="col-span-2 sm:col-span-1">
-                                    <li class="mb-2 text-md"><a href="./tcs-nqt.html" class="text-slate-300">TCS NQT</a></li> 
-                                     <li class="my-2 text-md"><a href="./wipro.html" class="text-slate-300"> Wipro NTH</a></li>
-                                     <li class="my-2 text-md"><a href="./infytq.html" class="text-slate-300"> InfyTQ</a></li>
-                                     <li class="my-2 text-md"><a href="./companies.html" class="text-slate-300"> All Companies</a></li>
+                                    <li class="mb-2 text-md"><a href="./tcs-nqt.html" class="text-slate-300 hover:text-white">TCS NQT</a></li> 
+                                     <li class="my-2 text-md"><a href="./wipro.html" class="text-slate-300 hover:text-white"> Wipro NTH</a></li>
+                                     <li class="my-2 text-md"><a href="./infytq.html" class="text-slate-300 hover:text-white"> InfyTQ</a></li>
+                                     <li class="my-2 text-md"><a href="./companies.html" class="text-slate-300 hover:text-white"> All Companies</a></li>
                                 </ol>
                             </div>
                         </div>
@@ -407,10 +410,10 @@
                         <div class="col-span-2 sm:col-span-1 justify-end">
                             <h2 class="text-white text-xl font-semibold font-sans mb-4">Resources</h2>
                             <ol>
-                                <li class="my-2 text-md"><a href="./telegram.html" class="text-slate-300">Telegram Channel</a></li> 
-                                <li class="my-2 text-md"><a href="./learning.html" class="text-slate-300">Learning Portal</a></li>
-                                <li class="my-2 text-md"><a href="./practice.html" class="text-slate-300"> Free Practice Tests</a></li>
-                                <li class="my-2 text-md"><a href="./free.html" class="text-slate-300"> Free GRE & IELTS Tests</a></li>
+                                <li class="my-2 text-md"><a href="./telegram.html" class="text-slate-300 hover:text-white">Telegram Channel</a></li> 
+                                <li class="my-2 text-md"><a href="./learning.html" class="text-slate-300 hover:text-white">Learning Portal</a></li>
+                                <li class="my-2 text-md"><a href="./practice.html" class="text-slate-300 hover:text-white"> Free Practice Tests</a></li>
+                                <li class="my-2 text-md"><a href="./free.html" class="text-slate-300 hover:text-white"> Free GRE & IELTS Tests</a></li>
                             </ol>
                         </div>
     
@@ -466,7 +469,7 @@
                     </div>
                     
                     <!--info-->
-                    <p class="text-center text-slate-400 text-sm font-sans mt-4 mb-2">
+                    <p class="text-center text-gray-200 text-sm font-sans mt-4 mb-2">
                         © 2021 Quedb Edtech Private Limited. All rights reserved.
                     </p>
                     <p class="text-sm px-4 sm:px-16 mx-auto text-center">When you visit or interact with our sites, services or tools, we or our authorised service providers may use cookies for storing information to help provide you with a better, faster and safer experience and for marketing purposes.</p>
