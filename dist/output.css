@@ -694,9 +694,15 @@ video {
   margin-right: -0.25rem;
 }
 
+<<<<<<< HEAD
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+=======
+.mx-16 {
+  margin-left: 4rem;
+  margin-right: 4rem;
+>>>>>>> 0b922c7 (updating files and adding image)
 }
 
 .mx-4 {
@@ -744,6 +750,11 @@ video {
   margin-bottom: 3rem;
 }
 
+.my-16 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -764,6 +775,14 @@ video {
   margin-bottom: 1.25rem;
 }
 
+<<<<<<< HEAD
+=======
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+>>>>>>> 0b922c7 (updating files and adding image)
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -866,10 +885,13 @@ video {
   margin-right: 0.5rem;
 }
 
+<<<<<<< HEAD
 .mr-20 {
   margin-right: 5rem;
 }
 
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
 .mr-3 {
   margin-right: 0.75rem;
 }
@@ -1029,6 +1051,7 @@ video {
   height: 0.875rem;
 }
 
+<<<<<<< HEAD
 .h-32 {
   height: 8rem;
 }
@@ -1037,6 +1060,8 @@ video {
   height: 9rem;
 }
 
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
 .h-4 {
   height: 1rem;
 }
@@ -1109,10 +1134,13 @@ video {
   width: 0.625rem;
 }
 
+<<<<<<< HEAD
 .w-2\/3 {
   width: 66.666667%;
 }
 
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
 .w-20 {
   width: 5rem;
 }
@@ -1129,10 +1157,13 @@ video {
   width: 75%;
 }
 
+<<<<<<< HEAD
 .w-32 {
   width: 8rem;
 }
 
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
 .w-36 {
   width: 9rem;
 }
@@ -1413,10 +1444,13 @@ video {
   align-self: flex-end;
 }
 
+<<<<<<< HEAD
 .self-center {
   align-self: center;
 }
 
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
 .justify-self-center {
   justify-self: center;
 }
@@ -1653,11 +1687,14 @@ video {
   background-color: rgb(8 145 178 / var(--tw-bg-opacity));
 }
 
+<<<<<<< HEAD
 .bg-emerald-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(16 185 129 / var(--tw-bg-opacity));
 }
 
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
 .bg-gray-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
@@ -1733,21 +1770,27 @@ video {
   background-color: rgb(190 24 93 / var(--tw-bg-opacity));
 }
 
+<<<<<<< HEAD
 .bg-pink-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(157 23 77 / var(--tw-bg-opacity));
 }
 
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
 .bg-red-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(220 38 38 / var(--tw-bg-opacity));
 }
 
+<<<<<<< HEAD
 .bg-rose-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(244 63 94 / var(--tw-bg-opacity));
 }
 
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
 .bg-sky-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(224 242 254 / var(--tw-bg-opacity));
@@ -1783,21 +1826,27 @@ video {
   background-color: rgb(12 74 110 / var(--tw-bg-opacity));
 }
 
+<<<<<<< HEAD
 .bg-slate-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(241 245 249 / var(--tw-bg-opacity));
 }
 
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
 .bg-slate-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(226 232 240 / var(--tw-bg-opacity));
 }
 
+<<<<<<< HEAD
 .bg-slate-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(203 213 225 / var(--tw-bg-opacity));
 }
 
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
 .bg-transparent {
   background-color: transparent;
 }
@@ -1822,10 +1871,13 @@ video {
   background-color: rgb(234 179 8 / var(--tw-bg-opacity));
 }
 
+<<<<<<< HEAD
 .bg-gradient-to-br {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
 
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -1834,6 +1886,7 @@ video {
   background-image: linear-gradient(to top left, var(--tw-gradient-stops));
 }
 
+<<<<<<< HEAD
 .from-blue-500 {
   --tw-gradient-from: #3b82f6 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(59 130 246 / 0) var(--tw-gradient-to-position);
@@ -1852,12 +1905,21 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+=======
+.from-green-400 {
+  --tw-gradient-from: #4ade80 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(74 222 128 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+>>>>>>> 0b922c7 (updating files and adding image)
 .from-lime-300 {
   --tw-gradient-from: #bef264 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(190 242 100 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+<<<<<<< HEAD
 .from-red-400 {
   --tw-gradient-from: #f87171 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(248 113 113 / 0) var(--tw-gradient-to-position);
@@ -1899,10 +1961,13 @@ video {
   --tw-gradient-to: #1d4ed8 var(--tw-gradient-to-position);
 }
 
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
 .to-gray-900 {
   --tw-gradient-to: #111827 var(--tw-gradient-to-position);
 }
 
+<<<<<<< HEAD
 .to-red-600 {
   --tw-gradient-to: #dc2626 var(--tw-gradient-to-position);
 }
@@ -1911,6 +1976,8 @@ video {
   --tw-gradient-to: transparent var(--tw-gradient-to-position);
 }
 
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
 .to-white {
   --tw-gradient-to: #fff var(--tw-gradient-to-position);
 }
@@ -1919,6 +1986,7 @@ video {
   fill: currentColor;
 }
 
+<<<<<<< HEAD
 .p-0 {
   padding: 0px;
 }
@@ -1927,6 +1995,8 @@ video {
   padding: 0.125rem;
 }
 
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
 .p-1 {
   padding: 0.25rem;
 }
@@ -1959,9 +2029,15 @@ video {
   padding: 2rem;
 }
 
+<<<<<<< HEAD
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
+=======
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+>>>>>>> 0b922c7 (updating files and adding image)
 }
 
 .px-10 {
@@ -2102,10 +2178,13 @@ video {
   padding-bottom: 3rem;
 }
 
+<<<<<<< HEAD
 .pb-14 {
   padding-bottom: 3.5rem;
 }
 
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
 .pb-16 {
   padding-bottom: 4rem;
 }
@@ -2178,6 +2257,7 @@ video {
   padding-left: 2rem;
 }
 
+<<<<<<< HEAD
 .pr-0 {
   padding-right: 0px;
 }
@@ -2186,6 +2266,8 @@ video {
   padding-right: 2.5rem;
 }
 
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
 .pr-24 {
   padding-right: 6rem;
 }
@@ -2202,10 +2284,13 @@ video {
   padding-right: 1.25rem;
 }
 
+<<<<<<< HEAD
 .pr-52 {
   padding-right: 13rem;
 }
 
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
 .pr-8 {
   padding-right: 2rem;
 }
@@ -2254,10 +2339,13 @@ video {
   padding-top: 1.25rem;
 }
 
+<<<<<<< HEAD
 .pt-6 {
   padding-top: 1.5rem;
 }
 
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
 .pt-8 {
   padding-top: 2rem;
 }
@@ -2556,6 +2644,7 @@ video {
   color: rgb(202 138 4 / var(--tw-text-opacity));
 }
 
+<<<<<<< HEAD
 .no-underline {
   text-decoration-line: none;
 }
@@ -2564,14 +2653,19 @@ video {
   opacity: 0.7;
 }
 
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
 .opacity-75 {
   opacity: 0.75;
 }
 
+<<<<<<< HEAD
 .opacity-80 {
   opacity: 0.8;
 }
 
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
@@ -2601,11 +2695,14 @@ video {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
+<<<<<<< HEAD
 .shadow-slate-200 {
   --tw-shadow-color: #e2e8f0;
   --tw-shadow: var(--tw-shadow-colored);
 }
 
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
 .shadow-slate-300 {
   --tw-shadow-color: #cbd5e1;
   --tw-shadow: var(--tw-shadow-colored);
@@ -2624,12 +2721,15 @@ video {
   transition-duration: 150ms;
 }
 
+<<<<<<< HEAD
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
 
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
 .transition-transform {
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -2648,10 +2748,13 @@ video {
   transition-duration: 300ms;
 }
 
+<<<<<<< HEAD
 .duration-75 {
   transition-duration: 75ms;
 }
 
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
 .ease-in {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
@@ -2680,6 +2783,14 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+<<<<<<< HEAD
+=======
+.hover\:scale-y-110:hover {
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+>>>>>>> 0b922c7 (updating files and adding image)
 .hover\:border-blue-500:hover {
   --tw-border-opacity: 1;
   border-color: rgb(59 130 246 / var(--tw-border-opacity));
@@ -2771,10 +2882,13 @@ video {
 
 .hover\:bg-opacity-75:hover {
   --tw-bg-opacity: 0.75;
+<<<<<<< HEAD
 }
 
 .hover\:bg-gradient-to-br:hover {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
 }
 
 .hover\:fill-blue-500:hover {
@@ -2883,6 +2997,7 @@ video {
   --tw-ring-color: rgb(229 231 235 / var(--tw-ring-opacity));
 }
 
+<<<<<<< HEAD
 .focus\:ring-red-300:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(252 165 165 / var(--tw-ring-opacity));
@@ -2902,6 +3017,8 @@ video {
   --tw-gradient-to: #3b82f6 var(--tw-gradient-to-position);
 }
 
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
 @media (prefers-color-scheme: dark) {
   .dark\:divide-gray-600 > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 1;
@@ -3048,10 +3165,13 @@ video {
     margin-right: 1rem;
   }
 
+<<<<<<< HEAD
   .sm\:block {
     display: block;
   }
 
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
   .sm\:flex {
     display: flex;
   }
@@ -3123,11 +3243,14 @@ video {
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
+<<<<<<< HEAD
 
   .sm\:text-5xl {
     font-size: 3rem;
     line-height: 1;
   }
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
 }
 
 @media (min-width: 768px) {
@@ -3162,6 +3285,7 @@ video {
     margin-right: 5rem;
   }
 
+<<<<<<< HEAD
   .md\:mx-32 {
     margin-left: 8rem;
     margin-right: 8rem;
@@ -3197,6 +3321,8 @@ video {
     margin-bottom: 1.5rem;
   }
 
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
   .md\:mb-10 {
     margin-bottom: 2.5rem;
   }
@@ -3209,10 +3335,13 @@ video {
     margin-bottom: 2.25rem;
   }
 
+<<<<<<< HEAD
   .md\:ml-0 {
     margin-left: 0px;
   }
 
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
   .md\:ml-16 {
     margin-left: 4rem;
   }
@@ -3237,10 +3366,13 @@ video {
     margin-right: 1rem;
   }
 
+<<<<<<< HEAD
   .md\:mr-44 {
     margin-right: 11rem;
   }
 
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
   .md\:ms-16 {
     -webkit-margin-start: 4rem;
             margin-inline-start: 4rem;
@@ -3282,6 +3414,7 @@ video {
     height: 24rem;
   }
 
+<<<<<<< HEAD
   .md\:h-\[168\.75px\] {
     height: 168.75px;
   }
@@ -3294,6 +3427,8 @@ video {
     height: 630px;
   }
 
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
   .md\:w-1\/2 {
     width: 50%;
   }
@@ -3302,14 +3437,18 @@ video {
     width: 91.666667%;
   }
 
+<<<<<<< HEAD
   .md\:w-48 {
     width: 12rem;
   }
 
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
   .md\:w-6\/12 {
     width: 50%;
   }
 
+<<<<<<< HEAD
   .md\:w-80 {
     width: 20rem;
   }
@@ -3326,6 +3465,8 @@ video {
     width: 350px;
   }
 
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
   .md\:w-auto {
     width: auto;
   }
@@ -3362,34 +3503,46 @@ video {
     flex-wrap: wrap;
   }
 
+<<<<<<< HEAD
   .md\:flex-nowrap {
     flex-wrap: nowrap;
   }
 
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
   .md\:justify-start {
     justify-content: flex-start;
   }
 
+<<<<<<< HEAD
   .md\:justify-center {
     justify-content: center;
   }
 
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
   .md\:gap-10 {
     gap: 2.5rem;
   }
 
+<<<<<<< HEAD
   .md\:gap-3 {
     gap: 0.75rem;
   }
 
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
   .md\:gap-4 {
     gap: 1rem;
   }
 
+<<<<<<< HEAD
   .md\:gap-6 {
     gap: 1.5rem;
   }
 
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
   .md\:gap-8 {
     gap: 2rem;
   }
@@ -3431,6 +3584,15 @@ video {
 
   .md\:p-10 {
     padding: 2.5rem;
+  }
+
+<<<<<<< HEAD
+  .md\:p-14 {
+    padding: 3.5rem;
+=======
+  .md\:p-12 {
+    padding: 3rem;
+>>>>>>> 0b922c7 (updating files and adding image)
   }
 
   .md\:p-14 {
@@ -3486,6 +3648,7 @@ video {
     padding-bottom: 5rem;
   }
 
+<<<<<<< HEAD
   .md\:py-32 {
     padding-top: 8rem;
     padding-bottom: 8rem;
@@ -3496,22 +3659,35 @@ video {
     padding-bottom: 2rem;
   }
 
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
   .md\:pb-28 {
     padding-bottom: 7rem;
   }
 
+<<<<<<< HEAD
   .md\:pb-3 {
     padding-bottom: 0.75rem;
   }
 
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
   .md\:pb-4 {
     padding-bottom: 1rem;
   }
 
+<<<<<<< HEAD
+=======
+  .md\:pb-5 {
+    padding-bottom: 1.25rem;
+  }
+
+>>>>>>> 0b922c7 (updating files and adding image)
   .md\:pl-1 {
     padding-left: 0.25rem;
   }
 
+<<<<<<< HEAD
   .md\:pl-16 {
     padding-left: 4rem;
   }
@@ -3532,6 +3708,8 @@ video {
     padding-left: 12rem;
   }
 
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
   .md\:pt-16 {
     padding-top: 4rem;
   }
@@ -3552,23 +3730,34 @@ video {
     text-align: start;
   }
 
+<<<<<<< HEAD
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
   }
 
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
   }
 
+<<<<<<< HEAD
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
 
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
   .md\:text-5xl {
     font-size: 3rem;
+    line-height: 1;
+  }
+
+  .md\:text-6xl {
+    font-size: 3.75rem;
     line-height: 1;
   }
 
@@ -3599,10 +3788,13 @@ video {
 }
 
 @media (min-width: 1024px) {
+<<<<<<< HEAD
   .lg\:col-span-1 {
     grid-column: span 1 / span 1;
   }
 
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
   .lg\:col-span-2 {
     grid-column: span 2 / span 2;
   }
@@ -3631,6 +3823,13 @@ video {
 
   .lg\:ml-1 {
     margin-left: 0.25rem;
+<<<<<<< HEAD
+=======
+  }
+
+  .lg\:ml-16 {
+    margin-left: 4rem;
+>>>>>>> 0b922c7 (updating files and adding image)
   }
 
   .lg\:mr-10 {
@@ -3665,6 +3864,7 @@ video {
     display: none;
   }
 
+<<<<<<< HEAD
   .lg\:h-10 {
     height: 2.5rem;
   }
@@ -3673,6 +3873,8 @@ video {
     height: 3rem;
   }
 
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
   .lg\:h-72 {
     height: 18rem;
   }
@@ -3735,6 +3937,13 @@ video {
     justify-content: flex-start;
   }
 
+<<<<<<< HEAD
+=======
+  .lg\:justify-center {
+    justify-content: center;
+  }
+
+>>>>>>> 0b922c7 (updating files and adding image)
   .lg\:justify-between {
     justify-content: space-between;
   }
@@ -3743,10 +3952,13 @@ video {
     gap: 2.5rem;
   }
 
+<<<<<<< HEAD
   .lg\:gap-5 {
     gap: 1.25rem;
   }
 
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
   .lg\:gap-6 {
     gap: 1.5rem;
   }
@@ -3769,10 +3981,13 @@ video {
     padding: 5rem;
   }
 
+<<<<<<< HEAD
   .lg\:p-3 {
     padding: 0.75rem;
   }
 
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
   .lg\:p-5 {
     padding: 1.25rem;
   }
@@ -3796,31 +4011,40 @@ video {
     padding-right: 5rem;
   }
 
+<<<<<<< HEAD
   .lg\:px-24 {
     padding-left: 6rem;
     padding-right: 6rem;
   }
 
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
   .lg\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
   }
 
+<<<<<<< HEAD
   .lg\:px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
   }
 
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
   }
 
+<<<<<<< HEAD
   .lg\:py-10 {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
   }
 
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
   .lg\:py-16 {
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -3831,11 +4055,14 @@ video {
     padding-bottom: 5rem;
   }
 
+<<<<<<< HEAD
   .lg\:py-28 {
     padding-top: 7rem;
     padding-bottom: 7rem;
   }
 
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
   .lg\:py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -3845,6 +4072,7 @@ video {
     padding-bottom: 7rem;
   }
 
+<<<<<<< HEAD
   .lg\:pl-24 {
     padding-left: 6rem;
   }
@@ -3855,6 +4083,10 @@ video {
 
   .lg\:pt-36 {
     padding-top: 9rem;
+=======
+  .lg\:pt-16 {
+    padding-top: 4rem;
+>>>>>>> 0b922c7 (updating files and adding image)
   }
 
   .lg\:pt-4 {
@@ -3865,11 +4097,14 @@ video {
     padding-top: 11rem;
   }
 
+<<<<<<< HEAD
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
   }
 
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
   .lg\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -3940,10 +4175,13 @@ video {
     padding-left: 6rem;
   }
 
+<<<<<<< HEAD
   .xl\:pr-28 {
     padding-right: 7rem;
   }
 
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
   .xl\:pt-16 {
     padding-top: 4rem;
   }
@@ -3955,9 +4193,12 @@ video {
   .xl\:pt-44 {
     padding-top: 11rem;
   }
+<<<<<<< HEAD
 
   .xl\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
   }
+=======
+>>>>>>> 0b922c7 (updating files and adding image)
 }
