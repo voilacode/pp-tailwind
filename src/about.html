@@ -27,11 +27,11 @@
                 </a>
                 <div class="flex md:order-2">
                     <button type="button"
-                        class="text-white bg-red-600 focus:ring-4 focus:outline-none font-medium rounded-lg text-md hover:bg-red-800 hover:outline-1 px-4 md:py-2 text-center mr-3 md:mr-0 talk-btn ">Talk
+                        class="text-white bg-red-600 focus:ring-4 focus:outline-none font-medium rounded-lg text-md hover:bg-red-800 hover:outline-1 px-4 md:py-2 text-center mr-3 md:mr-0 talk-btn " aria-label="talk to us">Talk
                         to us</button>
                     <button data-collapse-toggle="navbar-sticky" type="button"
                         class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden  bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                        aria-controls="navbar-sticky" aria-expanded="false">
+                        aria-controls="navbar-sticky" aria-label="toggle button" aria-expanded="false">
 
                         <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                             viewBox="0 0 17 14">
@@ -164,17 +164,17 @@
             <!--Our Survices-->
             <div class="mr-20">
                 <h1 class="text-blue-500 font-bold text-2xl md:pl-4 pl-2 border-l-4 border-blue-500">Our Services</h1>
-                <div class="md:grid    md:grid-cols-6 md:gap-3 py-1">
-                    <p class="text-sm bg-gray-300 col-span-2 text-center rounded my-1">Finishing School Program</p>
-                    <p class="text-sm bg-gray-300 py-1 text-center  rounded my-1">Fullstack Java</p>
-                    <p class="text-sm bg-gray-300 py-1 text-center rounded my-1">Frontend Traning</p>
-                    <p class="text-sm bg-gray-300 py-1 text-center rounded my-1">Softskills</p>
-                    <p class="text-sm bg-gray-300  py-1 text-center rounded my-1">Aptitude Traning</p>
+                <div class="grid md:grid-cols-4 grid-cols-2 gap-2 md:gap-3 py-1">
+                    <p class="text-sm bg-gray-200 col-span-2 text-center rounded my-1 py-2">Finishing School Program</p>
+                    <p class="text-sm bg-gray-200 py-2 text-center  rounded my-1">Fullstack Java</p>
+                    <p class="text-sm bg-gray-200 py-2 text-center rounded my-1">Frontend Traning</p>
+                    <p class="text-sm bg-gray-200 py-2 text-center rounded my-1">Softskills</p>
+                    <p class="text-sm bg-gray-200  py-2 text-center rounded my-1">Aptitude Traning</p>
 
-                    <p class="text-sm bg-gray-300 text-center md:col-span-2  rounded my-1">Campus Recruitment Traning</p>
-                    <p class="text-sm bg-gray-300 py-1 md:col-span-2 text-center rounded my-1">Technical Training</p>
-                    <p class="text-sm bg-gray-300 py-1 md:col-span-2 text-center rounded my-1">Abroad Study Traning</p>
-                    <p class="text-sm bg-gray-300 py-1 text-center rounded my-1" >Interview Prep</p>
+                    <p class="text-sm bg-gray-200 text-center md:col-span-2  rounded my-1">Campus Recruitment Traning</p>
+                    <p class="text-sm bg-gray-200 py-2 md:col-span-2 text-center rounded my-1">Technical Training</p>
+                    <p class="text-sm bg-gray-200 py-2 md:col-span-2 text-center rounded my-1">Abroad Study Traning</p>
+                    <p class="text-sm bg-gray-200 py-2 text-center rounded my-1" >Interview Prep</p>
 
                 </div>
             </div>
@@ -259,7 +259,7 @@
 
 
         </div>
-        <div class="bg-yellow-100 mr-16 w-full rounded h-[400px]">
+        <div class="bg-yellow-100 mr-16 w-full rounded h-[400px] md:h-[600px] lg:h-[400px]">
             <div class="p-5">
                 <h1 class="text-blue-500 text-2xl font-semibold border-l-4 border-blue-500 pl-2 md:pl-4">Loved by everyone!</h1>
             </div>
@@ -296,7 +296,7 @@
                 perfect in programming and especially in front end. I like the way they taught us.</p>
             <p class="font-semibold px-5 pt-10">Rakesh Varma</p>
             <a href="https://www.google.com/maps/reviews/data=!4m5!14m4!1m3!1m2!1s115438379562908657717!2s0x0:0xfe4900bdc486b2e6?hl=en-IN&shorturl=1"
-                class="font-semibold px-5 text-blue-500">Original google review</a>
+                class="font-semibold px-5 text-blue-500 ">Original google review</a>
         </div>
     </section>
 
@@ -308,126 +308,200 @@
 
 
     <!--Our Team-->
-    <section class="mx-2 md:mx-40 pl-3 mt-2 ">
+    <section class="mx-4 md:mx-40 md:pl-9 mt-2 ">
         <p class="py-1 text-sm">OUR TEAM</p>
         <h1 class="text-3xl font-semibold">Trust the professionals</h1>
-        <div class=" grid md:grid-cols-4 mt-6">
-            <div class="ml-5 md:ml-0">
-
-                <img src="../assets/file_KT.jpg" alt="KtSir" class="rounded-xl w-48 h-48 ">
-
-                <div class="w-2/3 text-center bg-white shadow-xl mt-4 py-3 px-0">
-                    <p class="text-xl font-bold">Krishna Teja</p>
-                    <p class="font-semibold">Director</p>
-                    <p class="text-sm">CEO</p>
+        <div class=" grid md:grid-cols-4 md:mt-5 md:mb-32 my-10">
+            <div class="ml-5 md:ml-0 py-5">
+                <div class="relative   md:w-[250px] md:h-[187.50px]">
+                    <img src="../assets/file_KT.webp" alt="KtSir" class="rounded-xl md:w-100% md:h-100% " width="100%" height="100%">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center">
+                        <div class="card shadow-2xl text-center md:mt-64 mt-56 mx-4 px-4 rounded py-2 relative z-10 bg-white bg-opacity-100">
+                            <p class="text-xl font-semibold">Krishna Teja</p>
+                            <p class="font-semibold">Director</p>
+                            <p class="text-sm">CEO</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="ml-5 md:ml-0 py-5">
+                <div class="relative md:w-[250px] md:h-[187.50px]">
+                <img src="../assets/file_poojitha.webp" alt="poojitha" class="rounded-xl w-100% h-100%" width="100%" height="100%">
+                <div class="absolute inset-0 flex flex-col items-center justify-center">
+                    <div class="card shadow-2xl text-center md:mt-64 mt-56 mx-4 px-4 rounded py-2 relative z-10 bg-white bg-opacity-100">
+                        <p class="text-xl font-semibold">Poojitha</p>
+                        <p class="font-semibold">Director</p>
+                        <p class="text-sm">CFO</p>
+                    </div>
                 </div>
             </div>
-            <div class="ml-5 md:ml-0">
-                <img src="../assets/file_poojitha.jpg" alt="poojitha" class="rounded-xl w-48 h-48 ">
-                <div class="w-2/3 text-center bg-white shadow-xl mt-4 py-3 px-0">
-                    <p class="text-xl font-bold">Poojitha</p>
-                    <p class="font-semibold">Director</p>
-                    <p class="text-sm">CFO</p>
+                
+            </div>
+            <div class="ml-5 md:ml-0 py-5">
+                <div class="relative md:w-[250px] md:h-[187.50px]">
+                <img src="../assets/file_srinivas.webp" alt="srinivas" class="rounded-xl w-100% h-100% " width="100%" height="100%">
+            
+                <div class="absolute inset-0 flex flex-col items-center justify-center">
+                    <div class="card shadow-2xl text-center md:mt-60 mt-56 mx-4 px-4 rounded py-2 relative z-10 bg-white bg-opacity-100">
+                        <p class="text-xl font-semibold">J Srinivas</p>
+                        <p class="font-semibold">Sr. Manager</p>
+                        <p class="text-sm">Corporate Alliances</p>
+                    </div>
                 </div>
             </div>
-            <div class="ml-5 md:ml-0">
-                <img src="../assets/file_srinivas.jpeg" alt="srinivas" class="rounded-xl w-48 h-48 ">
-                <div class="w-2/3 text-center bg-white shadow-xl mt-4 py-3 px-0">
-                    <p class="text-xl font-bold">J Srinivas</p>
-                    <p class="font-semibold">Sr. Manager</p>
-                    <p class="text-sm">Corporate Alliances</p>
-                </div>
             </div>
-            <div class="ml-5 md:ml-0">
-                <img src="../assets/file_mathew.jpeg" alt="mathew" class="rounded-xl w-48 h-48 ">
-                <div class="w-2/3 text-center bg-white shadow-xl mt-4 py-3 px-0">
-                    <p class="text-xl font-bold">Lourdu Mathew</p>
-                    <p class="font-semibold">Manager</p>
-                    <p class="text-sm">Manager</p>
+            <div class="ml-5 md:ml-0 py-5">
+                <div class="relative   md:w-[250px] md:h-[187.50px]">
+                    <img src="../assets/file_mathew.webp" alt="mathew" class="rounded-xl w-100% h-100%" width="100%" height="100%">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center">
+                        <div class="card shadow-2xl text-center md:mt-96 mt-80 mx-4 px-4 rounded py-2 relative z-10 bg-white bg-opacity-100">
+                            <p class="text-xl font-semibold">Lourdu Mathew</p>
+                            <p class="font-semibold">Manager</p>
+                            <p class="text-sm">Operations</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-
-
-        <div class=" grid md:grid-cols-4 mt-6">
-            <div class="ml-5 md:ml-0">
-                <img src="../assets/file_visha.jpeg" alt="visha" class="rounded-xl w-48 h-48 ">
-                <div class="w-2/3 text-center bg-white shadow-xl mt-4 py-3 px-0">
-                    <p class="text-xl font-bold">Visha Madaan</p>
-                    <p class="font-semibold">Manager</p>
-                    <p class="text-sm">Counselling</p>
-                </div>
-            </div>
-            <div class="ml-5 md:ml-0">
-                <img src="../assets/file_harsha.jpeg" alt="harsh" class="rounded-xl w-48 h-48 ">
-                <div class="w-2/3 text-center bg-white shadow-xl mt-4 py-3 px-0">
-                    <p class="text-xl font-bold">Harsha</p>
-                    <p class="font-semibold">Associate</p>
-                    <p class="text-sm">Corporate Alliances</p>
-                </div>
-            </div>
-            <div class="ml-5 md:ml-0">
-                <img src="../assets/file_murali.jpeg" alt="Murali" class="rounded-xl w-48 h-48 ">
-                <div class="w-2/3 text-center bg-white shadow-xl mt-4 py-3 px-0">
-                    <p class="text-xl font-bold">Murali Krishna</p>
-                    <p class="font-semibold">Training Head</p>
-                    <p class="text-sm">Fullstack Java</p>
-                </div>
-            </div>
-            <div class="ml-5 md:ml-0">
-                <img src="../assets/file_seshagiri.jpeg" alt="sheshagiri" class="rounded-xl w-48 h-48 ">
-                <div class="w-2/3 text-center bg-white shadow-xl mt-4 py-3 px-0">
-                    <p class="text-xl font-bold">Sheshagiri</p>
-                    <p class="font-semibold">Professor</p>
-                    <p class="text-sm">Fullstack Java</p>
-                </div>
+                
             </div>
         </div>
-        <div class=" grid md:grid-cols-4 mt-6">
-            <div class="ml-5 md:ml-0">
-                <img src="../assets/file_banerjee.jpeg" alt="banerjee" class="rounded-xl w-48 h-48 ">
-                <div class="w-2/3 text-center bg-white shadow-xl mt-4 py-3 px-0">
-                    <p class="text-xl font-bold">Banerjee</p>
-                    <p class="font-semibold">Developer</p>
-                    <p class="text-sm">Fullstack</p>
-                </div>
-            </div>
-            <div class="ml-5 md:ml-0">
-                <img src="../assets/file_sushanma2.jpeg" alt="Sush Meday" class="rounded-xl w-48 h-48 ">
-                <div class="w-2/3 text-center bg-white shadow-xl mt-4 py-3 px-0">
-                    <p class="text-xl font-bold">Sush Meday</p>
-                    <p class="font-semibold">Consultant</p>
-                    <p class="text-sm">Content Development</p>
-                </div>
-            </div>
-            <div class="ml-5 md:ml-0">
-                <img src="../assets/file_vishaka.jpeg" alt="Vishaka" class="rounded-xl w-48 h-48 ">
-                <div class="w-2/3 text-center bg-white shadow-xl mt-4 py-3 px-0">
-                    <p class="text-xl font-bold">Vishaka</p>
-                    <p class="font-semibold">Associate</p>
-                    <p class="text-sm">Operations</p>
-                </div>
-            </div>
-            <div class="ml-5 md:ml-0">
-                <img src="../assets/file_vamsi.jpeg" alt="Sai Vamsidhar" class="rounded-xl w-32 h-32 md:w-48 md:h-48">
-                <div class="w-2/3 text-center bg-white shadow-xl mt-4 py-3 px-0">
-                    <p class="text-xl font-bold">Sai Vamsidhar</p>
-                    <p class="font-semibold">Intern</p>
-                    <p class="text-sm">Social Media</p>
-                </div>
-            </div>
-        </div>
-        <div class=" grid md:grid-cols-4 mt-6">
-            <div class="ml-5 md:ml-0">
-                <img src="../assets/file_ankitha.jpeg" alt="Ankitha Reddy" class="rounded-xl w-32 h-32 md:w-48 md:h-48">
-                <div class="w-2/3 text-center bg-white shadow-xl mt-4 py-3 px-0">
-                    <p class="text-xl font-bold">Ankitha Reddy</p>
-                    <p class="font-semibold">Intern</p>
-                    <p class="text-sm">Social Media</p>
-                </div>
-            </div>
 
+
+        <div class=" grid md:grid-cols-4  md:my-32 my-10">
+            <div class="ml-5 md:ml-0 py-5">
+                <div class="relative   md:w-[250px] md:h-[187.50px]">
+                    <img src="../assets/file_visha.webp" alt="Visha" class="rounded-xl w-100% h-100%" width="100%" height="100%">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center">
+                        <div class="card shadow-2xl text-center md:mt-64 mt-56 mx-4 px-4 rounded py-2 relative z-10 bg-white bg-opacity-100">
+                            <p class="text-xl font-semibold">Visha Madaan</p>
+                            <p class="font-semibold">Manager</p>
+                            <p class="text-sm">Counselling</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="ml-5 md:ml-0 py-5">
+                <div class="relative   md:w-[250px] md:h-[187.50px]">
+                    <img src="../assets/file_harsha.webp" alt="Harsha" class="rounded-xl w-100% h-100%" width="100%" height="100%">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center">
+                        <div class="card shadow-2xl text-center md:mt-80 mt-80 mx-4 px-4 rounded py-2 relative z-10 bg-white bg-opacity-100">
+                            <p class="text-xl font-semibold">Harsha</p>
+                            <p class="font-semibold">Associate</p>
+                            <p class="text-sm">Corporate Alliances</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="ml-5 md:ml-0 py-5">
+                <div class="relative   md:w-[250px] md:h-[187.50px]">
+                    <img src="../assets/file_murali.webp" alt="Murali Krishna" class="rounded-xl w-100% h-100%" width="100%" height="100%">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center">
+                        <div class="card shadow-2xl text-center md:mt-72 mt-80 mx-4 px-4 rounded py-2 relative z-10 bg-white bg-opacity-100">
+                            <p class="text-xl font-semibold">Murali Krishna</p>
+                            <p class="font-semibold">Training Head</p>
+                            <p class="text-sm">Fullstack Java</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="ml-5 md:ml-0 py-5">
+                <div class="relative   md:w-[250px] md:h-[187.50px]">
+                    <img src="../assets/file_seshagiri.webp" alt="Sheshagiri" class="rounded-xl w-100% h-100%" width="100%" height="100%">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center">
+                        <div class="card shadow-2xl text-center md:mt-72 mt-80 mx-4 px-4 rounded py-2 relative z-10 bg-white bg-opacity-100">
+                            <p class="text-xl font-semibold">Sheshagiri</p>
+                            <p class="font-semibold">Professor</p>
+                            <p class="text-sm">Fullstack Java</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
         </div>
+        <div class=" grid md:grid-cols-4  md:my-32 my-10">
+            <div class="ml-5 md:ml-0 py-5">
+                <div class="relative   md:w-[250px] md:h-[187.50px]">
+                    <img src="../assets/file_kishore.webp" alt="Kishore" class="rounded-xl w-100% h-100%" width="100%" height="100%">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center">
+                        <div class="card shadow-2xl text-center md:mt-72 mt-72 mx-4 px-4 rounded py-2 relative z-10 bg-white bg-opacity-100">
+                            <p class="text-xl font-semibold">Sai Kishore</p>
+                            <p class="font-semibold">Developer</p>
+                            <p class="text-sm">Frontend</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="ml-5 md:ml-0 py-5">
+                <div class="relative   md:w-[250px] md:h-[187.50px]">
+                    <img src="../assets/file_banerjee.webp" alt="Banerjee" class="rounded-xl w-100% h-100%" width="100%" height="100%">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center">
+                        <div class="card shadow-2xl text-center md:mt-72 mt-80 mx-4 px-4 rounded py-2 relative z-10 bg-white bg-opacity-100">
+                            <p class="text-xl font-semibold">Banerjee</p>
+                            <p class="font-semibold">Developer</p>
+                            <p class="text-sm">Fullstack</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="ml-5 md:ml-0 py-5">
+                <div class="relative   md:w-[250px] md:h-[187.50px]">
+                    <img src="../assets/file_sushanma2.webp" alt="Sush Meday" class="rounded-xl w-100% h-100%" width="100%" height="100%">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center">
+                        <div class="card shadow-2xl text-center md:mt-80 mt-80 mx-4 px-4 rounded py-2 relative z-10 bg-white bg-opacity-100">
+                            <p class="text-xl font-semibold">Sush Meday</p>
+                            <p class="font-semibold">Consultant</p>
+                            <p class="text-sm">Content Development</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="ml-5 md:ml-0 py-5">
+                <div class="relative   md:w-[250px] md:h-[187.50px]">
+                    <img src="../assets/file_vishaka.webp" alt="Vishaka" class="rounded-xl w-100% h-100%" width="100%" height="100%">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center">
+                        <div class="card shadow-2xl text-center md:mt-96 mt-80 mx-4 px-4 rounded py-2 relative z-10 bg-white bg-opacity-100">
+                            <p class="text-xl font-semibold">Vishaka</p>
+                            <p class="font-semibold">Associate</p>
+                            <p class="text-sm">Operations</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            </div>
+        <div class=" grid md:grid-cols-4  md:my-32 my-10">
+            <div class="ml-5 md:ml-0 py-5">
+                <div class="relative   md:w-[250px] md:h-[187.50px]">
+                    <img src="../assets/file_vamsi.webp" alt="Vamsidhar" class="rounded-xl w-100% h-100%" width="100%" height="100%">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center">
+                        <div class="card shadow-2xl text-center md:mt-96 mt-80 mx-4 px-4 rounded py-2 relative z-10 bg-white bg-opacity-100">
+                            <p class="text-xl font-semibold">Sai Vamsidhar</p>
+                            <p class="font-semibold">Intern</p>
+                            <p class="text-sm">Social Media</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ml-5 md:ml-0 py-5">
+                <div class="relative   md:w-[250px] md:h-[187.50px] ">
+                    <img src="../assets/file_ankitha.webp" alt="Ankitha" class="rounded-xl w-100% h-100%" width="100%" height="100%">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center">
+                        <div class="card shadow-2xl text-center md:mt-96 mt-80 mx-4 px-4 rounded py-2 relative z-10 bg-white bg-opacity-100">
+                            <p class="text-xl font-semibold">Ankitha Reddy</p>
+                            <p class="font-semibold">Intern</p>
+                            <p class="text-sm">Social Media</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </div>     
+            
     </section>
 
     <footer>
@@ -442,10 +516,10 @@
                     </div>
                     
                     <div class="col-span-2 sm:col-span-1 justify-center my-4 ml-auto text-center btn">
-                        <button class="rounded-full bg-blue-200 text-blue-900 font-semibold px-12 py-4 mb-2  translate">
+                        <button class="rounded-full bg-blue-200 text-blue-900 font-semibold px-12 py-4 mb-2  translate" aria-label="apply now">
                             <a href="#">Apply Now</a>
                         </button>
-                        <button class="rounded-full bg-white text-gray-800 font-semibold px-12 py-4 my-2  translate">
+                        <button class="rounded-full bg-white text-gray-800 font-semibold px-12 py-4 my-2  translate" aria-label="learn more">
                             <a href="#">Learn More</a>
                         </button>
                     </div>
@@ -462,7 +536,7 @@
                     <!--logo and address-->
                     <div class="col-span-4 sm:col-span-1">
                         <div class="">
-                            <img src="../assets/favicon-min.webp" class="h-24" alt="..." />
+                            <img src="../assets/favicon-min.webp" class="h-24" alt="..." height="96px" width="100%"/>
                             <h2 class="text-white text-2xl font-semibold font-sans mt-5">PacketPrep</h2>
                             <h2 class="text-white text-sm font-semibold font-sans  ">Job Training & Placement</h2>
                             <h2 class=" font-semibold font-sans mt-5 mb-5">Head Office</h2>
