@@ -3879,6 +3879,11 @@ video {
     padding-right: 1.5rem;
   }
 
+  .lg\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
   .lg\:pb-28 {
     padding-bottom: 7rem;
   }
