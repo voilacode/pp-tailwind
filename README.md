@@ -20,4 +20,9 @@
 # programming-concepts https://voilacode.github.io/pp-tailwind/src/programming-concepts
 # quantitative-aptitude https://voilacode.github.io/pp-tailwind/src/quantitative-aptitude
 # refundpolicy https://voilacode.github.io/pp-tailwind/src/refundpolicy
-# TCS NQT
+# TCS NQT https://voilacode.github.io/pp-tailwind/src/TCSNQT
+# Telegram https://voilacode.github.io/pp-tailwind/src/telegram
+# Terms https://voilacode.github.io/pp-tailwind/src/terms
+# Testimonial https://voilacode.github.io/pp-tailwind/src/testimonial
+# Verbal https://voilacode.github.io/pp-tailwind/src/verbal
+# WiproNth https://voilacode.github.io/pp-tailwind/src/WiproNth
