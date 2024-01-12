@@ -16,125 +16,196 @@
    
     <body class="bg-white">
 
-        <header>
-            <nav class="fixed w-full z-20 top-0 left-0" style="background-color: #135ca1;">
-                <div class="max-w-screen-xl p-4 sm:px-16 flex flex-wrap items-center justify-between mx-auto">
-                <a href="./index.html" class="flex items-center ">
-                    <img src="../assets/pp_logo.webp" class="logo" width="200px" height="auto"  alt="Logo">
-                </a>
-                <div class="flex md:order-2">
-                    <button type="button" class="text-white bg-red-600 focus:ring-4 focus:outline-none font-medium rounded-lg text-md hover:bg-red-800 hover:outline-1 px-4 md:py-2 text-center mr-3 md:mr-0 talk-btn ">Talk to us</button>
-                    <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden  bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+        <header class="fixed z-10 w-screen">
+
+            <nav class="w-full text-white transition-all duration-500 ease-in-out bg-no-repeat" style="background-color:#135ca1;">
+                <div class="items-center justify-around w-auto max-w-screen-xl px-4 py-2 mx-auto lg:justify-between sm:px-16 lg:flex">
+                    <div class="flex justify-between">
+                        <div>
+                            <a href="#" class="inline-flex py-2 mx-auto text-xl font-bold tracking-wider text-white uppercase sm:px-0">
+                                <img src="../assets/pp_logo.webp" alt="logo" width="180px" height="auto">
+                            </a>
+                        </div>
+        
+                        <div class="items-center my-auto lg:hidden ">
+                            <nav>
+                                <ul>
+                                    <li class="flex items-center gap-2 px-1 py-1 bg-white rounded-full">
+                                        <!--menu bar-->
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="gray" class="w-6 h-6" id="menuIcon"
+                                            onclick="toggleMobileMenu()">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
+                                        </svg>
+        
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+        
+                    <div class="items-center hidden w-full py-2 my-auto nav-links lg:inline-flex lg:w-auto lg:mt-0 lg:py-0 sm:px-4" id="mainMenu">
+                        <div class="py-2 mx-auto my-auto bg-white rounded lg:inline-flex lg:w-auto lg:mt-0 lg:bg-inherit sm:px-0 ms-4 sm:ms-0 me-2 sm:me-0" id="mainMenu">
+                            <ul
+                                class="flex flex-col w-full space-y-0.5 lg:w-auto lg:flex-row lg:space-y-0  lg:space-x-1 transition-all duration-300 ease-in-out font-afacad text-lg[px] ls-2 my-auto mx-auto sm:ms-3 lg:ms-0">
+                                <li class="">
+                                    <a href="./index.html"
+                                        class="flex px-4 py-2 text-gray-500 duration-300 ease-in-out rounded-md lg:text-gray-300 lg:hover:text-white hover:text-blue-500">
+                                        Home
+                                    </a>
+                                </li>
+                                <li class="relative">
+                                    <button
+                                        class="flex w-full px-4 py-2 text-gray-500 rounded-md outline-none focus:outline-none lg:hover:text-white lg:text-gray-300 hover:text-blue-500"
+                                        id="dropdownToggle1">
+                                        Job Training<svg class="w-3 h-3 ml-1.5 mt-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                                        </svg>
+                                    </button>
+                                    <div class="right-0 hidden w-full p-2 px-5 rounded-md lg:absolute dropdown-menu lg:w-72 lg:px-0 "
+                                        id="dropdownMenu1">
+                                        <div
+                                            class="grid p-4 space-y-2 font-sans transform bg-white border-t-4 border-blue-500  shadow lg:translate-x-36 sm:-translate-x-3 lg:translate-y-2.5 rounded-b xl:ml-5">
+                                            <div class="grid-cols-1">
+                                                <ul class="space-y-2 text-[15px]">
+                                                    
+                                                    <li>
+                                                        <a href="./pte.html"
+                                                            class="block py-1 text-gray-500 lg:hover:text-blue-600">
+                                                            FullstackJava with placement
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="./oet.html"
+                                                            class="block py-1 text-gray-500 hover:text-blue-600">
+                                                            Curriculum
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="./sat.html"
+                                                            class="block py-1 text-gray-500 hover:text-blue-600">
+                                                            Fee Structure
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>                                    
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="relative">
+                                    <button href="#"
+                                        class="flex w-full px-4 py-2 text-gray-500 rounded-md outline-none lg:text-gray-300 focus:outline-none lg:hover:text-white hover:text-blue-500"
+                                        id="dropdownToggle">
+                                        Resources<svg class="w-3 h-3 ml-1.5 mt-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                                        </svg>
+                                    </button>
+                                    <div class="right-0 hidden p-2 px-5 lg:absolute dropdown-menu lg:px-0" id="dropdownMenu">
+                                        <div
+                                            class="p-4 space-y-2 font-sans transform bg-white rounded-b border-t-4 border-blue-500  shadow lg:translate-x-28 sm:-translate-x-3 lg:translate-y-2.5">
+                                            <ul class=" text-[15px] lg:w-48">
+                                            <ul class="space-y-2 text-[15px] lg:w-48">
+                                                <li>
+                                                    <a href="./reading.html"
+                                                        class="block py-1 text-gray-500 hover:text-blue-600">
+                                                        Telegram Channel
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="block py-1 text-gray-500 hover:text-blue-600">
+                                                        Learning Portal
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./downloads.html"
+                                                        class="block py-1 text-gray-500 hover:text-blue-600">
+                                                        Free Practice Tests
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="block py-1 text-gray-500 hover:text-blue-600">
+                                                        Free IELTS & GRE Tests
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>                            
+                                <li class="">
+                                    <a href="./studyabroad.html"
+                                        class="flex px-4 py-2 text-gray-500 lg:text-gray-300 lg:hover:text-white hover:text-blue-500">
+                                        Hire from us!
+                                    </a>
+                                </li>
+                                <li>
+                                    <button class="button bg-[#ED4C78] px-5 py-2.5 rounded hover:translate-y-[-4px] duration-500  text-sm font-semibold mx-3 lg:mx-0 my-2 lg:my-auto mb-2 lg:mb-0">Talk to us</button>
+    
+                                </li>   
+                            </ul>
+                        </div>
+                    </div>  
                     
-                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-                    </svg>
-                </button>
                 </div>
-                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-                    <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium lg:text-lg rounded-lg md:flex-row md:space-x-4 md:mt-0 md:border-0  dark:border-gray-700">
-                    <li class="hover:bg-blue-500 px-4 py-2 rounded">
-                        <button class="hover:bg-sky-800/75 hover:bg-opacity-75 rounded">
-                            <a href="./index.html" class="block py-2 pl-3 pr-4 text-white rounded md:p-0  transition duration-200 ease-in" aria-current="page">Home</a>
-                        </button>
-                    </li>
-                    <li class="hover:bg-blue-500 px-4 py-2 rounded">
-                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-white rounded md:p-0  transition duration-200 ease-in">Job Training <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-                </svg></button>
-                            <!-- Dropdown menu -->
-                            <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
-                                <li>
-                                    <a href="#" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Fullstack Java with Placement</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Curriculum</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Fee Structure</a>
-                                </li>
-                                </ul>
-                            </div>
-                    </li>
-                    <li class="hover:bg-blue-500 px-4 py-2 rounded">
-                        <button id="dropdownNavbarLink1" data-dropdown-toggle="dropdownNavbar1" class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-white rounded md:p-0 md:w-auto transition duration-200 ease-in">Resources <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-                </svg></button>
-                            <!-- Dropdown menu -->
-                            <div id="dropdownNavbar1" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-400"    aria-labelledby="dropdownLargeButton">
-                                <li>
-                                    <a href="#" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Telegram Channel</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Learning Portal</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Free Practice Tests</a>
-                                </li>
-                                </ul>
-                                <div class="py-1">
-                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Free IELTS & GRE Test</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="hover:bg-blue-500 px-4 py-2 rounded">
-                        <a href="#" class="block py-2 pl-3 pr-4 text-white rounded md:p-0  transition duration-200 ease-in">Hire from us!</a>
-                        </li>
-                    </ul>
-                </div>
-                </div>
-            </nav> 
+            </nav>
+  
         </header>
 
         <main>
           <!--hero section-->
-          <section class="sm:px-4 py-4 pt-20 bg-blue-50">
-            <div class="max-w-screen-xl sm:flex items-center justify-between mx-auto">
+          <section class="p-4 pt-20 sm:px-16 bg-blue-50">
+            <div class="items-center justify-between max-w-screen-xl mx-auto md:flex">
                 <!--text-->
-                <div class="my-auto ml-16 ms-16 p-3 sm:p-6 mx-auto text">
-                    <h1 class="text-8xl font-semibold">Get <span class=" text-blue-500">Trained</span></h1>
-                    <p class="text-3xl py-8">Fullstack Java Training with
+                <div class="p-3 mx-auto my-auto ml-16 ms-16 sm:p-6 text">
+                    <h1 class="font-semibold text-8xl">Get <span class="text-blue-500 ">Trained</span></h1>
+                    <p class="py-8 text-3xl">Fullstack Java Training with
                     <br> placement assistance
                     </p>
                     <div class="flex gap-8 opt">
-                        <button class="bg-blue-700 px-4 py-3 text-white rounded-md hover:bg-blue-800 font-semibold transform hover:scale-110 duration-200 ease-in">Apply Now</button>
-                        <button class="px-4 py-3 text-blue-700 hover:text-blue-800 font-semibold transform hover:scale-110 duration-200 ease-in">Learn More ></button>
+                        <button class="px-6 py-3 font-semibold text-white duration-300 ease-in-out transform bg-blue-700 rounded-md hover:bg-blue-800 hover:-translate-y-1">Apply Now</button>
+                        <button class="flex px-4 py-3 font-semibold text-blue-700 duration-200 ease-in transform hover:text-blue-800">
+                            <span class="my-auto">Learn More</span>
+                             
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 mt-1.5 font-bold duration-300 ease-in-out transform ms-2 group-hover:translate-x-1">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </button>
                     </div>
                 </div>
 
                 <!--image-->
-                <div class="mr-16 mt-4 p-6 mx-auto">
+                <div class="p-6 mx-auto mt-4 mr-16">
                     <img src="../assets/hero-min.png" alt="hero section image" width="500px" height="auto" class="mx-auto">
                 </div>
 
             </div>
 
             <!--count blocks-->
-            <div class="grid grid-cols-2 md:grid-cols-4 max-w-screen-xl mx-auto gap-2 md:gap-8 py-4 p-4 count-blocks">
-                <div class="bg-white p-4 md:p-8 rounded shadow-lg">
-                    <h1 class="text-blue-500 font-semibold text-5xl count">15000+</h1>
+            <div class="grid max-w-screen-xl grid-cols-2 gap-2 p-4 mx-auto md:grid-cols-4 md:gap-8 ">
+                <div class="p-4 bg-white rounded shadow-lg md:p-8">
+                    <h1 class="text-5xl font-semibold text-blue-500 count">15000+</h1>
                     <p class="pt-4 text-lg md:text-xl">Active learners</p>
                 </div>
-                <div class="bg-white p-4 md:p-8 rounded shadow-lg">
-                    <h1 class="text-blue-500 font-semibold text-5xl count">4000+</h1>
-                    <p class="pt-4  text-lg md:text-xl">Direct Placements</p>
+                <div class="p-4 bg-white rounded shadow-lg md:p-8">
+                    <h1 class="text-5xl font-semibold text-blue-500 count">4000+</h1>
+                    <p class="pt-4 text-lg md:text-xl">Direct Placements</p>
                 </div>
-                <div class="bg-white p-4 md:p-8 rounded shadow-lg">
-                    <h1 class="text-blue-500 font-semibold text-5xl count">300+</h1>
-                    <p class="pt-4  text-lg md:text-xl">Colleges Network</p>
+                <div class="p-4 bg-white rounded shadow-lg md:p-8">
+                    <h1 class="text-5xl font-semibold text-blue-500 count">300+</h1>
+                    <p class="pt-4 text-lg md:text-xl">Colleges Network</p>
                 </div>
-                <div class="bg-white p-4 md:p-8 rounded shadow-lg">
-                    <h1 class="text-blue-500 font-semibold text-5xl count">180+</h1>
-                    <p class="pt-4  text-lg md:text-xl">Corporate Clients</p>
+                <div class="p-4 bg-white rounded shadow-lg md:p-8">
+                    <h1 class="text-5xl font-semibold text-blue-500 count">180+</h1>
+                    <p class="pt-4 text-lg md:text-xl">Corporate Clients</p>
                     
                 </div>
             </div>
 
             <!--branches-->
-            <div class=" my-4 py-2 mt-8 text-white branches" style="background-color: #4D5556;">
-                <div class=" text-center mx-auto px-4">
+            <div class="p-4 py-2 my-4 mt-8 text-white " style="background-color: #4D5556;">
+                <div class="px-4 mx-auto text-center ">
                     Our Branches :   Madhapur (Hyderabad),   Visakhapatnam,   Kakinada,   Vijayawada,   Guntur,   Tirupati
                 </div>
             </div>
@@ -142,17 +213,17 @@
           </section>
 
           <!--recent success stories-->
-          <section class="max-w-screen-xl mx-auto sm:py-8 p-4 sm:px-16">
+          <section class="max-w-screen-xl p-4 mx-auto sm:py-8 sm:px-16">
             
             <div class="flex justify-between image">
                 <img src="../assets/file1.webp" alt="success stories 1" width="100%" height="auto"> 
-                <img src="../assets/file2.webp" alt="success stories 2" class="pt-2 lg:pt-4 mt-1 pb-2" width="978px" height="300px" > 
+                <img src="../assets/file2.webp" alt="success stories 2" class="pt-2 pb-2 mt-1 lg:pt-4" width="978px" height="300px" > 
             </div>
           </section>
 
           <!--companies-->
           <section class="max-w-screen-xl mx-auto سة:py-8 p-4">
-            <h1 class="font-semibold text-4xl text-center title">Our students are placed in</h1>
+            <h1 class="text-4xl font-semibold text-center title">Our students are placed in</h1>
             <div class="px-4 sm:ps-16 md:ml-16 md:ms-16">
                 <div class="grid grid-cols-6 gap-4 mt-8">
                     <img src="../assets/tata.webp" class="col-span-1" width="120px" height="auto" alt="tata">
@@ -184,125 +255,124 @@
           </section>
 
           <!--why choose us-->
-          <section class="max-w-screen-xl mx-auto py-8 p-4 sm:px-16">
-                <h1 class="font-semibold text-4xl text-center title">Why Choose Us?</h1>
+          <section class="max-w-screen-xl p-4 py-8 mx-auto sm:px-16">
+                <h1 class="text-4xl font-semibold text-center title">Why Choose Us?</h1>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-2">
+                <div class="grid grid-cols-1 gap-8 my-2 md:grid-cols-2">
                     <!--block 1-->
-                    <div class="rounded shadow-lg p-4 flex mt-8 m-0 translate">
+                    <div class="flex p-4 m-0 mt-8 rounded shadow-lg translate">
                         <div>
                             <img src="../assets/file_quality-min.png" class="mt-2" alt="quality" width="150px" height="150px">
                         </div>
 
                         <div class="p-2">
-                            <h2 class="text-blue-600 font-semibold text-xl border-l-4 border-blue-600 pl-4 py-2">Quality training</h2>
-                            <p class="text-gray-800 pt-2 text-justify px-4">Our experienced faculty provide student-centric training that ensures the highest level of quality. The theory behind the concepts is well-explained, and there is a lot of hands-on project work, which is quite beneficial</p>
+                            <h2 class="py-2 pl-4 text-xl font-semibold text-blue-600 border-l-4 border-blue-600">Quality training</h2>
+                            <p class="px-4 pt-2 text-justify text-gray-800">Our experienced faculty provide student-centric training that ensures the highest level of quality. The theory behind the concepts is well-explained, and there is a lot of hands-on project work, which is quite beneficial</p>
                         </div>
                     </div>
                     <!--block 2-->
-                    <div class="rounded shadow-lg p-4 flex mt-8 translate">
+                    <div class="flex p-4 mt-8 rounded shadow-lg translate">
                         <div>
                             <img src="../assets/file_classroom-min.png" class="mt-2" alt="classroom" width="150px" height="150px">
                         </div>
 
                         <div class="p-2">
-                            <h2 class="text-blue-600 font-semibold text-xl border-l-4 border-blue-600 pl-4 py-2">Classroom & Online</h2>
-                            <p class="text-gray-800 pt-2 text-justify px-4">We provide the best classroom & online training with mentor support. All the classes will be recorded and made available to students thereafter, allowing you to catch up on missed classes or use them as a learning tool while studying.</p>
+                            <h2 class="py-2 pl-4 text-xl font-semibold text-blue-600 border-l-4 border-blue-600">Classroom & Online</h2>
+                            <p class="px-4 pt-2 text-justify text-gray-800">We provide the best classroom & online training with mentor support. All the classes will be recorded and made available to students thereafter, allowing you to catch up on missed classes or use them as a learning tool while studying.</p>
                         </div>
                     </div>
                     
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-2">
+                <div class="grid grid-cols-1 gap-8 my-2 md:grid-cols-2">
                     <!--block 1-->
-                    <div class="rounded shadow-lg p-4 flex mt-8 translate">
+                    <div class="flex p-4 mt-8 rounded shadow-lg translate">
                         <div>
                             <img src="../assets/file_apti-min.png" class="mt-2" alt="aptitude" width="150px" height="150px">
                         </div>
 
                         <div class="p-2">
-                            <h2 class="text-blue-600 font-semibold text-xl border-l-4 border-blue-600 pl-4 py-2">Aptitude</h2>
-                            <p class="text-gray-800 pt-2 text-justify px-4">Our aptitude training materials/practice tests/question sets (quantitative, logical thinking, verbal ability) provide all-round learning with strategies, tricks, and methods to help you clear pre-assessments.</p>
+                            <h2 class="py-2 pl-4 text-xl font-semibold text-blue-600 border-l-4 border-blue-600">Aptitude</h2>
+                            <p class="px-4 pt-2 text-justify text-gray-800">Our aptitude training materials/practice tests/question sets (quantitative, logical thinking, verbal ability) provide all-round learning with strategies, tricks, and methods to help you clear pre-assessments.</p>
                         </div>
                     </div>
                     <!--block 2-->
-                    <div class="rounded shadow-lg p-4 flex mt-8 translate">
+                    <div class="flex p-4 mt-8 rounded shadow-lg translate">
                         <div>
                             <img src="../assets/file_chat-min.png" class="mt-2" alt="softskills" width="150px" height="150px">
                         </div>
 
                         <div class="p-2">
-                            <h2 class="text-blue-600 font-semibold text-xl border-l-4 border-blue-600 pl-4 py-2">Soft Skills</h2>
-                            <p class="text-gray-800 pt-2 text-justify px-4">Soft Skills training is provided in areas including communication, presentation, and interview etiquette. Mock interviews are held to help students build confidence in facing and cracking any interview.</p>
+                            <h2 class="py-2 pl-4 text-xl font-semibold text-blue-600 border-l-4 border-blue-600">Soft Skills</h2>
+                            <p class="px-4 pt-2 text-justify text-gray-800">Soft Skills training is provided in areas including communication, presentation, and interview etiquette. Mock interviews are held to help students build confidence in facing and cracking any interview.</p>
                         </div>
                     </div>
                     
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-2">
+                <div class="grid grid-cols-1 gap-8 my-2 md:grid-cols-2">
                     <!--block 1-->
-                    <div class="rounded shadow-lg p-4 flex mt-8 translate">
+                    <div class="flex p-4 mt-8 rounded shadow-lg translate">
                         <div>
                             <img src="../assets/file_material-min.png" class="mt-2" alt="aptitude" width="150px" height="150px">
                         </div>
 
                         <div class="p-2">
-                            <h2 class="text-blue-600 font-semibold text-xl border-l-4 border-blue-600 pl-4 py-2">Study Material</h2>
-                            <p class="text-gray-800 pt-2 text-justify px-4">Get access to our online comprehensive and high-quality course material which includes 10,000 practise questions, 300+ in-demand tools and video resources, PDFs, Sample Questions, and the most common or frequently asked Interview Questions (Technical and HR)</p>
+                            <h2 class="py-2 pl-4 text-xl font-semibold text-blue-600 border-l-4 border-blue-600">Study Material</h2>
+                            <p class="px-4 pt-2 text-justify text-gray-800">Get access to our online comprehensive and high-quality course material which includes 10,000 practise questions, 300+ in-demand tools and video resources, PDFs, Sample Questions, and the most common or frequently asked Interview Questions (Technical and HR)</p>
                         </div>
                     </div>
                     <!--block 2-->
-                    <div class="rounded shadow-lg p-4 flex mt-8 translate">
+                    <div class="flex p-4 mt-8 rounded shadow-lg translate">
                         <div>
                             <img src="../assets/file_test_2-min.png" class="mt-2" alt="softskills" width="150px" height="150px">
                         </div>
 
                         <div class="p-2">
-                            <h2 class="text-blue-600 font-semibold text-xl border-l-4 border-blue-600 pl-4 py-2">Mock Tests</h2>
-                            <p class="text-gray-800 pt-2 text-justify px-4">We provide mock tests for all the top corporate companies to assess your level of competency.We conduct weekly assessments to help you analyse and identify your strengths and weaknesses so that you can improve your knowledge and abilities.</p>
+                            <h2 class="py-2 pl-4 text-xl font-semibold text-blue-600 border-l-4 border-blue-600">Mock Tests</h2>
+                            <p class="px-4 pt-2 text-justify text-gray-800">We provide mock tests for all the top corporate companies to assess your level of competency.We conduct weekly assessments to help you analyse and identify your strengths and weaknesses so that you can improve your knowledge and abilities.</p>
                         </div>
                     </div>
                     
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-2">
+                <div class="grid grid-cols-1 gap-4 my-2 md:grid-cols-2">
                     <!--block 1-->
-                    <div class="rounded shadow-lg p-4 flex mt-8 translate">
+                    <div class="flex p-4 mt-8 rounded shadow-lg translate">
                         <div>
                             <img src="../assets/file_softskills-min.png" class="mt-2" alt="aptitude" width="150px" height="150px">
                         </div>
 
                         <div class="p-2">
-                            <h2 class="text-blue-600 font-semibold text-xl border-l-4 border-blue-600 pl-4 py-2">Unlimited Placements</h2>
-                            <p class="text-gray-800 pt-2 text-justify px-4">We guarantee you a job by allowing you to attend unlimited number of interview calls until you are hired. Our service includes one-year placement support to ensure your success.</p>
+                            <h2 class="py-2 pl-4 text-xl font-semibold text-blue-600 border-l-4 border-blue-600">Unlimited Placements</h2>
+                            <p class="px-4 pt-2 text-justify text-gray-800">We guarantee you a job by allowing you to attend unlimited number of interview calls until you are hired. Our service includes one-year placement support to ensure your success.</p>
                         </div>
                     </div>
                     <!--block 2-->
-                    <div class="rounded shadow-lg p-4 flex mt-8 translate">
+                    <div class="flex p-4 mt-8 rounded shadow-lg translate">
                         <div>
                             <img src="../assets/file_get-money-min.png" class="mt-2" alt="softskills" width="150px" height="150px">
                         </div>
 
                         <div class="p-2">
-                            <h2 class="text-blue-600 font-semibold text-xl border-l-4 border-blue-600 pl-4 py-2">Pay after Placement</h2>
-                            <p class="text-gray-800 pt-2 text-justify px-4">Packet Prep is the first institute to provide "pay after placement" services in Telengana with the lowest upfront fee. With us, Students can pay the majority of the fee after getting placed.</p>
+                            <h2 class="py-2 pl-4 text-xl font-semibold text-blue-600 border-l-4 border-blue-600">Pay after Placement</h2>
+                            <p class="px-4 pt-2 text-justify text-gray-800">Packet Prep is the first institute to provide "pay after placement" services in Telengana with the lowest upfront fee. With us, Students can pay the majority of the fee after getting placed.</p>
                         </div>
                     </div>
                     
                 </div>
 
           </section>
-
-          
+  
         <!--testimonials-->
-        <section class="px-2 sm:px-16 py-8 pb-16" style="background-color: rgb(241, 241, 252);">
-            <h1 class="text-center text-3xl font-semibold my-4 title">What our students have to say</h1>
+        <section class="px-2 py-8 pb-16 sm:px-16" style="background-color: rgb(241, 241, 252);">
+            <h1 class="text-3xl font-semibold text-center sm:my-4 title">What our students have to say</h1>
 
-            <div class="grid md:grid-cols-8 lg:grid-cols-12 mt-8  max-w-screen-xl mx-auto">
+            <div class="grid max-w-screen-xl mx-auto mt-8 md:grid-cols-8 lg:grid-cols-12">
                 <!--first-->
-                <div class="col-span-4 rounded-xl shadow-xl p-8 mx-4 my-2 bg-white transform hover:scale-110 duration-200 ease-in" >
+                <div class="col-span-4 p-6 mx-4 my-2 duration-200 ease-in transform bg-white rounded shadow-xl" >
                     <div class="d-flex" style="width: 100%; display: inline-block;">
-                        <div class="pa-8 my-4 d-flex flex-column justify-space-between rounded-xl">
+                        <div class="my-4 d-flex flex-column justify-space-between rounded-xl">
                             <div class="flex flex-row my-2">
                                 <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
@@ -331,21 +401,27 @@
                                 </svg>
                                 <!-- <div class="text-rose-200 text-9xl" style="transform: translateX(270%);">❞</div> -->
                             </div>
-                            <p class="mt-2 text-justify font-italic font-weight-light py-4"><i>
+                            <p class="py-4 mt-2 text-justify font-italic font-weight-light"><i>
                                 Initially I'm no where in the idea of training or coaching But with packet prep they are providing pay after placement then I have joined them on may from there my training has started it has been very good with them in terms of placements and training It is best for the students who are not able to invest a lot of money for their training in order to get a job.They will provide an excellent placements from different companies
                             </i></p>
-                            <div data-v-e98a69a8="" class="my-2">
-                                <p class="text-blue-600 font-semibold">Saikrishna Potharaj</p>
-                                <i class="font-italic my-0">Original Google Review</i>
+                            <div class="flex ">
+                                <div class="my-auto">
+                                    <img src="../assets/testimonial1-min.png" width="45px" class="me-2" alt="priya">
+                                </div>
+                                <div class="my-2">
+                                    <p class="font-bold ">Saikrishna Potharaj</p>
+                                    <i class="my-0 font-semibold text-blue-700 font-italic">Original Google Review</i>
+                                </div>
+
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!--second-->
-                <div class="col-span-4 rounded-xl shadow-xl p-8 mx-4 bg-blue-600 text-white relative my-2 test transform hover:scale-110 duration-200 ease-in">
+                <div class="relative col-span-4 p-6 py-4 mx-4 my-2 text-white duration-200 ease-in transform bg-blue-600 rounded shadow-xl ">
                     <div class="d-flex" style="width: 100%; display: inline-block;">
-                        <div class="pa-8 my-4 d-flex flex-column justify-space-between rounded-xl ">
+                        <div class="flex flex-col h-full my-4 justify-space-between rounded-xl">
                             <div class="flex flex-row my-2">
                                 <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
@@ -374,19 +450,26 @@
                                 </svg>
                                 
                             </div>
-                            <p class="mt-2 text-justify font-italic font-weight-light py-4"><i>It's a good place to learn and skillup your coding knowledge. Trainer's are very interactive to the students. They will providing full stack development training with placement assistance I got placed in a good company. I suggest you to join people who are freshers they will get a job.</i></p>
-                            <div class="absolute bottom-0 pb-8 mb-4" data-v-e98a69a8="" class="my-2">
-                                <p class="text-white font-semibold">Manikanta</p>
-                                <i class="font-italic my-0">Original Google Review</i>
+                            <p class="py-4 mt-2 text-justify font-italic font-weight-light"><i>It's a good place to learn and skillup your coding knowledge. Trainer's are very interactive to the students. They will providing full stack development training with placement assistance I got placed in a good company. I suggest you to join people who are freshers they will get a job.</i></p>
+                            
+                            <div class="flex mt-6 md:mt-12 lg:pt-8">
+                                <div class="my-auto">
+                                    <img src="../assets/testimonial2-min.jpg" width="45px" class="rounded-full me-2" alt="priya">
+                                </div>
+                                <div class="my-2">
+                                    <p class="font-bold ">Manikanta</p>
+                                    <i class="my-0 font-semibold text-white font-italic">Original Google Review</i>
+                                </div>
+
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!--third-->
-                <div class="col-span-4 rounded-xl shadow-xl p-8 mx-4 px-16 relative my-2 test bg-white transform hover:scale-110 duration-200 ease-in">
+                <div class="relative col-span-4 p-6 px-16 py-4 mx-4 my-2 duration-200 ease-in transform bg-white rounded shadow-xl ">
                     <div class="d-flex" style="width: 100%; display: inline-block;">
-                        <div class="pa-8 my-4 d-flex flex-column justify-space-between rounded-xl">
+                        <div class="my-4 d-flex flex-column justify-space-between rounded-xl">
                             <div class="flex flex-row my-2">
                                 <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
@@ -415,10 +498,18 @@
                                 </svg>
                                 <!-- <div class="text-rose-200 text-9xl" style="transform: translateX(270%);">❞</div> -->
                             </div>
-                            <p class="mt-2 text-justify font-italic font-weight-light py-4"><i>Packet prep is the best place to explore yourself, it's a good learning institute along with placement assistance,I'm one of the student who placed in a good company via packet prep.faculty were very interactive,I boosted up my coding skills here.In my view it's the best institute 👍,right place for a fresher.</i></p>
-                            <div class="absolute bottom-0 pb-8 mb-4" data-v-e98a69a8="" class="my-2">
-                                <p class="text-blue-600 font-semibold">Abhishek</p>
-                                <i class="font-italic my-0">Original Google Review</i>
+                            <p class="py-4 mt-2 text-justify font-italic font-weight-light"><i>Packet prep is the best place to explore yourself, it's a good learning institute along with placement assistance,I'm one of the student who placed in a good company via packet prep.faculty were very interactive,I boosted up my coding skills here.In my view it's the best institute 👍,right place for a fresher.</i></p>
+                            <div class="lg:py-2"></div>
+                            
+                            <div class="flex mt-6 lg:pt-8 md:mt-16">
+                                <div class="my-auto">
+                                    <img src="../assets/testimonial3-min.jpg" width="45px" class="rounded-full me-2" alt="priya">
+                                </div>
+                                <div class="my-2">
+                                    <p class="font-bold ">Abhishek</p>
+                                    <i class="my-0 font-semibold text-blue-600 font-italic">Original Google Review</i>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -427,124 +518,123 @@
         </section>
 
         <!--faq-->
-        <section class="px-4 sm:px-16 py-4" >
-            <h1 class="text-center text-3xl font-semibold my-4 title">Frequently Asked Questions</h1>
-            <div id="accordion-color" class="mx-4 my-8 bg-white" data-accordion="collapse" data-active-classes="bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-white">
+        <section class="max-w-screen-xl p-4 mx-auto sm:px-16">
+            <h1 class="my-4 text-2xl font-semibold text-center md:text-3xl">Frequently Asked Questions
+            </h1>
+
+            <div class="my-6">
                 <!--first-->
-                <h2 id="accordion-color-heading-1">
-                <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-md focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-color-body-1" aria-expanded="false" aria-controls="accordion-color-body-1">
-                    <span>Why choose PacketPrep for job guaranteed training?</span>
-                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
-                    </svg>
-                </button>
-                </h2>
-                <div id="accordion-color-body-1" class="hidden" aria-labelledby="accordion-color-heading-1">
-                <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
-                    <p class="mb-2 text-gray-500 dark:text-gray-400">
-                        <p><b>To build your dream career! </b><br>Our students can be confident that they will have a job after completing a high-quality training programme with us. Students are free to attend as many interviews as they like until they are hired. We also have a pay-after-placement option available.</p>
-                    </p>
-                    
+                <div class="mb-2">
+                    <button class="flex justify-between w-full px-5 py-3 font-semibold text-left text-gray-700 duration-300 ease-in-out border-b-2 border-gray-300 rounded-t outline-none cursor-pointer accordion hover:bg-blue-400 focus:bg-blue-400 focus:text-white hover:text-white hover:border-white focus:border-white ">
+                        <div> Why choose PacketPrep for job guaranteed training?</div>
+                        <div class="text-xl font-bold icon">+</div>
+                    </button>
+                    <div class="hidden p-1 p-5 overflow-hidden text-gray-600 duration-300 ease-in-out border border-gray-200 rounded-b shadow-xl panel transition-height">
+                        <p class="mb-2 ">
+                            <p class="font-semibold">To build your dream career!</p>
+                            Our students can be confident that they will have a job after completing a high-quality training programme with us. Students are free to attend as many interviews as they like until they are hired. We also have a pay-after-placement option available.
+                        </p>
+        
+                    </div>
                 </div>
-                </div>
+                
                 <!--second-->
-                <h2 id="accordion-color-heading-2">
-                <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-color-body-2" aria-expanded="false" aria-controls="accordion-color-body-2">
-                    <span>Is PacketPrep the best institute for Full-stack java training with placement?</span>
-                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
-                    </svg>
-                </button>
-                </h2>
-                <div id="accordion-color-body-2" class="hidden" aria-labelledby="accordion-color-heading-2">
-                <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
-                    <p class="mb-2 text-gray-500 dark:text-gray-400">Full-stack java course content in our institute is designed as per the current requirements of the IT industry. When students get quality training from our industry experts they become trained professionals. Our trainers provide personal care to each student based on their training needs.</p>
+                <div class="mb-2">
+                    <button class="flex justify-between w-full px-5 py-3 font-semibold text-left text-gray-700 duration-300 ease-in-out border-b-2 border-gray-300 rounded-t outline-none cursor-pointer accordion hover:bg-blue-400 focus:bg-blue-400 focus:text-white hover:text-white hover:border-white focus:border-white">
+                        <div> Is PacketPrep the best institute for Full-stack java training with placement? </div>
+                        <div class="text-xl font-bold icon">+</div>
+                    </button>
+                    <div class="hidden p-1 p-5 overflow-hidden text-gray-600 duration-300 ease-in-out border border-gray-200 rounded-b shadow-xl panel transition-height">
+                        <p class="mb-2 ">Full-stack java course content in our institute is designed as per the current requirements of the IT industry. When students get quality training from our industry experts they become trained professionals. Our trainers provide personal care to each student based on their training needs. 
+                        </p>
+                        
+                    </div>
                 </div>
-                </div>
+                
                 <!--third-->
-                <h2 id="accordion-color-heading-3">
-                <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-color-body-3" aria-expanded="false" aria-controls="accordion-color-body-3">
-                    <span>How does PacketPrep pay after placement work?</span>
-                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
-                    </svg>
-                </button>
-                </h2>
-                <div id="accordion-color-body-3" class="hidden" aria-labelledby="accordion-color-heading-3">
-                <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
-                    <p class="mb-2 text-gray-500 dark:text-gray-400"><b> Get trained, Get Placed. Pay after placement</b><br>Enrol by paying a nominal amount of the entire amount as an upfront fee and sign the agreement copy. During training, you will not be charged anything. Once you have completed your training, you will be placed. After placement, clear the balance amount.</p>
+                <div class="mb-2">
+                    <button class="flex justify-between w-full px-5 py-3 font-semibold text-left text-gray-700 duration-300 ease-in-out border-b-2 border-gray-300 rounded-t outline-none cursor-pointer accordion hover:bg-blue-400 focus:bg-blue-400 focus:text-white hover:text-white hover:border-white focus:border-white">
+                        <div>How does PacketPrep pay after placement work?</div>
+                        <div class="text-xl font-bold icon">+</div>
+                    </button>
+                    <div class="hidden p-1 p-5 overflow-hidden duration-300 ease-in-out border border-gray-200 rounded-b shadow-xl panel transition-height">
+                        <p class="mb-2 "> Enrol by paying a nominal amount of the entire amount as an upfront fee and sign the agreement copy. During training, you will not be charged anything. Once you have completed your training, you will be placed. After placement, clear the balance amount.
+                        </p>
+        
+                    </div>
                 </div>
-                </div>
+
                 <!--fourth-->
-                <h2 id="accordion-color-heading-4">
-                <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-color-body-4" aria-expanded="false" aria-controls="accordion-color-body-4">
-                    <span>Does PacketPrep provide classroom &amp; online training?</span>
-                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
-                    </svg>
-                </button>
-                </h2>
-                <div id="accordion-color-body-4" class="hidden" aria-labelledby="accordion-color-heading-4">
-                <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
-                    <p class="mb-2 text-gray-500 dark:text-gray-400">Yes. Our online training is of the same high quality as our classroom training. With a smaller or limited student batch, more time will be spent on various training activities that are suited to the students' needs, allowing them to get personal care.</p>
+                <div class="mb-2">
+                    <button class="flex justify-between w-full px-5 py-3 font-semibold text-left text-gray-700 duration-300 ease-in-out border-b-2 border-gray-300 rounded-t outline-none cursor-pointer accordion hover:bg-blue-400 focus:bg-blue-400 focus:text-white hover:text-white hover:border-white focus:border-white">
+                        <div> Does PacketPrep provide classroom & online training?</div>
+                        <div class="text-xl font-bold icon">+</div>
+                    </button>
+                    <div class="hidden p-1 p-5 overflow-hidden text-gray-600 duration-300 ease-in-out border border-gray-200 rounded-b shadow-xl panel transition-height">
+                        <p class="mb-2 ">Yes. Our online training is of the same high quality as our classroom training. With a smaller or limited student batch, more time will be spent on various training activities that are suited to the students' needs, allowing them to get personal care.
+                        </p>
+                    </div>
                 </div>
-                </div>
+
                 <!--fifth-->
-                <h2 id="accordion-color-heading-5">
-                <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-color-body-5" aria-expanded="false" aria-controls="accordion-color-body-5">
-                    <span>How long is the placement support given?</span>
-                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
-                    </svg>
-                </button>
-                </h2>
-                <div id="accordion-color-body-5" class="hidden" aria-labelledby="accordion-color-heading-5">
-                <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
-                    <p class="mb-2 text-gray-500 dark:text-gray-400">Job placement support is provided to you to assist you in finding suitable position for yourself and to assist you in preparing for interviews. We assist you with interview preparation, job hunting, and other prep as required. With One year support, you'll have the opportunity to attend an interview with 30 to 60 companies.</p>
-                </div>
+                <div class="mb-2">
+                    <button class="flex justify-between w-full px-5 py-3 font-semibold text-left text-gray-700 duration-300 ease-in-out border-b-2 border-gray-300 rounded-t outline-none cursor-pointer accordion hover:bg-blue-400 focus:bg-blue-400 focus:text-white hover:text-white hover:border-white focus:border-white">
+                        <div> How long is the placement support given?</div>
+                        <div class="text-xl font-bold icon">+</div>
+                    </button>
+                    <div class="hidden p-1 p-5 overflow-hidden text-gray-600 duration-300 ease-in-out border border-gray-200 rounded-b shadow-xl panel transition-height">
+                        <p class="mb-2 ">Job placement support is provided to you to assist you in finding suitable position for yourself and to assist you in preparing for interviews. We assist you with interview preparation, job hunting, and other prep as required. With One year support, you'll have the opportunity to attend an interview with 30 to 60 companies.
+                        </p>
+                    </div>
                 </div>
             </div>
+            
 
         </section>
 
         </main>
 
         <footer>
-            <!--attend drives-->
-            <div class="text-white p-4 sm:px-16" style="background-color: #135ca1;">
-                <div class="sm:flex justify-between m-4 ">
+        
+        <!--attend drives-->
+        <div class="p-6 text-white" style="background-color: #135ca1;">
+            <div class="max-w-screen-xl mx-auto sm:px-16 sm:flex">
 
-                    <div class="col-span-2 sm:col-span-1 sm-text-center my-2">
-                        <h1 class="text-3xl font-semibold pb-4">Attend placement drives with us</h1>
-                        <p class="">Enrol for fullstack java with pay after placement</p>
-                    </div>
+                <div class="col-span-2 my-auto sm:col-span-1 sm-text-center">
+                    <h1 class="pb-4 text-3xl font-semibold">Attend placement drives with us</h1>
+                    <p class="">Enroll for fullstack java with pay after placement</p>
+                </div>
+
+                <div class="justify-end col-span-2 my-4 text-center ms-auto sm:col-span-1 btn">
+                    <button
+                        class="px-16 py-4 mx-2 mb-2 font-semibold text-white duration-200 ease-in transform rounded-full bg-cyan-400 hover:-translate-y-2"
+                        aria-label="try">
+                        <a href="#">Try Now</a>
+                    </button>
+                    <button class="px-12 py-4 mx-2 my-2 font-semibold text-gray-800 duration-200 ease-in transform bg-white rounded-full hover:-translate-y-2" aria-label="view">
+                        <a href="#">Learn More</a>
+                    </button>
                     
-                    <div class="col-span-2 sm:col-span-1 justify-center my-4 ml-auto text-center btn">
-                        <button class="rounded-full bg-blue-200 text-blue-900 font-semibold px-12 py-4 mb-2  translate">
-                            <a href="#">Apply Now</a>
-                        </button>
-                        <button class="rounded-full bg-white text-gray-800 font-semibold px-12 py-4 my-2  translate">
-                            <a href="#">Learn More</a>
-                        </button>
-                    </div>
-
                 </div>
 
             </div>
 
+        </div>
+
+
             <!--links -->
-            <div class="bg-blue-900 text-white p-4" style="background-color: #245079;">
-                <div class="max-w-screen-xl mx-auto p-4 sm:px-16">
-                    <div class="grid grid-cols-4 gap-2 justify-between">
+            <div class="p-4 text-white bg-blue-900" style="background-color: #245079;">
+                <div class="max-w-screen-xl p-4 mx-auto sm:px-16">
+                    <div class="grid justify-between grid-cols-4 gap-2">
                         <!--logo and address-->
                         <div class="col-span-4 sm:col-span-1">
                             <div class="">
                                 <img src="../assets/favicon-min.webp" class="h-24" alt="..." />
-                                <h2 class="text-white text-2xl font-semibold font-sans mt-5">PacketPrep</h2>
-                                <h2 class="text-white text-sm font-semibold font-sans  ">Job Training & Placement</h2>
-                                <h2 class=" font-semibold font-sans mt-5 mb-5">Head Office</h2>
+                                <h2 class="mt-5 font-sans text-2xl font-semibold text-white">PacketPrep</h2>
+                                <h2 class="font-sans text-sm font-semibold text-white ">Job Training & Placement</h2>
+                                <h2 class="mt-5 mb-5 font-sans font-semibold ">Head Office</h2>
                                   
-                                <a href="#" class="text-white test-sm  mt-5">
+                                <a href="#" class="mt-5 text-white test-sm">
                                    
                                     <div class="flex flex-row-2">
                                         <div>
@@ -558,7 +648,7 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a href="#" class="text-white test-sm  mt-10">
+                                <a href="#" class="mt-10 text-white test-sm">
                                      
                                     <div class="flex flex-row-2">
                                       <div>
@@ -568,7 +658,7 @@
                                         
                                       </div>
                                       <div>
-                                        <p class="text-sm text-slate-100 mt-5">
+                                        <p class="mt-5 text-sm text-slate-100">
                                           +91 90000 45750
                                       </div>
                                     </div>
@@ -578,7 +668,7 @@
     
                         <!--Our company-->
                         <div class="col-span-2 sm:col-span-1">
-                            <h2 class="text-white text-xl font-semibold font-sans mb-4">Our Company</h2> 
+                            <h2 class="mb-4 font-sans text-xl font-semibold text-white">Our Company</h2> 
                             <ol>
                                 <li class="my-2 text-md"><a href="./about.html" class="text-slate-300 hover:text-white">About</a></li> 
                                 <li class="my-2 text-md"><a href="./review.html" class="text-slate-300 hover:text-white">Reviews</a></li>
@@ -590,7 +680,7 @@
     
                         <!--prepare-->
                         <div class="col-span-2 sm:col-span-1">
-                            <h2 class="text-white text-xl font-semibold font-sans mb-4">Prepare</h2> 
+                            <h2 class="mb-4 font-sans text-xl font-semibold text-white">Prepare</h2> 
                             <div class="grid grid-cols-2 gap-4">
                                 <ol class="col-span-2 md:col-span-1">
                                     <li class="mb-2 text-md"><a href="./quantitative-aptitude.html" class="text-slate-300 hover:text-white">Quantitative Aptitude</a></li> 
@@ -610,8 +700,8 @@
                         </div>
     
                         <!--resources-->
-                        <div class="col-span-2 sm:col-span-1 justify-end">
-                            <h2 class="text-white text-xl font-semibold font-sans mb-4">Resources</h2>
+                        <div class="justify-end col-span-2 sm:col-span-1">
+                            <h2 class="mb-4 font-sans text-xl font-semibold text-white">Resources</h2>
                             <ol>
                                 <li class="my-2 text-md"><a href="./telegram.html" class="text-slate-300 hover:text-white">Telegram Channel</a></li> 
                                 <li class="my-2 text-md"><a href="./learning.html" class="text-slate-300 hover:text-white">Learning Portal</a></li>
@@ -623,65 +713,83 @@
                     </div>
     
                     <!---branches-->
-                    <div class="flex justify-center mt-5 w-full bg-blue-100 rounded shadow-lg mb-4">
-                        <div class="py-1 rounded text-center text-blue-900 font-semibold text-sm p-2">
+                    <div class="flex justify-center w-full mt-5 mb-4 bg-blue-100 rounded shadow-lg">
+                        <div class="p-2 py-1 text-sm font-semibold text-center text-blue-900 rounded">
                             Our Branches :   Madhapur (Hyderabad),   Visakhapatnam,   Kakinada,   Vijayawada,   Guntur,   Tirupati
                         </div>
                     </div>
     
                     <hr>
-    
-                    <!--links and policy-->
-                    <div class="md:flex justify-between mt-4">
-                        <div class="sm:w-1/2 grid grid-cols-7 my-2">
-                            <div class="col-span-2 text-start">
-                                <a href="./policy.html" class="text-sm hover:text-gray-500 duration-200 ease-in">Privacy Policy</a>
-                            </div>
-                            <div class="col-span-2">
-                                <a href="./terms.html" class="text-sm hover:text-gray-500 duration-200 ease-in">Terms & Services</a>
-                            </div>
-                            <div class="col-span-3 pl-8">
-                                <a href="./refund.html" class="text-sm hover:text-gray-500 duration-200 ease-in">Refund & Cancellation</a>
-                            </div>
-                        </div>
-    
-                        <div class="col-span-6 place-content-end flex flex-wrap gap-4 justify-center sm:justify-end my-2">
-                            <a href="#" target="_blank" aria-label="facebook" class="hover:scale-110 duration-200 ease-in-out">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="1.5em"
-                                    viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                                    <path
-                                        d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
-                                        fill="white" />
-                                </svg>
-                            </a>
-                            <a href="#" target="_blank" aria-label="instagram" class="ms-2  hover:scale-110 duration-200 ease-in-out">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512">
-                                    <path
-                                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
-                                        fill="white" />
-                                </svg>
-                            </a>
-                            <a href="#" target="_blank" aria-label="Telegram" class="ms-2 hover:scale-110 duration-200 ease-in-out">
-                                <svg style="color: white" xmlns="http://www.w3.org/2000/svg"  height="1.5em"  fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16"> <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z" fill="white"></path> </svg>
-                            </a>
-                            <a href="#" target="_blank" aria-label="youtube" class="ms-2 hover:scale-110 duration-200 ease-in-out">
-                                <svg style="color: white" xmlns="http://www.w3.org/2000/svg" height="1.5em" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16"> <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" fill="white"></path> </svg>
-                            </a>
-                        </div>
-    
-                    </div>
+    <!--links and policy-->
+    <div class="justify-center max-w-screen-xl px-4 mx-auto mt-4 md:justify-between lg:flex sm:px-10">
+        <div class="flex flex-wrap justify-center col-span-6 pb-4 my-2 my-auto space-x-4 lg:pb-0 place-content-start sm:gap-4 lg:justify-start">
+            <div class="col-span-2 text-start">
+                <a href="./policy.html" class="text-sm duration-200 ease-in hover:text-gray-300">Privacy
+                    Policy</a>
+            </div>
+            <div class="col-span-2">
+                <a href="./terms.html" class="text-sm duration-200 ease-in hover:text-gray-300">Terms &
+                    Services</a>
+            </div>
+            <div class="col-span-3">
+                <a href="./refund.html" class="text-sm duration-200 ease-in hover:text-gray-300">Refund &
+                    Cancellation</a>
+            </div>
+        </div>
+
+        <div class="flex flex-wrap justify-center col-span-6 my-auto space-x-4 lg:space-x-2 place-content-end sm:gap-4 lg:justify-end">
+            <a href="#" target="_blank" aria-label="facebook"
+                class="duration-200 ease-in-out hover:scale-105">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512">
+                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                        d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+                        fill="white" />
+                </svg>
+            </a>
+            <a href="#" target="_blank" aria-label="instagram"
+                class="duration-200 ease-in-out ms-2 hover:scale-105">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512">
+                    <path
+                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                        fill="white" />
+                </svg>
+            </a>
+            <a href="#" target="_blank" aria-label="Telegram"
+                class="duration-200 ease-in-out ms-2 hover:scale-105">
+                <svg style="color: white" xmlns="http://www.w3.org/2000/svg" height="1.5em"
+                    fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+                    <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"
+                        fill="white"></path>
+                </svg>
+            </a>
+            <a href="#" target="_blank" aria-label="youtube"
+                class="duration-200 ease-in-out ms-2 hover:scale-105">
+                <svg style="color: white" xmlns="http://www.w3.org/2000/svg" height="1.5em"
+                    fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                    <path
+                        d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"
+                        fill="white"></path>
+                </svg>
+            </a>
+        </div>
+
+</div>
                     
                     <!--info-->
-                    <p class="text-center text-gray-200 text-sm font-sans mt-4 mb-2">
+                    <p class="mt-4 mb-2 font-sans text-sm text-center text-gray-200">
                         © 2021 Quedb Edtech Private Limited. All rights reserved.
                     </p>
-                    <p class="text-sm px-4 sm:px-16 mx-auto text-center">When you visit or interact with our sites, services or tools, we or our authorised service providers may use cookies for storing information to help provide you with a better, faster and safer experience and for marketing purposes.</p>
+                    <p class="px-4 mx-auto text-sm text-center sm:px-16">When you visit or interact with our sites, services or tools, we or our authorised service providers may use cookies for storing information to help provide you with a better, faster and safer experience and for marketing purposes.</p>
     
                 </div>
             </div>
             
         </footer>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+        
+        <script src="../dist/voilaui.js"></script>
+
 
     </body>
 </html>
