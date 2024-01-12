@@ -1,128 +1,15 @@
 .image img{
     width: 50%;
 }
-.btn{
-    justify-content: end!important;
-}
-.test{
-    min-height: 320px!important;
-}
-.translate:hover{
-    transform: translateY(-10%);
-    transition: ease-in-out .5s;
-}
-@media (max-width: 450px){
-    .logo{
-        width: 170px;
-        height: 40px;
-    }
-    .talk-btn{
-        font-size: 12px;
-        padding: 0px 4px!important;
-    }
-    .count{
-        font-size: 30px!important;
-    }
-    img[alt="hero section image"]{
-        width: 100%;
-        height: auto;
-    }
-    .title{
-        font-size: 24px!important;
-    }
-    .branches {
-        margin-left: 3%;
-        margin-right: 3%;
-    }
-}
-@media (max-width: 350px){
-    .test{
-        min-height: 500px!important;
-    }
-    .text h1{
-        margin-top: 30px;
-        font-size: 40px!important;
-    }
-    .text p{
-        font-size: 20px;
-    }
-    .opt button{
-        padding: 5px 10px!important;
-    }
-    .opt a{
-        font-size: 10px!important;
 
-    }
-}
 @media (min-width: 350px) and (max-width: 500px){
-    .text h1{
-        margin-top: 30px;
-        font-size: 55px!important;
-    }
     
     .image img{
         width: 100%;
     }
-    .test{
-        min-height: 400px!important;
-    }
 }
 @media (max-width: 600px){
-    .image img{
-        width: 100%!important;
-    }
     .image{
         display: block!important;
-    }
-    .sm-text-center{
-        text-align: center!important;
-    }
-    .text p{
-        font-size: 24px!important;
-    }
-}
-@media (min-width: 880px){
-    nav{
-        padding: 0 5%;
-    }
-    .count-blocks {
-        padding: 0 5%!important;
-    }
-    .branches {
-        margin: 6.3%;
-    }
-}
-@media (min-width: 768px) and (max-width: 1095px){
-    .count{
-        font-size: 30px!important;
-    }
-    #navbar-sticky ul li{
-        padding: 5px;
-    }
-    nav{
-        padding: 0;
-    }
-}
-@media (min-width: 768px) and (max-width: 855px){
-    .logo{
-        width: 150px;
-    }
-    #navbar-sticky ul li{
-        padding: 2px;
-        font-size: 14px;
-    }
-    .talk-btn{
-        margin: 0;
-        padding: 7px;
-    }
-}
-@media (min-width: 1000px){
-    .lg-pl-10{
-        padding-left: 3.4%;
-    }
-}
-@media (max-width: 800px){
-    iframe{
-        height: 350px;
     }
 }
