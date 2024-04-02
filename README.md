@@ -4,7 +4,7 @@
 # blog                     https://voilacode.github.io/pp-tailwind/src/blog
 # coding                   https://voilacode.github.io/pp-tailwind/src/coding
 # companies                https://voilacode.github.io/pp-tailwind/src/companies
-# ContactUs                https://voilacode.github.io/pp-tailwind/src/ContactUs
+# ContactUs                https://voilacode.github.io/pp-tailwind/src/contactus
 # curriculum               https://voilacode.github.io/pp-tailwind/src/curriculum
 # employee                 https://voilacode.github.io/pp-tailwind/src/employee
 # fees                     https://voilacode.github.io/pp-tailwind/src/fees
