@@ -154,13 +154,27 @@
             <div class="items-center justify-between max-w-screen-xl p-4 mx-auto sm:px-16 md:flex">
                 <!--text-->
                 <div class="p-3 mx-auto my-auto text">
-                    <h1 class="text-4xl font-semibold sm:text-8xl">Get <span class="text-blue-500 ">Trained</span></h1>
-                    <p class="py-8 text-3xl">Fullstack Java Training with
+                    <div class="flex space-x-4 sm:space-x-8">
+                        <h1 class="text-5xl font-semibold sm:text-8xl">Get</h1>
+                        <div class="" style="width: 320px;">
+                            <h1 class="pr-5 overflow-hidden text-5xl font-semibold text-blue-500 whitespace-nowrap sm:text-8xl">
+                                <span id="text"></span>
+                            </h1>
+                        </div>
+                       
+                    </div>
+                    
+                    <!-- typewriter -->
+                    <div class="w-max">
+                        
+                    </div>
+                    
+                    <p class="py-8 text-2xl sm:text-3xl">Fullstack Java Training with
                     <br> placement assistance
                     </p>
                     <div class="flex gap-8 opt">
-                        <button class="px-6 py-3 font-semibold text-white duration-300 ease-in-out transform bg-blue-700 rounded-md hover:bg-blue-800 hover:-translate-y-1">Apply Now</button>
-                        <button class="flex px-4 py-3 font-semibold text-blue-700 duration-200 ease-in transform hover:text-blue-800">
+                        <button class="px-3 py-3 font-semibold text-white duration-300 ease-in-out transform bg-blue-700 rounded-md sm:px-6 hover:bg-blue-800 hover:-translate-y-1">Apply Now</button>
+                        <button class="flex px-3 py-3 text-blue-700 duration-200 ease-in transform -6font-semibold sm:px hover:text-blue-800">
                             <span class="my-auto">Learn More</span>
                              
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 mt-1.5 font-bold duration-300 ease-in-out transform ms-2 group-hover:translate-x-1">
@@ -605,7 +619,7 @@
 
                 <div class="justify-end col-span-2 my-4 text-center ms-auto sm:col-span-1 btn">
                     <button
-                        class="px-16 py-4 mx-2 mb-2 font-semibold text-white duration-200 ease-in transform rounded-full bg-cyan-400 hover:-translate-y-2"
+                        class="px-16 py-4 mx-2 mb-2 font-semibold text-white duration-200 ease-in transform rounded-full bg-cyan-500 hover:-translate-y-2"
                         aria-label="try">
                         <a href="#">Try Now</a>
                     </button>
@@ -623,9 +637,9 @@
             <!--links -->
             <div class="p-4 text-white bg-blue-900" style="background-color: #245079;">
                 <div class="max-w-screen-xl p-4 mx-auto sm:px-16">
-                    <div class="grid justify-between grid-cols-4 gap-2">
+                    <div class="grid justify-between grid-cols-5 gap-8">
                         <!--logo and address-->
-                        <div class="col-span-4 sm:col-span-1">
+                        <div class="col-span-4 gap-8 sm:col-span-1">
                             <div class="">
                                 <img src="../assets/favicon-min.webp" class="h-24" alt="..." />
                                 <h2 class="mt-5 font-sans text-2xl font-semibold text-white">PacketPrep</h2>
@@ -677,7 +691,7 @@
                         </div>
     
                         <!--prepare-->
-                        <div class="col-span-2 sm:col-span-1">
+                        <div class="col-span-2 sm:col-span-2">
                             <h2 class="mb-4 font-sans text-xl font-semibold text-white">Prepare</h2> 
                             <div class="grid grid-cols-2 gap-4">
                                 <ol class="col-span-2 md:col-span-1">
@@ -787,6 +801,8 @@
         </footer>
         
         <script src="../dist/voilaui.js"></script>
+        <script src="../dist/accordion.js"></script>
+        <script src="../dist/typewriter.js"></script>
 
 
     </body>
