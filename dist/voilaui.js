@@ -35,12 +35,6 @@ document.getElementById('dropdownToggle1').addEventListener('click', function ()
     dropdownMenu1.classList.toggle('hidden');
 });
 
-document.getElementById('dropdownToggle2').addEventListener('click', function () {
-    var dropdownMenu2 = document.getElementById('dropdownMenu2');
-    closeOtherDropdowns('dropdownMenu2');
-    dropdownMenu2.classList.toggle('hidden');
-});
-
 // Close the dropdowns when clicking outside of them
 document.addEventListener('click', function (event) {
     var dropdownMenu = document.getElementById('dropdownMenu');
@@ -55,13 +49,6 @@ document.addEventListener('click', function (event) {
 
     if (!dropdownToggle1.contains(event.target) && !dropdownMenu1.contains(event.target)) {
         dropdownMenu1.classList.add('hidden');
-    }
-
-    var dropdownMenu2 = document.getElementById('dropdownMenu2');
-    var dropdownToggle2 = document.getElementById('dropdownToggle2');
-
-    if (!dropdownToggle2.contains(event.target) && !dropdownMenu2.contains(event.target)) {
-        dropdownMenu2.classList.add('hidden');
     }
 });
 
@@ -88,8 +75,6 @@ document.addEventListener('click', function (event) {
     }
 
 });
-
-
 
 // scroll to top
 window.addEventListener('scroll', function () {
