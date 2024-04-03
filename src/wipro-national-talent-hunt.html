@@ -8,467 +8,548 @@
         <meta property="og:image" content="../assets/favicon-min.webp">
         <link rel="shortcut icon" href="../assets/favicon-min.webp" />
         <link href="../dist/output.css" rel="stylesheet">
-        <link href="../dist/main.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="./css/index.css">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+        <link href="./css/index.css" rel="stylesheet">
         <title>Wipro National Talent Hunt | PacketPrepJob Guaranteed Java Training | Pay after placement | PacketPrep</title>  
     </head>
 <body>
-    <header>
-        <nav class="fixed w-full z-20 top-0 left-0" style="background-color: #135ca1;">
-            <div class="max-w-screen-xl p-4 sm:px-16 flex flex-wrap items-center justify-between mx-auto">
-            <a href="./index.html" class="flex items-center ">
-                <img src="../assets/pp_logo.webp" class="logo" width="200px" height="auto"  alt="Logo">
-            </a>
-            <div class="flex md:order-2">
-                <button type="button" class="text-white bg-red-600 focus:ring-4 focus:outline-none font-medium rounded-lg text-md hover:bg-red-800 hover:outline-1 px-4 md:py-2 text-center mr-3 md:mr-0 talk-btn ">Talk to us</button>
-                <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden  bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
-                
-                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-                </svg>
-            </button>
-            </div>
-            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-                <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium lg:text-lg rounded-lg md:flex-row md:space-x-4 md:mt-0 md:border-0  dark:border-gray-700">
-                <li class="hover:bg-blue-500 px-4 py-2 rounded">
-                    <button class="hover:bg-sky-800/75 hover:bg-opacity-75 rounded">
-                        <a href="./index.html" class="block py-2 pl-3 pr-4 text-white rounded md:p-0  transition duration-200 ease-in" aria-current="page">Home</a>
-                    </button>
-                </li>
-                <li class="hover:bg-blue-500 px-4 py-2 rounded">
-                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-white rounded md:p-0  transition duration-200 ease-in">Job Training <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-            </svg></button>
-                        <!-- Dropdown menu -->
-                        <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
-                            <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Fullstack Java with Placement</a>
-                            </li>
-                            <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Curriculum</a>
-                            </li>
-                            <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Fee Structure</a>
-                            </li>
+    <header class="fixed z-10 w-screen">
+        <nav class="text-white transition-all duration-500 ease-in-out bg-no-repeat " style="background-color:#135ca1;">
+            <div class="items-center lg:justify-between justify-around max-w-screen-xl px-2 py-2 mx-auto lg:flex sm:px-[52px] w-auto">
+                <div class="flex justify-between px-1">
+                    <div>
+                        <a href="./index.html" class="inline-flex w-48 py-2 mx-auto text-xl font-bold tracking-wider text-white uppercase sm:px-0 sm:w-60">
+                            <img src="../assets/pp_logo.webp" alt="logo" height="auto">
+                        </a>
+                    </div>
+    
+                    <div class="items-center my-auto lg:hidden ">
+                        <nav>
+                            <ul>
+                                <li class="flex items-center gap-2 px-1 py-1 bg-white rounded-full">
+                                    <!--menu bar-->
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="gray" class="w-6 h-6" id="menuIcon"
+                                        onclick="toggleMobileMenu()">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
+                                    </svg>
+    
+                                </li>
                             </ul>
-                        </div>
-                </li>
-                <li class="hover:bg-blue-500 px-4 py-2 rounded">
-                    <button id="dropdownNavbarLink1" data-dropdown-toggle="dropdownNavbar1" class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-white rounded md:p-0 md:w-auto transition duration-200 ease-in">Resources <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-            </svg></button>
-                        <!-- Dropdown menu -->
-                        <div id="dropdownNavbar1" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-400"    aria-labelledby="dropdownLargeButton">
-                            <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Telegram Channel</a>
+                        </nav>
+                    </div>
+                </div>
+    
+                <div class="items-center hidden w-full py-2 my-auto nav-links lg:inline-flex lg:w-auto lg:mt-0 lg:py-0 sm:px-4 "
+                    id="mainMenu">
+                    <div class="py-2 mx-auto my-auto bg-white rounded lg:inline-flex lg:w-auto lg:mt-0 lg:bg-inherit sm:px-0 ms-2 sm:ms-0 me-2 sm:me-0" id="mainMenu">
+                        <ul class="flex flex-col w-full space-y-0.5 lg:w-auto lg:flex-row lg:space-y-0  lg:space-x-1 transition-all duration-300 ease-in-out font-afacad text-lg[px] ls-2 my-auto mx-auto sm:ms-3 lg:ms-0">
+                            <li class="">
+                                <a href="./index.html"
+                                    class="flex px-4 py-2 text-gray-500 duration-300 ease-in-out rounded-md lg:text-gray-300 lg:hover:text-white hover:text-blue-500">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="relative">
+                                <button
+                                    class="flex w-full px-4 py-2 text-gray-500 rounded-md outline-none focus:outline-none lg:hover:text-white lg:text-gray-300 hover:text-blue-500"
+                                    id="dropdownToggle1">
+                                    Job Training<svg class="w-3 h-3 ml-1.5 mt-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                                    </svg>
+                                </button>
+                                <div class="right-0 hidden w-full p-2 px-5 rounded-md lg:absolute dropdown-menu lg:w-72 lg:px-0 "
+                                    id="dropdownMenu1">
+                                    <div
+                                        class="grid p-4 space-y-2 font-sans transform bg-white border-t-4 border-blue-500  shadow lg:translate-x-36 sm:-translate-x-3 lg:translate-y-2.5 rounded-b xl:ml-5">
+                                        <div class="grid-cols-1">
+                                            <ul class="space-y-2 text-[15px]">
+                                                
+                                                <li>
+                                                    <a href="./fullstack-java.html"
+                                                        class="block py-1 text-gray-500 lg:hover:text-blue-600">
+                                                        FullstackJava with placement
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./curriculum.html"
+                                                        class="block py-1 text-gray-500 hover:text-blue-600">
+                                                        Curriculum
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./fees.html"
+                                                        class="block py-1 text-gray-500 hover:text-blue-600">
+                                                        Fee Structure
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>                                    
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="relative">
+                                <button href="#"
+                                    class="flex w-full px-4 py-2 text-gray-500 rounded-md outline-none lg:text-gray-300 focus:outline-none lg:hover:text-white hover:text-blue-500"
+                                    id="dropdownToggle">
+                                    Resources<svg class="w-3 h-3 ml-1.5 mt-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                                    </svg>
+                                </button>
+                                <div class="right-0 hidden p-2 px-5 lg:absolute dropdown-menu lg:px-0" id="dropdownMenu">
+                                    <div
+                                        class="p-4 space-y-2 font-sans transform bg-white rounded-b border-t-4 border-blue-500  shadow lg:translate-x-28 sm:-translate-x-3 lg:translate-y-2.5">
+                                        <ul class=" text-[15px] lg:w-48">
+                                        <ul class="space-y-2 text-[15px] lg:w-48">
+                                            <li>
+                                                <a href="./telegram.html"
+                                                    class="block py-1 text-gray-500 hover:text-blue-600">
+                                                    Telegram Channel
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="block py-1 text-gray-500 hover:text-blue-600">
+                                                    Learning Portal
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="./free-practice-tests.html"
+                                                    class="block py-1 text-gray-500 hover:text-blue-600">
+                                                    Free Practice Tests
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="firstacademy.html"
+                                                    class="block py-1 text-gray-500 hover:text-blue-600">
+                                                    Free IELTS & GRE Tests
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>                            
+                            <li class="">
+                                <a href="./hire-from-us.html"
+                                    class="flex px-4 py-2 text-gray-500 lg:text-gray-300 lg:hover:text-white hover:text-blue-500">
+                                    Hire from us!
+                                </a>
                             </li>
                             <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Learning Portal</a>
-                            </li>
-                            <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Free Practice Tests</a>
-                            </li>
-                            </ul>
-                            <div class="py-1">
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Free IELTS & GRE Test</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="hover:bg-blue-500 px-4 py-2 rounded">
-                    <a href="#" class="block py-2 pl-3 pr-4 text-white rounded md:p-0  transition duration-200 ease-in">Hire from us!</a>
-                    </li>
-                </ul>
+                                <a href="./contactus.html" class="button bg-[#ED4C78] px-5 py-2.5 rounded hover:translate-y-[-4px] duration-500  text-sm font-semibold mx-3 lg:mx-0 lg:my-auto mb-2 lg:mb-0 block my-8">Talk to us</a>
+
+                            </li>   
+                        </ul>
+                    </div>
+                </div>    
             </div>
-            </div>
-        </nav> 
+        </nav>
     </header>
 
 
     <!-- main -->
-    <div class="max-w-screen-xl p-4 sm:px-16 flex flex-wrap items-center justify-between mx-auto mt-8">
-        <div class="pb-5 mt-8">
-            <p class="text-gray-600 text-lg">
-                <a class="text-blue-400 hover:text-blue-700 cursor-pointer" href="https://packetprep.com/">Home </a> / <a class="text-blue-400 hover:text-blue-700 cursor-pointer" href="https://packetprep.com/blog"> Blog </a> / Wipro National Talent Hunt
-            </p>
-        </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-5 md:gap-10">
-            <div class="col-span-2 bg-white rounded-lg p-3">
-                <p class="text-gray-500 pb-3 font-semibold text-md">Wipro</p>
-                <div class="text-5xl pb-10 font-semibold"><lable class="border-b-4 border-blue-600"> Wipr</lable>o National Talent Hunt</div>
-                <div class="pb-5">
-                    <div class="flex flex-row gap-3">
-                        <div class="relative top-1">
-                            <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7.75 2.5C7.75 2.08579 7.41421 1.75 7 1.75C6.58579 1.75 6.25 2.08579 6.25 2.5V4.07926C4.81067 4.19451 3.86577 4.47737 3.17157 5.17157C2.47737 5.86577 2.19451 6.81067 2.07926 8.25H21.9207C21.8055 6.81067 21.5226 5.86577 20.8284 5.17157C20.1342 4.47737 19.1893 4.19451 17.75 4.07926V2.5C17.75 2.08579 17.4142 1.75 17 1.75C16.5858 1.75 16.25 2.08579 16.25 2.5V4.0129C15.5847 4 14.839 4 14 4H10C9.16097 4 8.41527 4 7.75 4.0129V2.5Z" fill="#1C274C"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M2 12C2 11.161 2 10.4153 2.0129 9.75H21.9871C22 10.4153 22 11.161 22 12V14C22 17.7712 22 19.6569 20.8284 20.8284C19.6569 22 17.7712 22 14 22H10C6.22876 22 4.34315 22 3.17157 20.8284C2 19.6569 2 17.7712 2 14V12ZM17 14C17.5523 14 18 13.5523 18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13C16 13.5523 16.4477 14 17 14ZM17 18C17.5523 18 18 17.5523 18 17C18 16.4477 17.5523 16 17 16C16.4477 16 16 16.4477 16 17C16 17.5523 16.4477 18 17 18ZM13 13C13 13.5523 12.5523 14 12 14C11.4477 14 11 13.5523 11 13C11 12.4477 11.4477 12 12 12C12.5523 12 13 12.4477 13 13ZM13 17C13 17.5523 12.5523 18 12 18C11.4477 18 11 17.5523 11 17C11 16.4477 11.4477 16 12 16C12.5523 16 13 16.4477 13 17ZM7 14C7.55228 14 8 13.5523 8 13C8 12.4477 7.55228 12 7 12C6.44772 12 6 12.4477 6 13C6 13.5523 6.44772 14 7 14ZM7 18C7.55228 18 8 17.5523 8 17C8 16.4477 7.55228 16 7 16C6.44772 16 6 16.4477 6 17C6 17.5523 6.44772 18 7 18Z" fill="#1C274C"></path> </g></svg> 
-                        </div>
-                        <div>
-                            <p class="text-lg text-gray-700 ">Nov 23 2021</p>
-                        </div>
-                        <div class="border-l-2 h-5 relative top-1 border-gray-700"></div>
-                        <div class="bg-gray-600 text-white rounded-lg text-center p-1 text-xs font-semibold ">Palcement Prep</div>
-                    </div>
-                </div>
-                <div class="text-xl text-gray-700 pb-5">
-                    Wipro is conducting a pan India test called the National talent hunt in 2020 to recruit engineering graduates. It is going to happen this year in the month of October, for registration you can check out Wipro careers page.
-                </div>
-                <div class="text-xl text-gray-700 pb-10">
-                    If you are in the final year of engineering then being prepared can give an edge over others in the Wipro recruitment drive. To be prepared what you have to do is first carefully understand the Wipro test pattern and make a proper schedule to learn all the topics in the Wipro syllabus then focus on practice. We have reviewed the past five year papers and consolidated all repeated questions in the section-wise practice questions, solve them with the utmost care.
-                </div>
-                <div class="text-xl text-gray-700 pb-10">
-                    Then move to the placement papers section, we have added 5 Wipro placement papers very much in sync with the latest test patterns. Solve at least 3 papers now, and the rest 2 you can do it one day before the exam. 
-                </div>
-                <div class="text-xl text-gray-700 pb-10">
-                    Remember, its all about preparation and practice. If you can put effort now, I'm sure success will be yours. Good Luck!
-                </div>
-
-                <div class="mt-5">
-                    <h4 class="text-xl font-semibold mb-2">Test Details</h4>
-                    <div class="grid grid-cols-2 gap-x-4 gap-y-2">
-                        <div class="flex items-center">
-                            <span class="text-gray-600">Test Time:</span>
-                        </div>
-                        <div>
-                            <span>140 minutes</span>
-                        </div>
-                        
-                        <div class="flex items-center">
-                            <span class="text-gray-600">Negative Marking:</span>
-                        </div>
-                        <div>
-                            <span>No</span>
-                        </div>
-                
-                        <div class="flex items-center">
-                            <span class="text-gray-600">Adaptive Test:</span>
-                        </div>
-                        <div>
-                            <span>Yes</span>
-                        </div>
-                
-                        <div class="flex items-center">
-                            <span class="text-gray-600">Education Requirement:</span>
-                        </div>
-                        <div>
-                            <span>10th Standard: 60% or above</span><br>
-                            <span>12th Standard: 60% or above</span><br>
-                            <span>Graduation: 60% or CGPA Equivalent to 60% or above as applicable by the university guidelines</span>
-                        </div>
-                
-                        <div class="flex items-center">
-                            <span class="text-gray-600">Qualification:</span>
-                        </div>
-                        <div>
-                            <span>B.E./B.Tech / 5 years Integrated-M.Tech</span>
-                        </div>
-                
-                        <div class="flex items-center">
-                            <span class="text-gray-600">Compensation:</span>
-                        </div>
-                        <div>
-                            <span>INR 3.50 to 6.50 lacs per annum</span>
-                        </div>
-                
-                        <div class="flex items-center">
-                            <span class="text-gray-600">Service Agreement:</span>
-                        </div>
-                        <div>
-                            <span>Applicable for 15 months post joining @ INR 75,000 on a pro-rata basis</span>
+    <main>
+        <div class="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto mt-8 sm:px-16">
+            <div class="pb-5 mt-8">
+                <p class="text-lg text-gray-600">
+                    <a class="text-blue-400 cursor-pointer hover:text-blue-700" href="https://packetprep.com/">Home </a> / <a class="text-blue-400 cursor-pointer hover:text-blue-700" href="https://packetprep.com/blog"> Blog </a> / Wipro National Talent Hunt
+                </p>
+            </div>
+            <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 md:gap-10">
+                <div class="col-span-2 p-3 bg-white rounded-lg">
+                    <p class="pb-3 font-semibold text-gray-500 text-md">Wipro</p>
+                    <div class="pb-10 text-5xl font-semibold"><lable class="border-b-4 border-blue-600"> Wipr</lable>o National Talent Hunt</div>
+                    <div class="pb-5">
+                        <div class="flex flex-row gap-3">
+                            <div class="relative top-1">
+                                <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7.75 2.5C7.75 2.08579 7.41421 1.75 7 1.75C6.58579 1.75 6.25 2.08579 6.25 2.5V4.07926C4.81067 4.19451 3.86577 4.47737 3.17157 5.17157C2.47737 5.86577 2.19451 6.81067 2.07926 8.25H21.9207C21.8055 6.81067 21.5226 5.86577 20.8284 5.17157C20.1342 4.47737 19.1893 4.19451 17.75 4.07926V2.5C17.75 2.08579 17.4142 1.75 17 1.75C16.5858 1.75 16.25 2.08579 16.25 2.5V4.0129C15.5847 4 14.839 4 14 4H10C9.16097 4 8.41527 4 7.75 4.0129V2.5Z" fill="#1C274C"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M2 12C2 11.161 2 10.4153 2.0129 9.75H21.9871C22 10.4153 22 11.161 22 12V14C22 17.7712 22 19.6569 20.8284 20.8284C19.6569 22 17.7712 22 14 22H10C6.22876 22 4.34315 22 3.17157 20.8284C2 19.6569 2 17.7712 2 14V12ZM17 14C17.5523 14 18 13.5523 18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13C16 13.5523 16.4477 14 17 14ZM17 18C17.5523 18 18 17.5523 18 17C18 16.4477 17.5523 16 17 16C16.4477 16 16 16.4477 16 17C16 17.5523 16.4477 18 17 18ZM13 13C13 13.5523 12.5523 14 12 14C11.4477 14 11 13.5523 11 13C11 12.4477 11.4477 12 12 12C12.5523 12 13 12.4477 13 13ZM13 17C13 17.5523 12.5523 18 12 18C11.4477 18 11 17.5523 11 17C11 16.4477 11.4477 16 12 16C12.5523 16 13 16.4477 13 17ZM7 14C7.55228 14 8 13.5523 8 13C8 12.4477 7.55228 12 7 12C6.44772 12 6 12.4477 6 13C6 13.5523 6.44772 14 7 14ZM7 18C7.55228 18 8 17.5523 8 17C8 16.4477 7.55228 16 7 16C6.44772 16 6 16.4477 6 17C6 17.5523 6.44772 18 7 18Z" fill="#1C274C"></path> </g></svg> 
+                            </div>
+                            <div>
+                                <p class="text-lg text-gray-700 ">Nov 23 2021</p>
+                            </div>
+                            <div class="relative h-5 border-l-2 border-gray-700 top-1"></div>
+                            <div class="p-1 text-xs font-semibold text-center text-white bg-gray-600 rounded-lg ">Palcement Prep</div>
                         </div>
                     </div>
-                    <p class="mt-3">Wipro Elite National Talent Hunt (Wipro NLTH 2020) exam consists of three sections: aptitude, written communication, and an online programming test.</p>
-                </div>
-                 
-                <div class="mt-5">
-                    <h4 class="text-xl font-semibold mb-2">Test Sections</h4>
-                    <div class="overflow-x-auto">
-                        <table class="min-w-full divide-y divide-gray-800 border border-gray-800 rounded-lg">
-                            <thead class="bg-gray-800">
-                                <tr>
-                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider border border-gray-700">Section</th>
-                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider border border-gray-700">Modules</th>
-                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider border border-gray-700">Duration</th>
-                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider border border-gray-700">Difficulty</th>
-                                </tr>
-                            </thead>
-                            <tbody class="bg-white divide-y divide-gray-800">
-                                <tr>
-                                    <td class="px-6 py-4 whitespace-nowrap border border-gray-700">Aptitude Test</td>
-                                    <td class="px-6 py-4 whitespace-nowrap border border-gray-700">
-                                        <ul class="list-disc pl-4">
-                                            <li>Logical Ability</li>
-                                            <li>Quantitative Ability</li>
-                                            <li>Verbal Ability</li>
-                                        </ul>
-                                    </td>
-                                    <td class="px-6 py-4 whitespace-nowrap border border-gray-700">60 minutes</td>
-                                    <td class="px-6 py-4 whitespace-nowrap border border-gray-700">Moderate</td>
-                                </tr>
-                                <tr>
-                                    <td class="px-6 py-4 whitespace-nowrap border border-gray-700">Written Communication Test</td>
-                                    <td class="px-6 py-4 whitespace-nowrap border border-gray-700">Essay Writing</td>
-                                    <td class="px-6 py-4 whitespace-nowrap border border-gray-700">20 minutes</td>
-                                    <td class="px-6 py-4 whitespace-nowrap border border-gray-700">Easy</td>
-                                </tr>
-                                <tr>
-                                    <td class="px-6 py-4 whitespace-nowrap border border-gray-700">Online Programming Test</td>
-                                    <td class="px-6 py-4 whitespace-nowrap border border-gray-700">Two programs for Coding (using JAVA, C, C++ or Python)</td>
-                                    <td class="px-6 py-4 whitespace-nowrap border border-gray-700">60 minutes</td>
-                                    <td class="px-6 py-4 whitespace-nowrap border border-gray-700">Hard</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        
-                        
+                    <div class="pb-5 text-xl text-gray-700">
+                        Wipro is conducting a pan India test called the National talent hunt in 2020 to recruit engineering graduates. It is going to happen this year in the month of October, for registration you can check out Wipro careers page.
+                    </div>
+                    <div class="pb-10 text-xl text-gray-700">
+                        If you are in the final year of engineering then being prepared can give an edge over others in the Wipro recruitment drive. To be prepared what you have to do is first carefully understand the Wipro test pattern and make a proper schedule to learn all the topics in the Wipro syllabus then focus on practice. We have reviewed the past five year papers and consolidated all repeated questions in the section-wise practice questions, solve them with the utmost care.
+                    </div>
+                    <div class="pb-10 text-xl text-gray-700">
+                        Then move to the placement papers section, we have added 5 Wipro placement papers very much in sync with the latest test patterns. Solve at least 3 papers now, and the rest 2 you can do it one day before the exam. 
+                    </div>
+                    <div class="pb-10 text-xl text-gray-700">
+                        Remember, its all about preparation and practice. If you can put effort now, I'm sure success will be yours. Good Luck!
+                    </div>
+    
+                    <div class="mt-5">
+                        <h4 class="mb-2 text-xl font-semibold">Test Details</h4>
+                        <div class="grid grid-cols-2 gap-x-4 gap-y-2">
+                            <div class="flex items-center">
+                                <span class="text-gray-600">Test Time:</span>
+                            </div>
+                            <div>
+                                <span>140 minutes</span>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <span class="text-gray-600">Negative Marking:</span>
+                            </div>
+                            <div>
+                                <span>No</span>
+                            </div>
+                    
+                            <div class="flex items-center">
+                                <span class="text-gray-600">Adaptive Test:</span>
+                            </div>
+                            <div>
+                                <span>Yes</span>
+                            </div>
+                    
+                            <div class="flex items-center">
+                                <span class="text-gray-600">Education Requirement:</span>
+                            </div>
+                            <div>
+                                <span>10th Standard: 60% or above</span><br>
+                                <span>12th Standard: 60% or above</span><br>
+                                <span>Graduation: 60% or CGPA Equivalent to 60% or above as applicable by the university guidelines</span>
+                            </div>
+                    
+                            <div class="flex items-center">
+                                <span class="text-gray-600">Qualification:</span>
+                            </div>
+                            <div>
+                                <span>B.E./B.Tech / 5 years Integrated-M.Tech</span>
+                            </div>
+                    
+                            <div class="flex items-center">
+                                <span class="text-gray-600">Compensation:</span>
+                            </div>
+                            <div>
+                                <span>INR 3.50 to 6.50 lacs per annum</span>
+                            </div>
+                    
+                            <div class="flex items-center">
+                                <span class="text-gray-600">Service Agreement:</span>
+                            </div>
+                            <div>
+                                <span>Applicable for 15 months post joining @ INR 75,000 on a pro-rata basis</span>
+                            </div>
+                        </div>
+                        <p class="mt-3">Wipro Elite National Talent Hunt (Wipro NLTH 2020) exam consists of three sections: aptitude, written communication, and an online programming test.</p>
+                    </div>
+                     
+                    <div class="mt-5">
+                        <h4 class="mb-2 text-xl font-semibold">Test Sections</h4>
+                        <div class="overflow-x-auto">
+                            <table class="min-w-full border border-gray-800 divide-y divide-gray-800 rounded-lg">
+                                <thead class="bg-gray-800">
+                                    <tr>
+                                        <th class="px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-300 uppercase border border-gray-700">Section</th>
+                                        <th class="px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-300 uppercase border border-gray-700">Modules</th>
+                                        <th class="px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-300 uppercase border border-gray-700">Duration</th>
+                                        <th class="px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-300 uppercase border border-gray-700">Difficulty</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="bg-white divide-y divide-gray-800">
+                                    <tr>
+                                        <td class="px-6 py-4 border border-gray-700 whitespace-nowrap">Aptitude Test</td>
+                                        <td class="px-6 py-4 border border-gray-700 whitespace-nowrap">
+                                            <ul class="pl-4 list-disc">
+                                                <li>Logical Ability</li>
+                                                <li>Quantitative Ability</li>
+                                                <li>Verbal Ability</li>
+                                            </ul>
+                                        </td>
+                                        <td class="px-6 py-4 border border-gray-700 whitespace-nowrap">60 minutes</td>
+                                        <td class="px-6 py-4 border border-gray-700 whitespace-nowrap">Moderate</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-6 py-4 border border-gray-700 whitespace-nowrap">Written Communication Test</td>
+                                        <td class="px-6 py-4 border border-gray-700 whitespace-nowrap">Essay Writing</td>
+                                        <td class="px-6 py-4 border border-gray-700 whitespace-nowrap">20 minutes</td>
+                                        <td class="px-6 py-4 border border-gray-700 whitespace-nowrap">Easy</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-6 py-4 border border-gray-700 whitespace-nowrap">Online Programming Test</td>
+                                        <td class="px-6 py-4 border border-gray-700 whitespace-nowrap">Two programs for Coding (using JAVA, C, C++ or Python)</td>
+                                        <td class="px-6 py-4 border border-gray-700 whitespace-nowrap">60 minutes</td>
+                                        <td class="px-6 py-4 border border-gray-700 whitespace-nowrap">Hard</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+                            
+                        </div>
+                    </div>
+            
+                    <div class="mt-5">
+                        <h4 class="mb-2 text-lg font-semibold text-gray-800">Tags</h4>
+                        <a href="https://packetprep.com/blog/tag/wipro" class="inline-block px-3 py-1 mb-2 mr-2 font-medium text-white transition duration-300 bg-blue-500 rounded-lg hover:bg-blue-600">Wipro</a>
+                        <a href="https://packetprep.com/blog/tag/recruitment-process" class="inline-block px-3 py-1 mb-2 mr-2 font-medium text-white transition duration-300 bg-green-500 rounded-lg hover:bg-green-600">Recruitment process</a>
+                    </div><br>
+                    
+                    <div class="flex flex-row gap-2 pb-6">
+                        <div class="relative text-gray-600 top-1">SHARE:</div>
+                        <div class="relative p-2 rounded-full bottom-1 hover:bg-blue-200"><svg width="15px" height="15px" class="hover:fill-blue-500" viewBox="-5 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" stroke="#b8b8b8"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>facebook [#176]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-385.000000, -7399.000000)" fill="#000000"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M335.821282,7259 L335.821282,7250 L338.553693,7250 L339,7246 L335.821282,7246 L335.821282,7244.052 C335.821282,7243.022 335.847593,7242 337.286884,7242 L338.744689,7242 L338.744689,7239.14 C338.744689,7239.097 337.492497,7239 336.225687,7239 C333.580004,7239 331.923407,7240.657 331.923407,7243.7 L331.923407,7246 L329,7246 L329,7250 L331.923407,7250 L331.923407,7259 L335.821282,7259 Z" id="facebook-[#176]"> </path> </g> </g> </g> </g></svg></div>
+                        <div class="relative p-2 rounded-full bottom-1 hover:bg-blue-200"><svg fill="#000000" width="20px" height="20px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" stroke="#a8a8a8"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M11.919 24.94c-2.548 0-4.921-.747-6.919-2.032a9.049 9.049 0 0 0 6.681-1.867 4.512 4.512 0 0 1-4.215-3.137c.276.054.559.082.848.082.412 0 .812-.056 1.193-.156a4.519 4.519 0 0 1-3.622-4.425v-.059a4.478 4.478 0 0 0 2.042.564 4.507 4.507 0 0 1-2.008-3.758c0-.824.225-1.602.612-2.268a12.811 12.811 0 0 0 9.303 4.715 4.517 4.517 0 0 1 7.692-4.115 9.107 9.107 0 0 0 2.866-1.094 4.542 4.542 0 0 1-1.983 2.498 9.08 9.08 0 0 0 2.592-.71 9.283 9.283 0 0 1-2.252 2.337c.008.193.014.388.014.583-.001 5.962-4.542 12.843-12.844 12.842"></path></g></svg></div>
+                        <div class="relative p-2 rounded-full bottom-1 hover:bg-blue-200"><svg viewBox="0 0 24 24" fill="none" width="20px" height="20px" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M10.24 13.6C10.0818 13.6 9.92711 13.5531 9.79555 13.4652C9.66399 13.3773 9.56145 13.2523 9.5009 13.1061C9.44035 12.96 9.42451 12.7991 9.45538 12.6439C9.48624 12.4887 9.56244 12.3462 9.67432 12.2343C9.7862 12.1224 9.92875 12.0462 10.0839 12.0154C10.2391 11.9845 10.4 12.0003 10.5461 12.0609C10.6923 12.1214 10.8173 12.224 10.9052 12.3555C10.9931 12.4871 11.04 12.6418 11.04 12.8C11.04 12.9051 11.0193 13.0091 10.9791 13.1061C10.9389 13.2032 10.88 13.2914 10.8057 13.3657C10.7314 13.44 10.6432 13.4989 10.5461 13.5391C10.4491 13.5793 10.3451 13.6 10.24 13.6ZM20 12C20 13.5823 19.5308 15.129 18.6518 16.4446C17.7727 17.7602 16.5233 18.7855 15.0615 19.391C13.5997 19.9965 11.9911 20.155 10.4393 19.8463C8.88743 19.5376 7.46197 18.7757 6.34315 17.6569C5.22433 16.538 4.4624 15.1126 4.15372 13.5607C3.84504 12.0089 4.00347 10.4003 4.60897 8.93853C5.21447 7.47672 6.23985 6.22729 7.55544 5.34824C8.87103 4.46919 10.4178 4 12 4C14.1217 4 16.1566 4.84285 17.6569 6.34315C19.1571 7.84344 20 9.87827 20 12ZM15.73 10.67C15.4543 10.6862 15.1943 10.8038 15 11C14.1775 10.4564 13.2158 10.1613 12.23 10.15L12.79 7.62L14.58 8.02C14.5787 8.12458 14.5981 8.22839 14.6372 8.32539C14.6764 8.4224 14.7343 8.51067 14.8078 8.58509C14.8813 8.65951 14.9689 8.7186 15.0654 8.75892C15.1619 8.79925 15.2654 8.82001 15.37 8.82C15.5831 8.81737 15.7866 8.73087 15.9363 8.57925C16.0861 8.42763 16.17 8.2231 16.17 8.01C16.176 7.82715 16.1183 7.6479 16.0069 7.50284C15.8954 7.35777 15.737 7.25589 15.5588 7.21458C15.3806 7.17327 15.1936 7.1951 15.0296 7.27633C14.8657 7.35756 14.7351 7.49317 14.66 7.66L12.66 7.22C12.6124 7.21087 12.5631 7.22027 12.5222 7.2463C12.4813 7.27233 12.4519 7.313 12.44 7.36L11.82 10.15C10.8346 10.1641 9.87368 10.4589 9.05 11C8.94175 10.8882 8.81043 10.8014 8.66518 10.7456C8.51993 10.6898 8.36426 10.6663 8.20902 10.6769C8.05378 10.6874 7.9027 10.7316 7.76631 10.8065C7.62993 10.8814 7.51152 10.9852 7.41934 11.1105C7.32717 11.2359 7.26344 11.3799 7.23261 11.5324C7.20178 11.6849 7.20458 11.8423 7.24082 11.9936C7.27706 12.1449 7.34586 12.2865 7.44244 12.4085C7.53902 12.5305 7.66104 12.63 7.8 12.7C7.78471 12.8663 7.78471 13.0337 7.8 13.2C7.8 14.89 9.71 16.27 12.06 16.27C14.41 16.27 16.32 14.89 16.32 13.2C16.3204 13.0282 16.3002 12.857 16.26 12.69C16.4621 12.5755 16.6215 12.3984 16.714 12.1854C16.8066 11.9724 16.8274 11.7351 16.7732 11.5092C16.719 11.2834 16.5927 11.0813 16.4136 10.9335C16.2344 10.7858 16.012 10.7003 15.78 10.69L15.73 10.67ZM13.51 14.42C13.0606 14.7023 12.5407 14.852 12.01 14.852C11.4793 14.852 10.9594 14.7023 10.51 14.42C10.4731 14.3863 10.425 14.3676 10.375 14.3676C10.325 14.3676 10.2769 14.3863 10.24 14.42C10.2206 14.4378 10.2051 14.4594 10.1945 14.4835C10.1839 14.5076 10.1785 14.5337 10.1785 14.56C10.1785 14.5863 10.1839 14.6124 10.1945 14.6365C10.2051 14.6606 10.2206 14.6822 10.24 14.7C10.7652 15.0564 11.3853 15.2469 12.02 15.2469C12.6547 15.2469 13.2748 15.0564 13.8 14.7C13.8194 14.6822 13.8349 14.6606 13.8455 14.6365C13.8561 14.6124 13.8616 14.5863 13.8616 14.56C13.8616 14.5337 13.8561 14.5076 13.8455 14.4835C13.8349 14.4594 13.8194 14.4378 13.8 14.42C13.7813 14.4003 13.7588 14.3847 13.7339 14.374C13.709 14.3633 13.6821 14.3577 13.655 14.3577C13.6279 14.3577 13.601 14.3633 13.5761 14.374C13.5512 14.3847 13.5287 14.4003 13.51 14.42ZM13.76 12C13.6018 12 13.4471 12.0469 13.3155 12.1348C13.184 12.2227 13.0814 12.3477 13.0209 12.4939C12.9604 12.64 12.9445 12.8009 12.9754 12.9561C13.0062 13.1113 13.0824 13.2538 13.1943 13.3657C13.3062 13.4776 13.4487 13.5538 13.6039 13.5846C13.7591 13.6155 13.92 13.5997 14.0662 13.5391C14.2123 13.4786 14.3373 13.376 14.4252 13.2445C14.5131 13.1129 14.56 12.9582 14.56 12.8C14.56 12.5878 14.4757 12.3843 14.3257 12.2343C14.1757 12.0843 13.9722 12 13.76 12Z" fill="#000000"></path> </g></svg></div>
+                        <div class="relative p-2 rounded-full bottom-1 hover:bg-blue-200"><svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="12px" viewBox="0 0 552.77 552.77" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M17.95,528.854h71.861c9.914,0,17.95-8.037,17.95-17.951V196.8c0-9.915-8.036-17.95-17.95-17.95H17.95 C8.035,178.85,0,186.885,0,196.8v314.103C0,520.816,8.035,528.854,17.95,528.854z"></path> <path d="M17.95,123.629h71.861c9.914,0,17.95-8.036,17.95-17.95V41.866c0-9.914-8.036-17.95-17.95-17.95H17.95 C8.035,23.916,0,31.952,0,41.866v63.813C0,115.593,8.035,123.629,17.95,123.629z"></path> <path d="M525.732,215.282c-10.098-13.292-24.988-24.223-44.676-32.791c-19.688-8.562-41.42-12.846-65.197-12.846 c-48.268,0-89.168,18.421-122.699,55.27c-6.672,7.332-11.523,5.729-11.523-4.186V196.8c0-9.915-8.037-17.95-17.951-17.95h-64.192 c-9.915,0-17.95,8.035-17.95,17.95v314.103c0,9.914,8.036,17.951,17.95,17.951h71.861c9.915,0,17.95-8.037,17.95-17.951V401.666 c0-45.508,2.748-76.701,8.244-93.574c5.494-16.873,15.66-30.422,30.488-40.649c14.83-10.227,31.574-15.343,50.24-15.343 c14.572,0,27.037,3.58,37.393,10.741c10.355,7.16,17.834,17.19,22.436,30.104c4.604,12.912,6.904,41.354,6.904,85.33v132.627 c0,9.914,8.035,17.951,17.949,17.951h71.861c9.914,0,17.949-8.037,17.949-17.951V333.02c0-31.445-1.982-55.607-5.941-72.48 S535.836,228.581,525.732,215.282z"></path> </g> </g> </g></svg></div>
                     </div>
                 </div>
-        
-                <div class="mt-5">
-                    <h4 class="text-lg font-semibold text-gray-800 mb-2">Tags</h4>
-                    <a href="https://packetprep.com/blog/tag/wipro" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-medium py-1 px-3 rounded-lg mr-2 mb-2 transition duration-300">wipro</a>
-                    <a href="https://packetprep.com/blog/tag/recruitment-process" class="inline-block bg-green-500 hover:bg-green-600 text-white font-medium py-1 px-3 rounded-lg mr-2 mb-2 transition duration-300">recruitment process</a>
-                </div><br>
-                
-                <div class="flex flex-row gap-2 pb-6">
-                    <div class="relative top-1 text-gray-600">SHARE:</div>
-                    <div class="p-2  relative bottom-1 hover:bg-blue-200  rounded-full"><svg width="15px" height="15px" class="hover:fill-blue-500" viewBox="-5 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" stroke="#b8b8b8"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>facebook [#176]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-385.000000, -7399.000000)" fill="#000000"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M335.821282,7259 L335.821282,7250 L338.553693,7250 L339,7246 L335.821282,7246 L335.821282,7244.052 C335.821282,7243.022 335.847593,7242 337.286884,7242 L338.744689,7242 L338.744689,7239.14 C338.744689,7239.097 337.492497,7239 336.225687,7239 C333.580004,7239 331.923407,7240.657 331.923407,7243.7 L331.923407,7246 L329,7246 L329,7250 L331.923407,7250 L331.923407,7259 L335.821282,7259 Z" id="facebook-[#176]"> </path> </g> </g> </g> </g></svg></div>
-                    <div class="p-2  relative bottom-1 hover:bg-blue-200  rounded-full"><svg fill="#000000" width="20px" height="20px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" stroke="#a8a8a8"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M11.919 24.94c-2.548 0-4.921-.747-6.919-2.032a9.049 9.049 0 0 0 6.681-1.867 4.512 4.512 0 0 1-4.215-3.137c.276.054.559.082.848.082.412 0 .812-.056 1.193-.156a4.519 4.519 0 0 1-3.622-4.425v-.059a4.478 4.478 0 0 0 2.042.564 4.507 4.507 0 0 1-2.008-3.758c0-.824.225-1.602.612-2.268a12.811 12.811 0 0 0 9.303 4.715 4.517 4.517 0 0 1 7.692-4.115 9.107 9.107 0 0 0 2.866-1.094 4.542 4.542 0 0 1-1.983 2.498 9.08 9.08 0 0 0 2.592-.71 9.283 9.283 0 0 1-2.252 2.337c.008.193.014.388.014.583-.001 5.962-4.542 12.843-12.844 12.842"></path></g></svg></div>
-                    <div class="p-2  relative bottom-1 hover:bg-blue-200  rounded-full"><svg viewBox="0 0 24 24" fill="none" width="20px" height="20px" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M10.24 13.6C10.0818 13.6 9.92711 13.5531 9.79555 13.4652C9.66399 13.3773 9.56145 13.2523 9.5009 13.1061C9.44035 12.96 9.42451 12.7991 9.45538 12.6439C9.48624 12.4887 9.56244 12.3462 9.67432 12.2343C9.7862 12.1224 9.92875 12.0462 10.0839 12.0154C10.2391 11.9845 10.4 12.0003 10.5461 12.0609C10.6923 12.1214 10.8173 12.224 10.9052 12.3555C10.9931 12.4871 11.04 12.6418 11.04 12.8C11.04 12.9051 11.0193 13.0091 10.9791 13.1061C10.9389 13.2032 10.88 13.2914 10.8057 13.3657C10.7314 13.44 10.6432 13.4989 10.5461 13.5391C10.4491 13.5793 10.3451 13.6 10.24 13.6ZM20 12C20 13.5823 19.5308 15.129 18.6518 16.4446C17.7727 17.7602 16.5233 18.7855 15.0615 19.391C13.5997 19.9965 11.9911 20.155 10.4393 19.8463C8.88743 19.5376 7.46197 18.7757 6.34315 17.6569C5.22433 16.538 4.4624 15.1126 4.15372 13.5607C3.84504 12.0089 4.00347 10.4003 4.60897 8.93853C5.21447 7.47672 6.23985 6.22729 7.55544 5.34824C8.87103 4.46919 10.4178 4 12 4C14.1217 4 16.1566 4.84285 17.6569 6.34315C19.1571 7.84344 20 9.87827 20 12ZM15.73 10.67C15.4543 10.6862 15.1943 10.8038 15 11C14.1775 10.4564 13.2158 10.1613 12.23 10.15L12.79 7.62L14.58 8.02C14.5787 8.12458 14.5981 8.22839 14.6372 8.32539C14.6764 8.4224 14.7343 8.51067 14.8078 8.58509C14.8813 8.65951 14.9689 8.7186 15.0654 8.75892C15.1619 8.79925 15.2654 8.82001 15.37 8.82C15.5831 8.81737 15.7866 8.73087 15.9363 8.57925C16.0861 8.42763 16.17 8.2231 16.17 8.01C16.176 7.82715 16.1183 7.6479 16.0069 7.50284C15.8954 7.35777 15.737 7.25589 15.5588 7.21458C15.3806 7.17327 15.1936 7.1951 15.0296 7.27633C14.8657 7.35756 14.7351 7.49317 14.66 7.66L12.66 7.22C12.6124 7.21087 12.5631 7.22027 12.5222 7.2463C12.4813 7.27233 12.4519 7.313 12.44 7.36L11.82 10.15C10.8346 10.1641 9.87368 10.4589 9.05 11C8.94175 10.8882 8.81043 10.8014 8.66518 10.7456C8.51993 10.6898 8.36426 10.6663 8.20902 10.6769C8.05378 10.6874 7.9027 10.7316 7.76631 10.8065C7.62993 10.8814 7.51152 10.9852 7.41934 11.1105C7.32717 11.2359 7.26344 11.3799 7.23261 11.5324C7.20178 11.6849 7.20458 11.8423 7.24082 11.9936C7.27706 12.1449 7.34586 12.2865 7.44244 12.4085C7.53902 12.5305 7.66104 12.63 7.8 12.7C7.78471 12.8663 7.78471 13.0337 7.8 13.2C7.8 14.89 9.71 16.27 12.06 16.27C14.41 16.27 16.32 14.89 16.32 13.2C16.3204 13.0282 16.3002 12.857 16.26 12.69C16.4621 12.5755 16.6215 12.3984 16.714 12.1854C16.8066 11.9724 16.8274 11.7351 16.7732 11.5092C16.719 11.2834 16.5927 11.0813 16.4136 10.9335C16.2344 10.7858 16.012 10.7003 15.78 10.69L15.73 10.67ZM13.51 14.42C13.0606 14.7023 12.5407 14.852 12.01 14.852C11.4793 14.852 10.9594 14.7023 10.51 14.42C10.4731 14.3863 10.425 14.3676 10.375 14.3676C10.325 14.3676 10.2769 14.3863 10.24 14.42C10.2206 14.4378 10.2051 14.4594 10.1945 14.4835C10.1839 14.5076 10.1785 14.5337 10.1785 14.56C10.1785 14.5863 10.1839 14.6124 10.1945 14.6365C10.2051 14.6606 10.2206 14.6822 10.24 14.7C10.7652 15.0564 11.3853 15.2469 12.02 15.2469C12.6547 15.2469 13.2748 15.0564 13.8 14.7C13.8194 14.6822 13.8349 14.6606 13.8455 14.6365C13.8561 14.6124 13.8616 14.5863 13.8616 14.56C13.8616 14.5337 13.8561 14.5076 13.8455 14.4835C13.8349 14.4594 13.8194 14.4378 13.8 14.42C13.7813 14.4003 13.7588 14.3847 13.7339 14.374C13.709 14.3633 13.6821 14.3577 13.655 14.3577C13.6279 14.3577 13.601 14.3633 13.5761 14.374C13.5512 14.3847 13.5287 14.4003 13.51 14.42ZM13.76 12C13.6018 12 13.4471 12.0469 13.3155 12.1348C13.184 12.2227 13.0814 12.3477 13.0209 12.4939C12.9604 12.64 12.9445 12.8009 12.9754 12.9561C13.0062 13.1113 13.0824 13.2538 13.1943 13.3657C13.3062 13.4776 13.4487 13.5538 13.6039 13.5846C13.7591 13.6155 13.92 13.5997 14.0662 13.5391C14.2123 13.4786 14.3373 13.376 14.4252 13.2445C14.5131 13.1129 14.56 12.9582 14.56 12.8C14.56 12.5878 14.4757 12.3843 14.3257 12.2343C14.1757 12.0843 13.9722 12 13.76 12Z" fill="#000000"></path> </g></svg></div>
-                    <div class="p-2 relative bottom-1 hover:bg-blue-200  rounded-full"><svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="12px" viewBox="0 0 552.77 552.77" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M17.95,528.854h71.861c9.914,0,17.95-8.037,17.95-17.951V196.8c0-9.915-8.036-17.95-17.95-17.95H17.95 C8.035,178.85,0,186.885,0,196.8v314.103C0,520.816,8.035,528.854,17.95,528.854z"></path> <path d="M17.95,123.629h71.861c9.914,0,17.95-8.036,17.95-17.95V41.866c0-9.914-8.036-17.95-17.95-17.95H17.95 C8.035,23.916,0,31.952,0,41.866v63.813C0,115.593,8.035,123.629,17.95,123.629z"></path> <path d="M525.732,215.282c-10.098-13.292-24.988-24.223-44.676-32.791c-19.688-8.562-41.42-12.846-65.197-12.846 c-48.268,0-89.168,18.421-122.699,55.27c-6.672,7.332-11.523,5.729-11.523-4.186V196.8c0-9.915-8.037-17.95-17.951-17.95h-64.192 c-9.915,0-17.95,8.035-17.95,17.95v314.103c0,9.914,8.036,17.951,17.95,17.951h71.861c9.915,0,17.95-8.037,17.95-17.951V401.666 c0-45.508,2.748-76.701,8.244-93.574c5.494-16.873,15.66-30.422,30.488-40.649c14.83-10.227,31.574-15.343,50.24-15.343 c14.572,0,27.037,3.58,37.393,10.741c10.355,7.16,17.834,17.19,22.436,30.104c4.604,12.912,6.904,41.354,6.904,85.33v132.627 c0,9.914,8.035,17.951,17.949,17.951h71.861c9.914,0,17.949-8.037,17.949-17.951V333.02c0-31.445-1.982-55.607-5.941-72.48 S535.836,228.581,525.732,215.282z"></path> </g> </g> </g></svg></div>
+    
+                <!-- side -->
+                <div>
+                    <div class="pb-5">
+                        <a href=""><div class="flex items-center justify-center p-3 font-semibold text-white bg-pink-500 rounded-lg">Login</div>
+                        </div></a>
+                    <div class="pb-5">
+                        <div class="pl-5 text-2xl font-semibold text-blue-500 border-l-4 border-blue-600">Related Posts</div>
+                    </div>
+                    <div class="pb-5">
+                        <div class="flex flex-row items-center gap-5 p-3 bg-blue-200 rounded-lg">
+                            <div><img src="../assets/wipro.webp" width="100px" height="100px" class="rounded-lg" alt=""></div>
+                            <div>
+                                <div class="text-lg font-semibold ">Top Wipro HR interview questions for freshers </div><p class="text-lg text-gray-700">1 year ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pb-5">
+                        <div class="p-3 bg-blue-200 rounded-lg">
+                            <div class="text-lg font-semibold">InfyTQ </div>
+                            <p class="text-lg text-gray-700">Infosys has one of the best</p>
+                            <p class="text-lg text-gray-700">recruitment processes ...</p>
+                        </div>
+                    </div>
+                    <div class="pb-5">
+                        <div class="pl-5 text-2xl font-semibold text-blue-500 border-l-4 border-blue-600">Popular Posts</div>
+                    </div>
+                    <div class="pb-5">
+                        <div class="flex flex-row items-center gap-5 p-3 bg-pink-200 rounded-lg">
+                            <div><img src="../assets/byjus.webp" width="100px" height="100px" class="rounded-lg" alt=""></div>
+                            <div>
+                                <div class="text-lg font-semibold ">Byjus Recruitment Process </div><p class="text-lg text-gray-700">1 year ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pb-5">
+                        <div class="flex flex-row items-center gap-5 p-3 bg-pink-200 rounded-lg">
+                            <div><img src="../assets/wipro.webp" width="100px" height="100px" class="rounded-lg" alt=""></div>
+                            <div>
+                                <div class="text-lg font-semibold ">Top Wipro HR interview questions for freshers </div><p class="text-lg text-gray-700">1 year ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pb-5">
+                        <div class="p-3 bg-pink-200 rounded-lg">
+                            <div class="text-lg font-semibold">Requirement for Trainee <p>Network Engineer 2020 &</p> 2021</div>
+                            <p class="text-lg text-gray-700">SreeTech Inc is looking for</p>
+                            <p class="text-lg text-gray-700">fresh graduates for th...</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <!-- side -->
-            <div>
-                <div class="pb-5">
-                    <a href=""><div class="bg-pink-500 text-white p-3 rounded-lg flex items-center justify-center font-semibold">Login</div>
-                    </div></a>
-                <div class="pb-5">
-                    <div class="border-l-4 border-blue-600 text-blue-500 pl-5 font-semibold text-2xl">Related Posts</div>
-                </div>
-                <div class="pb-5">
-                    <div class="bg-blue-200 flex rounded-lg p-3 gap-5  items-center  flex-row">
-                        <div><img src="../assets/wipro.webp" width="100px" height="100px" class="rounded-lg" alt=""></div>
-                        <div>
-                            <div class="text-lg font-semibold ">Top Wipro HR interview questions for freshers </div><p class="text-gray-700 text-lg">1 year ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="pb-5">
-                    <div class="bg-blue-200 rounded-lg p-3">
-                        <div class="text-lg font-semibold">InfyTQ </div>
-                        <p class="text-gray-700 text-lg">Infosys has one of the best</p>
-                        <p class="text-gray-700 text-lg">recruitment processes ...</p>
-                    </div>
-                </div>
-                <div class="pb-5">
-                    <div class="border-l-4 border-blue-600 text-blue-500 pl-5 font-semibold text-2xl">Popular Posts</div>
-                </div>
-                <div class="pb-5">
-                    <div class="bg-pink-200 flex rounded-lg p-3 gap-5  items-center  flex-row">
-                        <div><img src="../assets/byjus.webp" width="100px" height="100px" class="rounded-lg" alt=""></div>
-                        <div>
-                            <div class="text-lg font-semibold ">Byjus Recruitment Process </div><p class="text-gray-700 text-lg">1 year ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="pb-5">
-                    <div class="bg-pink-200 flex rounded-lg p-3 gap-5  items-center  flex-row">
-                        <div><img src="../assets/wipro.webp" width="100px" height="100px" class="rounded-lg" alt=""></div>
-                        <div>
-                            <div class="text-lg font-semibold ">Top Wipro HR interview questions for freshers </div><p class="text-gray-700 text-lg">1 year ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="pb-5">
-                    <div class="bg-pink-200 rounded-lg p-3">
-                        <div class="text-lg font-semibold">Requirement for Trainee <p>Network Engineer 2020 &</p> 2021</div>
-                        <p class="text-gray-700 text-lg">SreeTech Inc is looking for</p>
-                        <p class="text-gray-700 text-lg">fresh graduates for th...</p>
-                    </div>
-                </div>
-            </div>
         </div>
-    </div>
+    </main>
+    
 
     <footer>
+        
         <!--attend drives-->
-        <div class="text-white" style="background-color: #135ca1;">
-            <div class="max-w-screen-xl mx-auto p-4 sm:px-16">
-                <div class="sm:flex justify-between mx-5">
+        <div class="p-6 text-white" style="background-color: #135ca1;">
+            <div class="max-w-screen-xl mx-auto sm:px-16 sm:flex">
 
-                    <div class="col-span-2 sm:col-span-1 sm-text-center my-2">
-                        <h1 class="text-3xl font-semibold pb-4">Attend placement drives with us</h1>
-                        <p class="">Enrol for fullstack java with pay after placement</p>
-                    </div>
-                    
-                    <div class="col-span-2 sm:col-span-1 justify-center my-4 ml-auto text-center btn">
-                        <button class="rounded-full bg-blue-200 text-blue-900 font-semibold px-12 py-4 mb-2  translate">
-                            <a href="#">Apply Now</a>
-                        </button>
-                        <button class="rounded-full bg-white text-gray-800 font-semibold px-12 py-4 my-2  translate">
-                            <a href="#">Learn More</a>
-                        </button>
-                    </div>
-
+                <div class="col-span-2 my-auto sm:col-span-1 sm-text-center">
+                    <h1 class="pb-4 text-3xl font-semibold">Attend placement drives with us</h1>
+                    <p class="">Enroll for fullstack java with pay after placement</p>
                 </div>
+
+                <div class="justify-end col-span-2 my-4 text-center ms-auto sm:col-span-1 btn">
+                    <button
+                        class="px-16 py-4 mx-2 mb-2 font-semibold text-white duration-200 ease-in transform rounded-full bg-cyan-500 hover:-translate-y-2"
+                        aria-label="try">
+                        <a href="#">Try Now</a>
+                    </button>
+                    <button class="px-12 py-4 mx-2 my-2 font-semibold text-gray-800 duration-200 ease-in transform bg-white rounded-full hover:-translate-y-2" aria-label="view">
+                        <a href="./fullstack-java.html">Learn More</a>
+                    </button>
+                    
+                </div>
+
             </div>
 
         </div>
 
-        <!--links -->
-        <div class="text-white" style="background-color: #245079;">
-            <div class="max-w-screen-xl mx-auto p-4 sm:px-16">
-                <div class="grid grid-cols-4 gap-2 justify-between max-w-screen-xl px-6">
-                    <!--logo and address-->
-                    <div class="col-span-4 sm:col-span-1">
-                        <div class="">
-                            <img src="../assets/favicon-min.webp" class="h-24" alt="..." />
-                            <h2 class="text-white text-2xl font-semibold font-sans mt-5">PacketPrep</h2>
-                            <h2 class="text-white text-sm font-semibold font-sans  ">Job Training & Placement</h2>
-                            <h2 class=" font-semibold font-sans mt-5 mb-5">Head Office</h2>
-                              
-                            <a href="#" class="text-white test-sm  mt-5">
-                               
-                                <div class="flex flex-row-2">
-                                    <div>
-                                        <svg xmlns="https://g.page/packetprepjobs" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 mr-1">
-                                        <path fill-rule="evenodd" d="M9.69 18.933l.003.001C9.89 19.02 10 19 10 19s.11.02.308-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 00.281-.14c.186-.096.446-.24.757-.433.62-.384 1.445-.966 2.274-1.765C15.302 14.988 17 12.493 17 9A7 7 0 103 9c0 3.492 1.698 5.988 3.355 7.584a13.731 13.731 0 002.273 1.765 11.842 11.842 0 00.976.544l.062.029.018.008.006.003zM10 11.25a2.25 2.25 0 100-4.5 2.25 2.25 0 000 4.5z" clip-rule="evenodd" />
+
+            <!--links -->
+            <div class="p-4 text-white bg-blue-900" style="background-color: #245079;">
+                <div class="max-w-screen-xl p-4 mx-auto sm:px-16">
+                    <div class="grid justify-between grid-cols-5 gap-8">
+                        <!--logo and address-->
+                        <div class="col-span-4 gap-8 sm:col-span-1">
+                            <div class="">
+                                <img src="../assets/favicon-min.webp" class="h-24" alt="..." />
+                                <h2 class="mt-5 font-sans text-2xl font-semibold text-white">PacketPrep</h2>
+                                <h2 class="font-sans text-sm font-semibold text-white ">Job Training & Placement</h2>
+                                <h2 class="mt-5 mb-5 font-sans font-semibold ">Head Office</h2>
+                                  
+                                <a href="https://g.page/packetprepjobs" class="mt-5 text-white test-sm">
+                                   
+                                    <div class="flex flex-row-2">
+                                        <div>
+                                            <svg xmlns="https://g.page/packetprepjobs" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 mr-1">
+                                            <path fill-rule="evenodd" d="M9.69 18.933l.003.001C9.89 19.02 10 19 10 19s.11.02.308-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 00.281-.14c.186-.096.446-.24.757-.433.62-.384 1.445-.966 2.274-1.765C15.302 14.988 17 12.493 17 9A7 7 0 103 9c0 3.492 1.698 5.988 3.355 7.584a13.731 13.731 0 002.273 1.765 11.842 11.842 0 00.976.544l.062.029.018.008.006.003zM10 11.25a2.25 2.25 0 100-4.5 2.25 2.25 0 000 4.5z" clip-rule="evenodd" />
+                                            </svg>
+                                            
+                                        </div>
+                                        <div>
+                                            <p class="text-sm text-slate-300">2nd Floor, Oyester Uptown, Beside Durgam Cheruvu Metro Station, Madhapur, Hyderabad, Telengana, 500081.</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="https://wa.me/9000045750" class="mt-10 text-white test-sm">
+                                     
+                                    <div class="flex flex-row-2">
+                                      <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-4 mt-5">
+                                          <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z" clip-rule="evenodd" />
                                         </svg>
                                         
+                                      </div>
+                                      <div>
+                                        <p class="mt-5 text-sm text-slate-100">
+                                          +91 90000 45750
+                                      </div>
                                     </div>
-                                    <div>
-                                        <p class="text-sm text-slate-300">2nd Floor, Oyester Uptown, Beside Durgam Cheruvu Metro Station, Madhapur, Hyderabad, Telengana, 500081.</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="text-white test-sm  mt-10">
-                                 
-                                <div class="flex flex-row-2">
-                                  <div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-4 mt-5">
-                                      <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z" clip-rule="evenodd" />
-                                    </svg>
-                                    
-                                  </div>
-                                  <div>
-                                    <p class="text-sm text-slate-100 mt-5">
-                                      +91 90000 45750
-                                  </div>
-                                </div>
-                              </a>             
-                          </div>
-                    </div>
-
-                    <!--Our company-->
-                    <div class="col-span-2 sm:col-span-1">
-                        <h2 class="text-white text-xl font-semibold font-sans mb-4">Our Company</h2> 
-                        <ol>
-                            <li class="my-2 text-md"><a href="./about.html" class="text-slate-300 hover:text-white">About</a></li> 
-                            <li class="my-2 text-md"><a href="./review.html" class="text-slate-300 hover:text-white">Reviews</a></li>
-                            <li class="my-2 text-md"><a href="./testimonials.html" class="text-slate-300 hover:text-white"> Testimonials</a></li>
-                            <li class="my-2 text-md"><a href="./blogs.html" class="text-slate-300 hover:text-white"> Blog</a></li>
-                            <li class="my-2 text-md"><a href="./contact.html" class="text-slate-300 hover:text-white">  Contact </a></li>
-                        </ol>
-                    </div>
-
-                    <!--prepare-->
-                    <div class="col-span-2 sm:col-span-1">
-                        <h2 class="text-white text-xl font-semibold font-sans mb-4">Prepare</h2> 
-                        <div class="grid grid-cols-2 gap-4">
-                            <ol class="col-span-2 md:col-span-1">
-                                <li class="mb-2 text-md"><a href="./quantitative-aptitude.html" class="text-slate-300 hover:text-white">Quantitative Aptitude</a></li> 
-                                <li class="my-2 text-md"><a href="./logical.html" class="text-slate-300 hover:text-white">Logical Reasoning</a></li>
-                                <li class="my-2 text-md"><a href="./verbal.html" class="text-slate-300 hover:text-white"> Verbal Ability</a></li>
-                                <li class="my-2 text-md"><a href="./interview.html" class="text-slate-300 hover:text-white"> Interview Skills</a></li>
-                                <li class="my-2 text-md"><a href="./programming.html" class="text-slate-300 hover:text-white">  Programming Concepts</a></li>
-                                <li class="mt-2 text-md"><a href="./coding.html" class="text-slate-300 hover:text-white"> Coding for Interviews </a></li>
-                            </ol>
-                            <ol class="col-span-2 sm:col-span-1">
-                                <li class="mb-2 text-md"><a href="./tcs-nqt.html" class="text-slate-300 hover:text-white">TCS NQT</a></li> 
-                                 <li class="my-2 text-md"><a href="./wipro.html" class="text-slate-300 hover:text-white"> Wipro NTH</a></li>
-                                 <li class="my-2 text-md"><a href="./infytq.html" class="text-slate-300 hover:text-white"> InfyTQ</a></li>
-                                 <li class="my-2 text-md"><a href="./companies.html" class="text-slate-300 hover:text-white"> All Companies</a></li>
+                                  </a>             
+                              </div>
+                        </div>
+    
+                        <!--Our company-->
+                        <div class="col-span-2 sm:col-span-1">
+                            <h2 class="mb-4 font-sans text-xl font-semibold text-white">Our Company</h2> 
+                            <ol>
+                                <li class="my-2 text-md"><a href="./about.html" class="text-slate-300 hover:text-white">About</a></li> 
+                                <li class="my-2 text-md"><a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x3bcb916c2ed5ff65:0x8c672557b26d8d6d?source=g.page.default" target="_blank" class="text-slate-300 hover:text-white">Reviews</a></li>
+                                <li class="my-2 text-md"><a href="./testimonial.html" class="text-slate-300 hover:text-white"> Testimonials</a></li>
+                                <li class="my-2 text-md"><a href="./blog.html" class="text-slate-300 hover:text-white"> Blog</a></li>
+                                <li class="my-2 text-md"><a href="./contactus.html" class="text-slate-300 hover:text-white">  Contact </a></li>
                             </ol>
                         </div>
-                    </div>
-
-                    <!--resources-->
-                    <div class="col-span-2 sm:col-span-1 justify-end">
-                        <h2 class="text-white text-xl font-semibold font-sans mb-4">Resources</h2>
-                        <ol>
-                            <li class="my-2 text-md"><a href="./telegram.html" class="text-slate-300 hover:text-white">Telegram Channel</a></li> 
-                            <li class="my-2 text-md"><a href="./learning.html" class="text-slate-300 hover:text-white">Learning Portal</a></li>
-                            <li class="my-2 text-md"><a href="./practice.html" class="text-slate-300 hover:text-white"> Free Practice Tests</a></li>
-                            <li class="my-2 text-md"><a href="./free.html" class="text-slate-300 hover:text-white"> Free GRE & IELTS Tests</a></li>
-                        </ol>
-                    </div>
-                </div>
-
-                <div class="max-w-screen-xl px-6">
-                    
-                <!---branches-->
-                <div class="flex justify-center mt-5 w-full bg-blue-100 rounded shadow-lg mb-4 max-w-screen-xl px-4 sm:px-16">
-                    <div class="py-1 rounded text-center text-blue-900 font-semibold text-sm p-2">
-                        Our Branches :   Madhapur (Hyderabad),   Visakhapatnam,   Kakinada,   Vijayawada,   Guntur,   Tirupati
-                    </div>
-                </div>
-
-                <hr>
-
-                <!--links and policy-->
-                <div class="md:flex justify-between mt-4">
-                    <div class="sm:w-1/2 grid grid-cols-7 my-2">
-                        <div class="col-span-2 text-start">
-                            <a href="./policy.html" class="text-sm hover:text-gray-500 duration-200 ease-in">Privacy Policy</a>
+    
+                        <!--prepare-->
+                        <div class="col-span-2 sm:col-span-2">
+                            <h2 class="mb-4 font-sans text-xl font-semibold text-white">Prepare</h2> 
+                            <div class="grid grid-cols-2 gap-4">
+                                <ol class="col-span-2 md:col-span-1">
+                                    <li class="mb-2 text-md"><a href="./quantitative-aptitude.html" class="text-slate-300 hover:text-white">Quantitative Aptitude</a></li> 
+                                    <li class="my-2 text-md"><a href="./logical-reasoning.html" class="text-slate-300 hover:text-white">Logical Reasoning</a></li>
+                                    <li class="my-2 text-md"><a href="./verbal-ability.html" class="text-slate-300 hover:text-white"> Verbal Ability</a></li>
+                                    <li class="my-2 text-md"><a href="./interview-skills.html" class="text-slate-300 hover:text-white"> Interview Skills</a></li>
+                                    <li class="my-2 text-md"><a href="./programming-concepts.html" class="text-slate-300 hover:text-white">  Programming Concepts</a></li>
+                                    <li class="mt-2 text-md"><a href="./coding-for-interviews.html" class="text-slate-300 hover:text-white"> Coding for Interviews </a></li>
+                                </ol>
+                                <ol class="col-span-2 sm:col-span-1">
+                                    <li class="mb-2 text-md"><a href="./tarettcs.html" class="text-slate-300 hover:text-white">TCS NQT</a></li> 
+                                     <li class="my-2 text-md"><a href="./wipro-national-talent-hunt.html" class="text-slate-300 hover:text-white"> Wipro NTH</a></li>
+                                     <li class="my-2 text-md"><a href="./infytq.html" class="text-slate-300 hover:text-white"> InfyTQ</a></li>
+                                     <li class="my-2 text-md"><a href="#" class="text-slate-300 hover:text-white"> All Companies</a></li>
+                                </ol>
+                            </div>
                         </div>
-                        <div class="col-span-2">
-                            <a href="./terms.html" class="text-sm hover:text-gray-500 duration-200 ease-in">Terms & Services</a>
+    
+                        <!--resources-->
+                        <div class="justify-end col-span-2 sm:col-span-1">
+                            <h2 class="mb-4 font-sans text-xl font-semibold text-white">Resources</h2>
+                            <ol>
+                                <li class="my-2 text-md"><a href="./telegram.html" class="text-slate-300 hover:text-white">Telegram Channel</a></li> 
+                                <li class="my-2 text-md"><a href="#" class="text-slate-300 hover:text-white">Learning Portal</a></li>
+                                <li class="my-2 text-md"><a href="./free-practice-tests.html" class="text-slate-300 hover:text-white"> Free Practice Tests</a></li>
+                                <li class="my-2 text-md"><a href="./firstacademy.html" class="text-slate-300 hover:text-white"> Free GRE & IELTS Tests</a></li>
+                            </ol>
                         </div>
-                        <div class="col-span-3 pl-8">
-                            <a href="./refund.html" class="text-sm hover:text-gray-500 duration-200 ease-in">Refund & Cancellation</a>
+    
+                    </div>
+    
+                    <!---branches-->
+                    <div class="flex justify-center w-full mt-5 mb-4 bg-blue-100 rounded shadow-lg">
+                        <div class="p-2 py-1 text-sm font-semibold text-center text-blue-900 rounded">
+                            Our Branches :   Madhapur (Hyderabad),   Visakhapatnam,   Kakinada,   Vijayawada,   Guntur,   Tirupati
                         </div>
                     </div>
-
-                    <div class="col-span-6 place-content-end flex flex-wrap gap-4 justify-center sm:justify-end my-2">
-                        <a href="#" target="_blank" aria-label="facebook" class="hover:scale-110 duration-200 ease-in-out">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="1.5em"
-                                viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                                <path
-                                    d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
-                                    fill="white" />
-                            </svg>
-                        </a>
-                        <a href="#" target="_blank" aria-label="instagram" class="ms-2  hover:scale-110 duration-200 ease-in-out">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512">
-                                <path
-                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
-                                    fill="white" />
-                            </svg>
-                        </a>
-                        <a href="#" target="_blank" aria-label="Telegram" class="ms-2 hover:scale-110 duration-200 ease-in-out">
-                            <svg style="color: white" xmlns="http://www.w3.org/2000/svg"  height="1.5em"  fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16"> <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z" fill="white"></path> </svg>
-                        </a>
-                        <a href="#" target="_blank" aria-label="youtube" class="ms-2 hover:scale-110 duration-200 ease-in-out">
-                            <svg style="color: white" xmlns="http://www.w3.org/2000/svg" height="1.5em" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16"> <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" fill="white"></path> </svg>
-                        </a>
-                    </div>
-
-                </div>
-                
-                <!--info-->
-                <p class="text-center text-gray-200 text-sm font-sans mt-4 mb-2">
-                    © 2021 Quedb Edtech Private Limited. All rights reserved.
-                </p>
-                <p class="text-sm px-4 sm:px-16 mx-auto text-center">When you visit or interact with our sites, services or tools, we or our authorised service providers may use cookies for storing information to help provide you with a better, faster and safer experience and for marketing purposes.</p>
-                </div>
-
-
+    
+                    <hr>
+    <!--links and policy-->
+    <div class="justify-center max-w-screen-xl px-4 mx-auto mt-4 md:justify-between lg:flex sm:px-10">
+        <div class="flex flex-wrap justify-center col-span-6 pb-4 my-2 my-auto space-x-4 lg:pb-0 place-content-start sm:gap-4 lg:justify-start">
+            <div class="col-span-2 text-start">
+                <a href="./privacy.html" class="text-sm duration-200 ease-in hover:text-gray-300">Privacy
+                    Policy</a>
+            </div>
+            <div class="col-span-2">
+                <a href="./terms.html" class="text-sm duration-200 ease-in hover:text-gray-300">Terms &
+                    Services</a>
+            </div>
+            <div class="col-span-3">
+                <a href="./refund.html" class="text-sm duration-200 ease-in hover:text-gray-300">Refund &
+                    Cancellation</a>
             </div>
         </div>
-        
+
+        <div class="flex flex-wrap justify-center col-span-6 my-auto space-x-4 lg:space-x-2 place-content-end sm:gap-4 lg:justify-end">
+            <a href="https://www.facebook.com/packetprep" target="_blank" aria-label="facebook"
+                class="duration-200 ease-in-out hover:scale-105">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512">
+                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                        d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+                        fill="white" />
+                </svg>
+            </a>
+            <a href="https://www.instagram.com/packetprep" target="_blank" aria-label="instagram"
+                class="duration-200 ease-in-out ms-2 hover:scale-105">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512">
+                    <path
+                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                        fill="white" />
+                </svg>
+            </a>
+            <a href="https://packetprep.com/telegram" target="_blank" aria-label="Telegram"
+                class="duration-200 ease-in-out ms-2 hover:scale-105">
+                <svg style="color: white" xmlns="http://www.w3.org/2000/svg" height="1.5em"
+                    fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+                    <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"
+                        fill="white"></path>
+                </svg>
+            </a>
+            <a href="https://www.youtube.com/packetprep" target="_blank" aria-label="youtube"
+                class="duration-200 ease-in-out ms-2 hover:scale-105">
+                <svg style="color: white" xmlns="http://www.w3.org/2000/svg" height="1.5em"
+                    fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                    <path
+                        d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"
+                        fill="white"></path>
+                </svg>
+            </a>
+        </div>
+
+</div>
+                    
+                    <!--info-->
+                    <p class="mt-4 mb-2 font-sans text-sm text-center text-gray-200">
+                        © 2021 Quedb Edtech Private Limited. All rights reserved.
+                    </p>
+                    <p class="px-4 mx-auto text-sm text-center sm:px-16">When you visit or interact with our sites, services or tools, we or our authorised service providers may use cookies for storing information to help provide you with a better, faster and safer experience and for marketing purposes.</p>
+    
+                </div>
+            </div>
+            
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+    <script src="../dist/voilaui.js"></script>
+    <script src="../dist/accordion.js"></script>
+    <script src="../dist/typewriter.js"></script>
 </body>
 </html>
