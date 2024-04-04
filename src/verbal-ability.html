@@ -8,83 +8,143 @@
         <meta property="og:image" content="../assets/favicon-min.webp">
         <link rel="shortcut icon" href="../assets/favicon-min.webp" />
         <link href="../dist/output.css" rel="stylesheet">
-        <link href="../dist/main.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="./css/index.css">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
         <title>Verbal Ability Free Practice Questions | Video Lessons | Mock Tests | PacketPrep</title> 
     </head>
    
     <body class="bg-white">        
-        <header>
-            <nav class="fixed top-0 left-0 z-20 w-full" style="background-color: #135ca1;">
-                <div class="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto sm:px-16">
-                <a href="./index.html" class="flex items-center ">
-                    <img src="../assets/pp_logo.webp" class="logo" width="200px" height="auto"  alt="Logo">
-                </a>
-                <div class="flex md:order-2">
-                    <button type="button" class="px-4 mr-3 font-medium text-center text-white bg-red-600 rounded-lg focus:ring-4 focus:outline-none text-md hover:bg-red-800 hover:outline-1 md:py-2 md:mr-0 talk-btn ">Talk to us</button>
-                    <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center justify-center w-10 h-10 p-2 text-sm bg-gray-100 rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
-                    
-                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-                    </svg>
-                </button>
-                </div>
-                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-                    <ul class="flex flex-col p-4 mt-4 font-medium rounded-lg md:p-0 lg:text-lg md:flex-row md:space-x-4 md:mt-0 md:border-0 dark:border-gray-700">
-                    <li class="px-4 py-2 rounded hover:bg-blue-500">
-                        <button class="rounded hover:bg-sky-800/75 hover:bg-opacity-75">
-                            <a href="./index.html" class="block py-2 pl-3 pr-4 text-white transition duration-200 ease-in rounded md:p-0" aria-current="page">Home</a>
-                        </button>
-                    </li>
-                    <li class="px-4 py-2 rounded hover:bg-blue-500">
-                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-white transition duration-200 ease-in rounded md:p-0">Job Training <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-                </svg></button>
-                            <!-- Dropdown menu -->
-                            <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
-                                <li>
-                                    <a href="./fullstack-java.html" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Fullstack Java with Placement</a>
-                                </li>
-                                <li>
-                                    <a href="./curriculum.html" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Curriculum</a>
-                                </li>
-                                <li>
-                                    <a href="./fees.html" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Fee Structure</a>
-                                </li>
+        
+        <header class="fixed z-10 w-screen">
+            <nav class="text-white transition-all duration-500 ease-in-out bg-no-repeat " style="background-color:#135ca1;">
+                <div class="items-center lg:justify-between justify-around max-w-screen-xl px-2 py-2 mx-auto lg:flex sm:px-[52px] w-auto">
+                    <div class="flex justify-between px-1">
+                        <div>
+                            <a href="./index.html" class="inline-flex w-48 py-2 mx-auto text-xl font-bold tracking-wider text-white uppercase sm:px-0 sm:w-60">
+                                <img src="../assets/pp_logo.webp" alt="logo" height="auto">
+                            </a>
+                        </div>
+        
+                        <div class="items-center my-auto lg:hidden ">
+                            <nav>
+                                <ul>
+                                    <li class="flex items-center gap-2 px-1 py-1 bg-white rounded-full">
+                                        <!--menu bar-->
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="gray" class="w-6 h-6" id="menuIcon"
+                                            onclick="toggleMobileMenu()">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
+                                        </svg>
+        
+                                    </li>
                                 </ul>
-                            </div>
-                    </li>
-                    <li class="px-4 py-2 rounded hover:bg-blue-500">
-                        <button id="dropdownNavbarLink1" data-dropdown-toggle="dropdownNavbar1" class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-white transition duration-200 ease-in rounded md:p-0 md:w-auto">Resources <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-                </svg></button>
-                            <!-- Dropdown menu -->
-                            <div id="dropdownNavbar1" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-400"    aria-labelledby="dropdownLargeButton">
-                                <li>
-                                    <a href="./telegram.html" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Telegram Channel</a>
+                            </nav>
+                        </div>
+                    </div>
+        
+                    <div class="items-center hidden w-full py-2 my-auto nav-links lg:inline-flex lg:w-auto lg:mt-0 lg:py-0 sm:px-4 "
+                        id="mainMenu">
+                        <div class="py-2 mx-auto my-auto bg-white rounded lg:inline-flex lg:w-auto lg:mt-0 lg:bg-inherit sm:px-0 ms-2 sm:ms-0 me-2 sm:me-0" id="mainMenu">
+                            <ul class="flex flex-col w-full space-y-0.5 lg:w-auto lg:flex-row lg:space-y-0  lg:space-x-1 transition-all duration-300 ease-in-out font-afacad text-lg[px] ls-2 my-auto mx-auto sm:ms-3 lg:ms-0">
+                                <li class="">
+                                    <a href="./index.html"
+                                        class="flex px-4 py-2 text-gray-500 duration-300 ease-in-out rounded-md lg:text-gray-300 lg:hover:text-white hover:text-blue-500">
+                                        Home
+                                    </a>
+                                </li>
+                                <li class="relative">
+                                    <button
+                                        class="flex w-full px-4 py-2 text-gray-500 rounded-md outline-none focus:outline-none lg:hover:text-white lg:text-gray-300 hover:text-blue-500"
+                                        id="dropdownToggle1">
+                                        Job Training<svg class="w-3 h-3 ml-1.5 mt-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                                        </svg>
+                                    </button>
+                                    <div class="right-0 hidden w-full p-2 px-5 rounded-md lg:absolute dropdown-menu lg:w-72 lg:px-0 "
+                                        id="dropdownMenu1">
+                                        <div
+                                            class="grid p-4 space-y-2 font-sans transform bg-white border-t-4 border-blue-500  shadow lg:translate-x-36 sm:-translate-x-3 lg:translate-y-2.5 rounded-b xl:ml-5">
+                                            <div class="grid-cols-1">
+                                                <ul class="space-y-2 text-[15px]">
+                                                    
+                                                    <li>
+                                                        <a href="./fullstack-java.html"
+                                                            class="block py-1 text-gray-500 lg:hover:text-blue-600">
+                                                            FullstackJava with placement
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="./curriculum.html"
+                                                            class="block py-1 text-gray-500 hover:text-blue-600">
+                                                            Curriculum
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="./fees.html"
+                                                            class="block py-1 text-gray-500 hover:text-blue-600">
+                                                            Fee Structure
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>                                    
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="relative">
+                                    <button href="#"
+                                        class="flex w-full px-4 py-2 text-gray-500 rounded-md outline-none lg:text-gray-300 focus:outline-none lg:hover:text-white hover:text-blue-500"
+                                        id="dropdownToggle">
+                                        Resources<svg class="w-3 h-3 ml-1.5 mt-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                                        </svg>
+                                    </button>
+                                    <div class="right-0 hidden p-2 px-5 lg:absolute dropdown-menu lg:px-0" id="dropdownMenu">
+                                        <div
+                                            class="p-4 space-y-2 font-sans transform bg-white rounded-b border-t-4 border-blue-500  shadow lg:translate-x-28 sm:-translate-x-3 lg:translate-y-2.5">
+                                            <ul class=" text-[15px] lg:w-48">
+                                            <ul class="space-y-2 text-[15px] lg:w-48">
+                                                <li>
+                                                    <a href="./telegram.html"
+                                                        class="block py-1 text-gray-500 hover:text-blue-600">
+                                                        Telegram Channel
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="block py-1 text-gray-500 hover:text-blue-600">
+                                                        Learning Portal
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./free-practice-tests.html"
+                                                        class="block py-1 text-gray-500 hover:text-blue-600">
+                                                        Free Practice Tests
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="firstacademy.html"
+                                                        class="block py-1 text-gray-500 hover:text-blue-600">
+                                                        Free IELTS & GRE Tests
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>                            
+                                <li class="">
+                                    <a href="./hire-from-us.html"
+                                        class="flex px-4 py-2 text-gray-500 lg:text-gray-300 lg:hover:text-white hover:text-blue-500">
+                                        Hire from us!
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="#" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Learning Portal</a>
-                                </li>
-                                <li>
-                                    <a href="./free-practice-tests.html" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Free Practice Tests</a>
-                                </li>
-                                </ul>
-                                <div class="py-1">
-                                <a href="./firstacademy.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Free IELTS & GRE Test</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="px-4 py-2 rounded hover:bg-blue-500">
-                        <a href="./hire-from-us.html" class="block py-2 pl-3 pr-4 text-white transition duration-200 ease-in rounded md:p-0">Hire from us!</a>
-                        </li>
-                    </ul>
+                                    <a href="./contactus.html" class="button bg-[#ED4C78] px-5 py-2.5 rounded hover:translate-y-[-4px] duration-500  text-sm font-semibold mx-3 lg:mx-0 lg:my-auto mb-2 lg:mb-0 block my-8">Talk to us</a>
+    
+                                </li>   
+                            </ul>
+                        </div>
+                    </div>    
                 </div>
-                </div>
-            </nav> 
+            </nav>
         </header>
 
         <main>
@@ -93,13 +153,13 @@
             <div class="items-center justify-between max-w-screen-xl px-4 pt-24 pb-8 mx-auto sm:px-16 sm:flex">
                 <!--text-->
                 <div class="">
-                    <div class="grid m-5 lg:grid-cols-2 md:grid-cols-1 lg:m-10">
+                    <div class="grid lg:grid-cols-2 md:grid-cols-1 py-12">
                         <div class="my-auto">
                             <div class="pb-4 text-4xl font-semibold text-gray-800 lg:text-6xl">
                                 <p class="pb-4">Verbal</p><p class="pb-4"> Aptitude </p>
                             </div>
                             <p class="pb-4 text-lg text-justify text-gray-700">The best free and paid placement preparation material for verbal ability with 40+ video lessons and 400 topic-wise practice questions</p>
-                            <button class="p-3 mt-2 font-semibold text-center text-white duration-200 ease-in transform bg-pink-600 rounded-lg text-md hover:bg-pink-900 hover:scale-110">Try a Free Test</button>
+                            <button class="p-3 px-6 mt-2 font-semibold text-center text-white duration-200 ease-in transform bg-pink-600 rounded-lg text-md hover:bg-pink-500 hover:scale-105">Try a Free Test</button>
                         </div>
                         <!-- Image have to come here.... -->
                         <div class="hidden ml-auto lg:block xl:block ms-auto">
@@ -120,42 +180,42 @@
                 <div class="flex flex-wrap justify-center space-x-2 lg-pl-10">
                     <div class="inline my-4">
                         <h3 class="inline">
-                            <a href="#" class="w-full p-3 mt-3 mb-2 ml-3 font-semibold text-left text-gray-700 border border-black rounded-lg hover:bg-gray-900 hover:text-white text-wrap "> Synonyms</a> 
+                            <a href="#" class="w-full p-3 mt-3 mb-2 ml-3 font-semibold text-left text-gray-700 border border-black rounded-lg hover:bg-gray-900 hover:text-white text-wrap duration-300 ease-in-out "> Synonyms</a> 
                         </h3>
                     </div>
                     <div class="inline my-4">
                         <h3 class="inline">
-                            <a href="#" class="w-full p-3 mt-3 mb-2 ml-3 font-semibold text-left text-gray-700 border border-black rounded-lg hover:bg-gray-900 hover:text-white text-wrap ">Antonyms</a> 
+                            <a href="#" class="w-full p-3 mt-3 mb-2 ml-3 font-semibold text-left text-gray-700 border border-black rounded-lg hover:bg-gray-900 hover:text-white text-wrap duration-300 ease-in-out ">Antonyms</a> 
                         </h3>
                     </div>
                     <div class="inline my-4">
                         <h3 class="inline">
-                            <a href="#" class="w-full p-3 mt-3 mb-2 ml-3 font-semibold text-left text-gray-700 border border-black rounded-lg hover:bg-gray-900 hover:text-white text-wrap "> Correct and Incorrect Sentences</a> 
+                            <a href="#" class="w-full p-3 mt-3 mb-2 ml-3 font-semibold text-left text-gray-700 border border-black rounded-lg hover:bg-gray-900 hover:text-white text-wrap duration-300 ease-in-out "> Correct and Incorrect Sentences</a> 
                         </h3>
                     </div>
                     <div class="inline my-4">
                         <h3 class="inline">
-                            <a href="#" class="w-full p-3 mt-3 mb-2 ml-3 font-semibold text-left text-gray-700 border border-black rounded-lg hover:bg-gray-900 hover:text-white text-wrap ">Sentence Completion</a> 
+                            <a href="#" class="w-full p-3 mt-3 mb-2 ml-3 font-semibold text-left text-gray-700 border border-black rounded-lg hover:bg-gray-900 hover:text-white text-wrap duration-300 ease-in-out ">Sentence Completion</a> 
                         </h3>
                     </div>
                     <div class="inline my-4">
                         <h3 class="inline">
-                            <a href="#" class="w-full p-3 mt-3 mb-2 ml-3 font-semibold text-left text-gray-700 border border-black rounded-lg hover:bg-gray-900 hover:text-white text-wrap "> Error Spotting</a> 
+                            <a href="#" class="w-full p-3 mt-3 mb-2 ml-3 font-semibold text-left text-gray-700 border border-black rounded-lg hover:bg-gray-900 hover:text-white text-wrap duration-300 ease-in-out "> Error Spotting</a> 
                         </h3>
                     </div>
                     <div class="inline my-4">
                         <h3 class="inline">
-                            <a href="#" class="w-full p-3 mt-3 mb-2 ml-3 font-semibold text-left text-gray-700 border border-black rounded-lg hover:bg-gray-900 hover:text-white text-wrap ">Sentence Improvement</a> 
+                            <a href="#" class="w-full p-3 mt-3 mb-2 ml-3 font-semibold text-left text-gray-700 border border-black rounded-lg hover:bg-gray-900 hover:text-white text-wrap duration-300 ease-in-out ">Sentence Improvement</a> 
                         </h3>
                     </div>
                     <div class="inline my-4">
                         <h3 class="inline">
-                            <a href="#" class="w-full p-3 mt-3 mb-2 ml-3 font-semibold text-left text-gray-700 border border-black rounded-lg hover:bg-gray-900 hover:text-white text-wrap "> Sentence Rearrangement</a> 
+                            <a href="#" class="w-full p-3 mt-3 mb-2 ml-3 font-semibold text-left text-gray-700 border border-black rounded-lg hover:bg-gray-900 hover:text-white text-wrap duration-300 ease-in-out "> Sentence Rearrangement</a> 
                         </h3>
                     </div>
                     <div class="inline my-4">
                         <h3 class="inline">
-                            <a href="#" class="w-full p-3 mt-3 mb-2 ml-3 font-semibold text-left text-gray-700 border border-black rounded-lg hover:bg-gray-900 hover:text-white text-wrap ">Reading Comprehension</a> 
+                            <a href="#" class="w-full p-3 mt-3 mb-2 ml-3 font-semibold text-left text-gray-700 border border-black rounded-lg hover:bg-gray-900 hover:text-white text-wrap duration-300 ease-in-out ">Reading Comprehension</a> 
                         </h3>
                     </div>
                 </div>
@@ -185,13 +245,13 @@
                 <div class="grid grid-cols-1 gap-10 mx-5 lg:grid-cols-2">
                     <div>
                         <ul>
-                            <li class="pb-5 duration-200 ease-in-out hover:scale-110"><svg width="30px" height="30px" class="inline" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="0.4" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#6b9cff"></path> <path d="M10.5795 15.5801C10.3795 15.5801 10.1895 15.5001 10.0495 15.3601L7.21945 12.5301C6.92945 12.2401 6.92945 11.7601 7.21945 11.4701C7.50945 11.1801 7.98945 11.1801 8.27945 11.4701L10.5795 13.7701L15.7195 8.6301C16.0095 8.3401 16.4895 8.3401 16.7795 8.6301C17.0695 8.9201 17.0695 9.4001 16.7795 9.6901L11.1095 15.3601C10.9695 15.5001 10.7795 15.5801 10.5795 15.5801Z" fill="#3275fb"></path> </g></svg><p class="inline text-md lg:text-lg md:pl-1"> Byte sized concept lectures</p></li>
-                            <li class="pb-5 duration-200 ease-in-out hover:scale-110"><svg width="30px" height="30px" class="inline" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="0.4" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#6b9cff"></path> <path d="M10.5795 15.5801C10.3795 15.5801 10.1895 15.5001 10.0495 15.3601L7.21945 12.5301C6.92945 12.2401 6.92945 11.7601 7.21945 11.4701C7.50945 11.1801 7.98945 11.1801 8.27945 11.4701L10.5795 13.7701L15.7195 8.6301C16.0095 8.3401 16.4895 8.3401 16.7795 8.6301C17.0695 8.9201 17.0695 9.4001 16.7795 9.6901L11.1095 15.3601C10.9695 15.5001 10.7795 15.5801 10.5795 15.5801Z" fill="#3275fb"></path> </g></svg><p class="inline text-md lg:text-lg md:pl-1"> Topic-wise Practice Questions</p></li>
-                            <li class="pb-5 duration-200 ease-in-out hover:scale-110"><svg width="30px" height="30px" class="inline" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="0.4" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#6b9cff"></path> <path d="M10.5795 15.5801C10.3795 15.5801 10.1895 15.5001 10.0495 15.3601L7.21945 12.5301C6.92945 12.2401 6.92945 11.7601 7.21945 11.4701C7.50945 11.1801 7.98945 11.1801 8.27945 11.4701L10.5795 13.7701L15.7195 8.6301C16.0095 8.3401 16.4895 8.3401 16.7795 8.6301C17.0695 8.9201 17.0695 9.4001 16.7795 9.6901L11.1095 15.3601C10.9695 15.5001 10.7795 15.5801 10.5795 15.5801Z" fill="#3275fb"></path> </g></svg><p class="inline text-md lg:text-lg md:pl-1"> Full-length Mock Tests</p></li>
-                            <li class="pb-5 duration-200 ease-in-out hover:scale-110"><svg width="30px" height="30px" class="inline" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="0.4" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#6b9cff"></path> <path d="M10.5795 15.5801C10.3795 15.5801 10.1895 15.5001 10.0495 15.3601L7.21945 12.5301C6.92945 12.2401 6.92945 11.7601 7.21945 11.4701C7.50945 11.1801 7.98945 11.1801 8.27945 11.4701L10.5795 13.7701L15.7195 8.6301C16.0095 8.3401 16.4895 8.3401 16.7795 8.6301C17.0695 8.9201 17.0695 9.4001 16.7795 9.6901L11.1095 15.3601C10.9695 15.5001 10.7795 15.5801 10.5795 15.5801Z" fill="#3275fb"></path> </g></svg><p class="inline text-md lg:text-lg md:pl-1"> Detailed Performance Reports</p></li>
-                            <li class="pb-5 duration-200 ease-in-out hover:scale-110"><svg width="30px" height="30px" class="inline" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="0.4" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#6b9cff"></path> <path d="M10.5795 15.5801C10.3795 15.5801 10.1895 15.5001 10.0495 15.3601L7.21945 12.5301C6.92945 12.2401 6.92945 11.7601 7.21945 11.4701C7.50945 11.1801 7.98945 11.1801 8.27945 11.4701L10.5795 13.7701L15.7195 8.6301C16.0095 8.3401 16.4895 8.3401 16.7795 8.6301C17.0695 8.9201 17.0695 9.4001 16.7795 9.6901L11.1095 15.3601C10.9695 15.5001 10.7795 15.5801 10.5795 15.5801Z" fill="#3275fb"></path> </g></svg><p class="inline text-md lg:text-lg md:pl-1"> Concept breakup for each Assessment</p></li>
-                            <li class="pb-5 duration-200 ease-in-out hover:scale-110"><svg width="30px" height="30px" class="inline" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="0.4" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#6b9cff"></path> <path d="M10.5795 15.5801C10.3795 15.5801 10.1895 15.5001 10.0495 15.3601L7.21945 12.5301C6.92945 12.2401 6.92945 11.7601 7.21945 11.4701C7.50945 11.1801 7.98945 11.1801 8.27945 11.4701L10.5795 13.7701L15.7195 8.6301C16.0095 8.3401 16.4895 8.3401 16.7795 8.6301C17.0695 8.9201 17.0695 9.4001 16.7795 9.6901L11.1095 15.3601C10.9695 15.5001 10.7795 15.5801 10.5795 15.5801Z" fill="#3275fb"></path> </g></svg><p class="inline text-md lg:text-lg md:pl-1"> Option to retry the tests</p></li>
-                            <li class="pb-5 duration-200 ease-in-out hover:scale-110"><svg width="30px" height="30px" class="inline" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="0.4" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#6b9cff"></path> <path d="M10.5795 15.5801C10.3795 15.5801 10.1895 15.5001 10.0495 15.3601L7.21945 12.5301C6.92945 12.2401 6.92945 11.7601 7.21945 11.4701C7.50945 11.1801 7.98945 11.1801 8.27945 11.4701L10.5795 13.7701L15.7195 8.6301C16.0095 8.3401 16.4895 8.3401 16.7795 8.6301C17.0695 8.9201 17.0695 9.4001 16.7795 9.6901L11.1095 15.3601C10.9695 15.5001 10.7795 15.5801 10.5795 15.5801Z" fill="#3275fb"></path> </g></svg><p class="inline text-md lg:text-lg md:pl-1"> Comment section for doubts</p></li>
+                            <li class="pb-5 duration-200 ease-in-out  "><svg width="30px" height="30px" class="inline" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="0.4" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#6b9cff"></path> <path d="M10.5795 15.5801C10.3795 15.5801 10.1895 15.5001 10.0495 15.3601L7.21945 12.5301C6.92945 12.2401 6.92945 11.7601 7.21945 11.4701C7.50945 11.1801 7.98945 11.1801 8.27945 11.4701L10.5795 13.7701L15.7195 8.6301C16.0095 8.3401 16.4895 8.3401 16.7795 8.6301C17.0695 8.9201 17.0695 9.4001 16.7795 9.6901L11.1095 15.3601C10.9695 15.5001 10.7795 15.5801 10.5795 15.5801Z" fill="#3275fb"></path> </g></svg><p class="inline text-md lg:text-lg md:pl-1"> Byte sized concept lectures</p></li>
+                            <li class="pb-5 duration-200 ease-in-out  "><svg width="30px" height="30px" class="inline" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="0.4" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#6b9cff"></path> <path d="M10.5795 15.5801C10.3795 15.5801 10.1895 15.5001 10.0495 15.3601L7.21945 12.5301C6.92945 12.2401 6.92945 11.7601 7.21945 11.4701C7.50945 11.1801 7.98945 11.1801 8.27945 11.4701L10.5795 13.7701L15.7195 8.6301C16.0095 8.3401 16.4895 8.3401 16.7795 8.6301C17.0695 8.9201 17.0695 9.4001 16.7795 9.6901L11.1095 15.3601C10.9695 15.5001 10.7795 15.5801 10.5795 15.5801Z" fill="#3275fb"></path> </g></svg><p class="inline text-md lg:text-lg md:pl-1"> Topic-wise Practice Questions</p></li>
+                            <li class="pb-5 duration-200 ease-in-out  "><svg width="30px" height="30px" class="inline" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="0.4" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#6b9cff"></path> <path d="M10.5795 15.5801C10.3795 15.5801 10.1895 15.5001 10.0495 15.3601L7.21945 12.5301C6.92945 12.2401 6.92945 11.7601 7.21945 11.4701C7.50945 11.1801 7.98945 11.1801 8.27945 11.4701L10.5795 13.7701L15.7195 8.6301C16.0095 8.3401 16.4895 8.3401 16.7795 8.6301C17.0695 8.9201 17.0695 9.4001 16.7795 9.6901L11.1095 15.3601C10.9695 15.5001 10.7795 15.5801 10.5795 15.5801Z" fill="#3275fb"></path> </g></svg><p class="inline text-md lg:text-lg md:pl-1"> Full-length Mock Tests</p></li>
+                            <li class="pb-5 duration-200 ease-in-out  "><svg width="30px" height="30px" class="inline" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="0.4" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#6b9cff"></path> <path d="M10.5795 15.5801C10.3795 15.5801 10.1895 15.5001 10.0495 15.3601L7.21945 12.5301C6.92945 12.2401 6.92945 11.7601 7.21945 11.4701C7.50945 11.1801 7.98945 11.1801 8.27945 11.4701L10.5795 13.7701L15.7195 8.6301C16.0095 8.3401 16.4895 8.3401 16.7795 8.6301C17.0695 8.9201 17.0695 9.4001 16.7795 9.6901L11.1095 15.3601C10.9695 15.5001 10.7795 15.5801 10.5795 15.5801Z" fill="#3275fb"></path> </g></svg><p class="inline text-md lg:text-lg md:pl-1"> Detailed Performance Reports</p></li>
+                            <li class="pb-5 duration-200 ease-in-out  "><svg width="30px" height="30px" class="inline" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="0.4" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#6b9cff"></path> <path d="M10.5795 15.5801C10.3795 15.5801 10.1895 15.5001 10.0495 15.3601L7.21945 12.5301C6.92945 12.2401 6.92945 11.7601 7.21945 11.4701C7.50945 11.1801 7.98945 11.1801 8.27945 11.4701L10.5795 13.7701L15.7195 8.6301C16.0095 8.3401 16.4895 8.3401 16.7795 8.6301C17.0695 8.9201 17.0695 9.4001 16.7795 9.6901L11.1095 15.3601C10.9695 15.5001 10.7795 15.5801 10.5795 15.5801Z" fill="#3275fb"></path> </g></svg><p class="inline text-md lg:text-lg md:pl-1"> Concept breakup for each Assessment</p></li>
+                            <li class="pb-5 duration-200 ease-in-out  "><svg width="30px" height="30px" class="inline" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="0.4" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#6b9cff"></path> <path d="M10.5795 15.5801C10.3795 15.5801 10.1895 15.5001 10.0495 15.3601L7.21945 12.5301C6.92945 12.2401 6.92945 11.7601 7.21945 11.4701C7.50945 11.1801 7.98945 11.1801 8.27945 11.4701L10.5795 13.7701L15.7195 8.6301C16.0095 8.3401 16.4895 8.3401 16.7795 8.6301C17.0695 8.9201 17.0695 9.4001 16.7795 9.6901L11.1095 15.3601C10.9695 15.5001 10.7795 15.5801 10.5795 15.5801Z" fill="#3275fb"></path> </g></svg><p class="inline text-md lg:text-lg md:pl-1"> Option to retry the tests</p></li>
+                            <li class="pb-5 duration-200 ease-in-out  "><svg width="30px" height="30px" class="inline" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="0.4" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#6b9cff"></path> <path d="M10.5795 15.5801C10.3795 15.5801 10.1895 15.5001 10.0495 15.3601L7.21945 12.5301C6.92945 12.2401 6.92945 11.7601 7.21945 11.4701C7.50945 11.1801 7.98945 11.1801 8.27945 11.4701L10.5795 13.7701L15.7195 8.6301C16.0095 8.3401 16.4895 8.3401 16.7795 8.6301C17.0695 8.9201 17.0695 9.4001 16.7795 9.6901L11.1095 15.3601C10.9695 15.5001 10.7795 15.5801 10.5795 15.5801Z" fill="#3275fb"></path> </g></svg><p class="inline text-md lg:text-lg md:pl-1"> Comment section for doubts</p></li>
                         </ul>
                     </div>
                     <div class="p-5 my-auto bg-white rounded-lg shadow-lg translate">
@@ -220,102 +280,102 @@
         </section>
         
         <!--faq-->
-        <section >
+        <section class="py-4">
             <h1 class="px-3 mt-8 text-2xl font-semibold text-center md:text-3xl title">Frequently Asked Questions</h1>
             
-            <div class="max-w-screen-xl mx-auto pb23293-4 sm:px-16">
-                <div id="accordion-color" class="mx-5 my-8 bg-white" data-accordion="collapse" data-active-classes="bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-white">
-                    <!--first-->
-                    <h2 id="accordion-color-heading-1">
-                    <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-md focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-color-body-1" aria-expanded="false" aria-controls="accordion-color-body-1">
-                        <span> Where can I find genuine study material for verbal ability? </span>
-                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
-                        </svg>
+            
+            <div class="max-w-screen-xl px-4 mx-auto my-8 mb-12 sm:px-16">
+                <!--first-->
+                <div class="mb-2">
+                    <button class="flex justify-between w-full px-5 py-3 font-semibold text-left text-gray-700 duration-300 ease-in-out border-b-2 border-gray-300 rounded-t outline-none cursor-pointer accordion hover:bg-blue-400 focus:bg-blue-400 focus:text-white hover:text-white hover:border-white focus:border-white ">
+                        <div> Where can I find genuine study material for verbal ability? </div>
+                        <div class="text-xl font-bold icon">+</div>
                     </button>
-                    </h2>
-                    <div id="accordion-color-body-1" class="hidden" aria-labelledby="accordion-color-heading-1">
-                    <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+                    <div class="hidden p-5 overflow-hidden text-gray-600 duration-300 ease-in-out border border-gray-200 rounded-b shadow-xl panel transition-height">
                         <p class="mb-2 text-gray-500 dark:text-gray-400">
-                            <p>Packet Prep is the best platform for Verbal Ability study material. We ensure your success by combining the highest-quality course material with the highest quality services.</p>
+                            Packet Prep is the best platform for Verbal Ability study material. We ensure your success by combining the highest-quality course material with the highest quality services.
                         </p>
-                        
-                    </div>
-                    </div>
-                    <!--second-->
-                    <h2 id="accordion-color-heading-2">
-                    <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-color-body-2" aria-expanded="false" aria-controls="accordion-color-body-2">
-                        <span>Are these questions from previous company exams?</span>
-                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
-                        </svg>
-                    </button>
-                    </h2>
-                    <div id="accordion-color-body-2" class="hidden" aria-labelledby="accordion-color-heading-2">
-                    <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
-                        <p class="mb-2 text-gray-500 dark:text-gray-400">We created similar models to help you gain a deeper understanding of the topics giving you an even greater advantage to crack the actual Verbal Aptitude test. </p>
-                    </div>
-                    </div>
-                    <!--third-->
-                    <h2 id="accordion-color-heading-3">
-                    <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-color-body-3" aria-expanded="false" aria-controls="accordion-color-body-3">
-                        <span>Is Packet Prep material sufficient for clearing company placements?</span>
-                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
-                        </svg>
-                    </button>
-                    </h2>
-                    <div id="accordion-color-body-3" class="hidden" aria-labelledby="accordion-color-heading-3">
-                    <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
-                        <p class="mb-2 text-gray-500 dark:text-gray-400"> Yes. Our team of experts hand-picked recurrent questions for a comprehensive Verbal Ability study guide that will help you pass any company placement.</p>
-                    </div>
+        
                     </div>
                 </div>
-            </div>
-            
+                
+                <!--second-->
+                <div class="mb-2">
+                    <button class="flex justify-between w-full px-5 py-3 font-semibold text-left text-gray-700 duration-300 ease-in-out border-b-2 border-gray-300 rounded-t outline-none cursor-pointer accordion hover:bg-blue-400 focus:bg-blue-400 focus:text-white hover:text-white hover:border-white focus:border-white">
+                        <div>Are these questions from previous company exams?</div>
+                        <div class="text-xl font-bold icon">+</div>
+                    </button>
+                    <div class="hidden p-5 overflow-hidden text-gray-600 duration-300 ease-in-out border border-gray-200 rounded-b shadow-xl panel transition-height">
+                        <p class="mb-2 text-gray-500 dark:text-gray-400">We created similar models to help you gain a deeper understanding of the topics giving you an even greater advantage to crack the actual Verbal Aptitude test. </p>
+                    </div>
+                </div>
+                
+                <!--third-->
+                <div class="mb-2">
+                    <button class="flex justify-between w-full px-5 py-3 font-semibold text-left text-gray-700 duration-300 ease-in-out border-b-2 border-gray-300 rounded-t outline-none cursor-pointer accordion hover:bg-blue-400 focus:bg-blue-400 focus:text-white hover:text-white hover:border-white focus:border-white">
+                        <div>Is Packet Prep material sufficient for clearing company placements?</div>
+                        <div class="text-xl font-bold icon">+</div>
+                    </button>
+                    <div class="hidden p-5 overflow-hidden duration-300 ease-in-out border border-gray-200 rounded-b shadow-xl panel transition-height">
+                        <p class="mb-2 text-gray-500 dark:text-gray-400"> Yes. Our team of experts hand-picked recurrent questions for a comprehensive Verbal Ability study guide that will help you pass any company placement.</p>
+        
+                    </div>
+                </div>
+
+            </div>            
 
         </section>
         
         </main>
 
-        <footer>
-            <!--attend drives-->
-            <div class="text-white" style="background-color: #135ca1;">
-                <div class="max-w-screen-xl p-4 mx-auto sm:px-16">
-                    <div class="justify-between mx-5 sm:flex">
+        <button id="scrollToTop" class="fixed z-10 p-3 rounded-full text-white transition-opacity duration-300 ease-in-out bg-gradient-to-tr from-emerald-700 to-emerald-400 shadow-2xl opacity-0 bottom-[50px] right-10 group-hover:opacity-100 hover:shadow-2xl">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m15 11.25-3-3m0 0-3 3m3-3v7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+              </svg>
+              
+        </button>
 
-                        <div class="col-span-2 my-2 sm:col-span-1 sm-text-center">
-                            <h1 class="pb-4 text-3xl font-semibold">Attend placement drives with us</h1>
-                            <p class="">Enrol for fullstack java with pay after placement</p>
-                        </div>
-                        
-                        <div class="justify-center col-span-2 my-4 ml-auto text-center sm:col-span-1 btn">
-                            <button class="px-12 py-4 mb-2 font-semibold text-blue-900 bg-blue-200 rounded-full translate">
-                                <a href="#">Apply Now</a>
-                            </button>
-                            <button class="px-12 py-4 my-2 font-semibold text-gray-800 bg-white rounded-full translate">
-                                <a href="#">Learn More</a>
-                            </button>
-                        </div>
-    
-                    </div>
+        <footer class="mb-8">
+        
+        <!--attend drives-->
+        <div class="p-6 text-white" style="background-color: #135ca1;">
+            <div class="max-w-screen-xl mx-auto sm:px-16 sm:flex">
+
+                <div class="col-span-2 my-auto sm:col-span-1 sm-text-center">
+                    <h1 class="pb-4 text-3xl font-semibold">Attend placement drives with us</h1>
+                    <p class="">Enroll for fullstack java with pay after placement</p>
+                </div>
+
+                <div class="justify-end col-span-2 my-4 text-center ms-auto sm:col-span-1 btn">
+                    <button
+                        class="px-16 py-4 mx-2 mb-2 font-semibold text-white duration-200 ease-in transform rounded-full bg-cyan-500 hover:-translate-y-2"
+                        aria-label="try">
+                        <a href="#">Try Now</a>
+                    </button>
+                    <button class="px-12 py-4 mx-2 my-2 font-semibold text-gray-800 duration-200 ease-in transform bg-white rounded-full hover:-translate-y-2" aria-label="view">
+                        <a href="./fullstack-java.html">Learn More</a>
+                    </button>
+                    
                 </div>
 
             </div>
 
+        </div>
+
+
             <!--links -->
-            <div class="text-white" style="background-color: #245079;">
+            <div class="p-4 text-white bg-blue-900" style="background-color: #245079;">
                 <div class="max-w-screen-xl p-4 mx-auto sm:px-16">
-                    <div class="grid justify-between max-w-screen-xl grid-cols-4 gap-2 px-6">
+                    <div class="grid justify-between grid-cols-5 gap-8">
                         <!--logo and address-->
-                        <div class="col-span-4 sm:col-span-1">
+                        <div class="col-span-4 gap-8 sm:col-span-1">
                             <div class="">
                                 <img src="../assets/favicon-min.webp" class="h-24" alt="..." />
                                 <h2 class="mt-5 font-sans text-2xl font-semibold text-white">PacketPrep</h2>
                                 <h2 class="font-sans text-sm font-semibold text-white ">Job Training & Placement</h2>
                                 <h2 class="mt-5 mb-5 font-sans font-semibold ">Head Office</h2>
                                   
-                                <a href="#" class="mt-5 text-white test-sm">
+                                <a href="https://g.page/packetprepjobs" class="mt-5 text-white test-sm">
                                    
                                     <div class="flex flex-row-2">
                                         <div>
@@ -329,7 +389,7 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a href="#" class="mt-10 text-white test-sm">
+                                <a href="https://wa.me/+919000045750" class="mt-10 text-white test-sm">
                                      
                                     <div class="flex flex-row-2">
                                       <div>
@@ -339,8 +399,23 @@
                                         
                                       </div>
                                       <div>
-                                        <p class="mt-5 text-sm text-slate-100">
+                                        <p class="mt-5 mb-2 text-sm text-slate-100">
                                           +91 90000 45750
+                                      </div>
+                                    </div>
+                                  </a>             
+                                <a href="https://wa.me/+918977945750" class="mt-2 text-white test-sm">
+                                     
+                                    <div class="flex flex-row-2">
+                                      <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-4">
+                                          <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z" clip-rule="evenodd" />
+                                        </svg>
+                                        
+                                      </div>
+                                      <div>
+                                        <p class="text-sm text-slate-100">
+                                        +91 89779 45750
                                       </div>
                                     </div>
                                   </a>             
@@ -352,30 +427,30 @@
                             <h2 class="mb-4 font-sans text-xl font-semibold text-white">Our Company</h2> 
                             <ol>
                                 <li class="my-2 text-md"><a href="./about.html" class="text-slate-300 hover:text-white">About</a></li> 
-                                <li class="my-2 text-md"><a href="./review.html" class="text-slate-300 hover:text-white">Reviews</a></li>
-                                <li class="my-2 text-md"><a href="./testimonials.html" class="text-slate-300 hover:text-white"> Testimonials</a></li>
-                                <li class="my-2 text-md"><a href="./blogs.html" class="text-slate-300 hover:text-white"> Blog</a></li>
-                                <li class="my-2 text-md"><a href="./contact.html" class="text-slate-300 hover:text-white">  Contact </a></li>
+                                <li class="my-2 text-md"><a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x3bcb916c2ed5ff65:0x8c672557b26d8d6d?source=g.page.default" target="_blank" class="text-slate-300 hover:text-white">Reviews</a></li>
+                                <li class="my-2 text-md"><a href="./testimonial.html" class="text-slate-300 hover:text-white"> Testimonials</a></li>
+                                <li class="my-2 text-md"><a href="./blog.html" class="text-slate-300 hover:text-white"> Blog</a></li>
+                                <li class="my-2 text-md"><a href="./contactus.html" class="text-slate-300 hover:text-white">  Contact </a></li>
                             </ol>
                         </div>
     
                         <!--prepare-->
-                        <div class="col-span-2 sm:col-span-1">
+                        <div class="col-span-2 sm:col-span-2">
                             <h2 class="mb-4 font-sans text-xl font-semibold text-white">Prepare</h2> 
                             <div class="grid grid-cols-2 gap-4">
                                 <ol class="col-span-2 md:col-span-1">
                                     <li class="mb-2 text-md"><a href="./quantitative-aptitude.html" class="text-slate-300 hover:text-white">Quantitative Aptitude</a></li> 
-                                    <li class="my-2 text-md"><a href="./logical.html" class="text-slate-300 hover:text-white">Logical Reasoning</a></li>
-                                    <li class="my-2 text-md"><a href="./verbal.html" class="text-slate-300 hover:text-white"> Verbal Ability</a></li>
-                                    <li class="my-2 text-md"><a href="./interview.html" class="text-slate-300 hover:text-white"> Interview Skills</a></li>
-                                    <li class="my-2 text-md"><a href="./programming.html" class="text-slate-300 hover:text-white">  Programming Concepts</a></li>
-                                    <li class="mt-2 text-md"><a href="./coding.html" class="text-slate-300 hover:text-white"> Coding for Interviews </a></li>
+                                    <li class="my-2 text-md"><a href="./logical-reasoning.html" class="text-slate-300 hover:text-white">Logical Reasoning</a></li>
+                                    <li class="my-2 text-md"><a href="./verbal-ability.html" class="text-slate-300 hover:text-white"> Verbal Ability</a></li>
+                                    <li class="my-2 text-md"><a href="./interview-skills.html" class="text-slate-300 hover:text-white"> Interview Skills</a></li>
+                                    <li class="my-2 text-md"><a href="./programming-concepts.html" class="text-slate-300 hover:text-white">  Programming Concepts</a></li>
+                                    <li class="mt-2 text-md"><a href="./coding-for-interviews.html" class="text-slate-300 hover:text-white"> Coding for Interviews </a></li>
                                 </ol>
                                 <ol class="col-span-2 sm:col-span-1">
-                                    <li class="mb-2 text-md"><a href="./tcs-nqt.html" class="text-slate-300 hover:text-white">TCS NQT</a></li> 
-                                     <li class="my-2 text-md"><a href="./wipro.html" class="text-slate-300 hover:text-white"> Wipro NTH</a></li>
+                                    <li class="mb-2 text-md"><a href="./tarettcs.html" class="text-slate-300 hover:text-white">TCS NQT</a></li> 
+                                     <li class="my-2 text-md"><a href="./wipro-national-talent-hunt.html" class="text-slate-300 hover:text-white"> Wipro NTH</a></li>
                                      <li class="my-2 text-md"><a href="./infytq.html" class="text-slate-300 hover:text-white"> InfyTQ</a></li>
-                                     <li class="my-2 text-md"><a href="./companies.html" class="text-slate-300 hover:text-white"> All Companies</a></li>
+                                     <li class="my-2 text-md"><a href="#" class="text-slate-300 hover:text-white"> All Companies</a></li>
                                 </ol>
                             </div>
                         </div>
@@ -385,77 +460,121 @@
                             <h2 class="mb-4 font-sans text-xl font-semibold text-white">Resources</h2>
                             <ol>
                                 <li class="my-2 text-md"><a href="./telegram.html" class="text-slate-300 hover:text-white">Telegram Channel</a></li> 
-                                <li class="my-2 text-md"><a href="./learning.html" class="text-slate-300 hover:text-white">Learning Portal</a></li>
-                                <li class="my-2 text-md"><a href="./practice.html" class="text-slate-300 hover:text-white"> Free Practice Tests</a></li>
-                                <li class="my-2 text-md"><a href="./free.html" class="text-slate-300 hover:text-white"> Free GRE & IELTS Tests</a></li>
+                                <li class="my-2 text-md"><a href="#" class="text-slate-300 hover:text-white">Learning Portal</a></li>
+                                <li class="my-2 text-md"><a href="./free-practice-tests.html" class="text-slate-300 hover:text-white"> Free Practice Tests</a></li>
+                                <li class="my-2 text-md"><a href="./firstacademy.html" class="text-slate-300 hover:text-white"> Free GRE & IELTS Tests</a></li>
                             </ol>
                         </div>
+    
                     </div>
-
-                    <div class="max-w-screen-xl px-6">
-                        
+    
                     <!---branches-->
-                    <div class="flex justify-center w-full max-w-screen-xl px-4 mt-5 mb-4 bg-blue-100 rounded shadow-lg sm:px-16">
+                    <div class="flex justify-center w-full mt-5 mb-4 bg-blue-100 rounded shadow-lg">
                         <div class="p-2 py-1 text-sm font-semibold text-center text-blue-900 rounded">
-                            Our Branches :   Madhapur (Hyderabad),   Visakhapatnam,   Kakinada,   Vijayawada,   Guntur,   Tirupati
+                            Our Branches :   Madhapur, Dilsukhnagar, Visakhapatnam, Kakinada, Vijayawada, Guntur, Tirupati, Warangal
                         </div>
                     </div>
     
                     <hr>
-    
-                    <!--links and policy-->
-                    <div class="justify-between mt-4 md:flex">
-                        <div class="grid grid-cols-7 my-2 sm:w-1/2">
-                            <div class="col-span-2 text-start">
-                                <a href="./policy.html" class="text-sm duration-200 ease-in hover:text-gray-500">Privacy Policy</a>
-                            </div>
-                            <div class="col-span-2">
-                                <a href="./terms.html" class="text-sm duration-200 ease-in hover:text-gray-500">Terms & Services</a>
-                            </div>
-                            <div class="col-span-3 pl-8">
-                                <a href="./refund.html" class="text-sm duration-200 ease-in hover:text-gray-500">Refund & Cancellation</a>
-                            </div>
-                        </div>
-    
-                        <div class="flex flex-wrap justify-center col-span-6 gap-4 my-2 place-content-end sm:justify-end">
-                            <a href="#" target="_blank" aria-label="facebook" class="duration-200 ease-in-out hover:scale-110">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="1.5em"
-                                    viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                                    <path
-                                        d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
-                                        fill="white" />
-                                </svg>
-                            </a>
-                            <a href="#" target="_blank" aria-label="instagram" class="duration-200 ease-in-out ms-2 hover:scale-110">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512">
-                                    <path
-                                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
-                                        fill="white" />
-                                </svg>
-                            </a>
-                            <a href="#" target="_blank" aria-label="Telegram" class="duration-200 ease-in-out ms-2 hover:scale-110">
-                                <svg style="color: white" xmlns="http://www.w3.org/2000/svg"  height="1.5em"  fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16"> <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z" fill="white"></path> </svg>
-                            </a>
-                            <a href="#" target="_blank" aria-label="youtube" class="duration-200 ease-in-out ms-2 hover:scale-110">
-                                <svg style="color: white" xmlns="http://www.w3.org/2000/svg" height="1.5em" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16"> <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" fill="white"></path> </svg>
-                            </a>
-                        </div>
-    
-                    </div>
+    <!--links and policy-->
+    <div class="justify-center max-w-screen-xl px-4 mx-auto mt-4 md:justify-between lg:flex sm:px-10">
+        <div class="flex flex-wrap justify-center col-span-6 pb-4 my-2 my-auto space-x-4 lg:pb-0 place-content-start sm:gap-4 lg:justify-start">
+            <div class="col-span-2 text-start">
+                <a href="./privacy.html" class="text-sm duration-200 ease-in hover:text-gray-300">Privacy
+                    Policy</a>
+            </div>
+            <div class="col-span-2">
+                <a href="./terms.html" class="text-sm duration-200 ease-in hover:text-gray-300">Terms &
+                    Services</a>
+            </div>
+            <div class="col-span-3">
+                <a href="./refund.html" class="text-sm duration-200 ease-in hover:text-gray-300">Refund &
+                    Cancellation</a>
+            </div>
+        </div>
+
+        <div class="flex flex-wrap justify-center col-span-6 my-auto space-x-4 lg:space-x-2 place-content-end sm:gap-4 lg:justify-end">
+            <a href="https://www.facebook.com/packetprep" target="_blank" aria-label="facebook"
+                class="duration-200 ease-in-out hover:scale-105">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512">
+                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                        d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+                        fill="white" />
+                </svg>
+            </a>
+            <a href="https://www.instagram.com/packetprep" target="_blank" aria-label="instagram"
+                class="duration-200 ease-in-out ms-2 hover:scale-105">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512">
+                    <path
+                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                        fill="white" />
+                </svg>
+            </a>
+            <a href="./telegram.html" target="_blank" aria-label="Telegram"
+                class="duration-200 ease-in-out ms-2 hover:scale-105">
+                <svg style="color: white" xmlns="http://www.w3.org/2000/svg" height="1.5em"
+                    fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+                    <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"
+                        fill="white"></path>
+                </svg>
+            </a>
+            <a href="https://www.youtube.com/packetprep" target="_blank" aria-label="youtube"
+                class="duration-200 ease-in-out ms-2 hover:scale-105">
+                <svg style="color: white" xmlns="http://www.w3.org/2000/svg" height="1.5em"
+                    fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                    <path
+                        d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"
+                        fill="white"></path>
+                </svg>
+            </a>
+        </div>
+
+</div>
                     
                     <!--info-->
                     <p class="mt-4 mb-2 font-sans text-sm text-center text-gray-200">
                         © 2021 Quedb Edtech Private Limited. All rights reserved.
                     </p>
                     <p class="px-4 mx-auto text-sm text-center sm:px-16">When you visit or interact with our sites, services or tools, we or our authorised service providers may use cookies for storing information to help provide you with a better, faster and safer experience and for marketing purposes.</p>
-                    </div>
-    
     
                 </div>
             </div>
             
         </footer>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+        
+    <!--Messages-->
 
+    <div class="fixed bottom-0 flex items-center justify-center w-full py-1 space-x-2 bg-gradient-to-b from-yellow-500 to-yellow-300">
+        <a href="tel:+919000045750" class="flex items-center px-4 py-1 space-x-2 bg-black rounded">
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                    stroke="currentColor" class="w-4 h-4 text-white">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                </svg>
+            </span>
+            <span class="text-sm font-bold text-white">Call</span>
+
+        </a>
+
+        <div>
+            <h1 class="hidden font-serif md:block">We would love to hear from you!</h1>
+        </div>
+
+        <a href="https://wa.me/+919000045750" class="flex items-center px-4 py-1 bg-black rounded">
+            <span>
+                <img src="../assets/whatsap.svg" width="24px" height="24px" alt="whatsapp">
+            </span>
+            <span class="text-sm font-bold text-white">WhatsApp</span>
+
+        </a>
+
+    </div>
+
+    
+    <script src="../dist/voilaui.js"></script>
+    <script src="../dist/accordion.js"></script>
     </body>
 </html>
