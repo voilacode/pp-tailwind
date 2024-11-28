@@ -203,7 +203,7 @@
                             Read our <a href="https://www.google.com/search?q=packetprep+reviews&sca_esv=bcad68fdd82005a1&rlz=1C1CHBF_enIN1128IN1128&sxsrf=ADLYWIL04eLw6xYousheM9_pPWxtv5y0_A%3A1732772680181&ei=SANIZ73bCt6iseMPgoywuQ0&ved=0ahUKEwi9n9Cgqf6JAxVeUWwGHQIGLNcQ4dUDCA8&uact=5&oq=packetprep+reviews&gs_lp=Egxnd3Mtd2l6LXNlcnAiEnBhY2tldHByZXAgcmV2aWV3czIFEAAYgAQyBhAAGBYYHjICECYyCBAAGKIEGIkFMggQABiABBiiBDIIEAAYgAQYogQyCBAAGIAEGKIESIQIUABYsAdwAHgBkAEAmAHpAaAB0giqAQUwLjcuMbgBA8gBAPgBAZgCCKAC7AjCAgoQIxiABBgnGIoFwgIOEC4YgAQYxwEYjgUYrwHCAgsQLhiABBjHARivAcICChAAGIAEGEMYigWYAwCSBwUwLjcuMaAHgUk&sclient=gws-wiz-serp#lrd=0x3bcb916c2ed5ff65:0x8c672557b26d8d6d,1,,,," target="_blank" class="text-blue-500"> success stories</a> - To get updates on latest placement drives follow our <a href="https://www.instagram.com/packetprep/?hl=en" target="_blank" class="text-blue-500"> Instagram page</a></p>
                     </div>   
                     <div class="p-5 flex justify-center">
-                        <form id="apply" action="{{ route('demo.apply') }}" method="POST" class="w-full ">   
+                        <form id="apply" action="{{ route('apply.send') }}" method="POST" class="w-full ">   
                             @csrf                       
                             <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-4">
                                 <div class="w-full my-1" >
@@ -219,21 +219,21 @@
                                     </label>
                                     <input class="appearance-none block w-full text-gray-700 border-2 border-gray-300 hover:border-blue-500 rounded p-3 leading-tight focus:outline-none" type="text" placeholder="Phone Number" name="phone">
                                 </div>
-    
+                    
                                 <div class="w-full my-1">
                                     <label class="block tracking-wide text-gray-800 pb-1" >
                                         Email address
                                     </label>
                                     <input class="appearance-none block w-full text-gray-700 border-2 border-gray-300 hover:border-blue-500 rounded p-3 leading-tight focus:outline-none" type="email" placeholder="Email Address" name="email">
                                 </div>
-    
+                    
                                 <div class="w-full my-1">
                                     <label class="block tracking-wide text-gray-800 pb-1">
                                         Current City
                                     </label>
                                     <input class="appearance-none block w-full text-gray-700 border-2 border-gray-300 hover:border-blue-500 rounded p-3 leading-tight focus:outline-none" type="text" placeholder="Enter your current city name" name="city">
                                 </div>
-    
+                    
                                 <div class="w-full my-1">
                                     <label class="block tracking-wide text-gray-800 pb-1" >
                                         Preferred Training Location
@@ -253,7 +253,7 @@
                                         </div>
                                     </div>
                                 </div>
-    
+                    
                                 <div class="w-full my-1">
                                     <label class="block tracking-wide text-gray-800 pb-1" >
                                         Preferred Training Mode
@@ -268,42 +268,42 @@
                                         </div>
                                     </div>
                                 </div>
-    
+                    
                                 <div class="w-full my-1 " >
                                     <label class="block tracking-wide text-gray-800 pb-1" >
                                         College Name
                                     </label>
                                     <input class="appearance-none block w-full text-gray-700 border-2 border-gray-300 hover:border-blue-500 rounded p-3 leading-tight focus:outline-none"  type="text" placeholder="Enter your college name" name="college">
                                 </div>
-    
+                    
                                 <div class="w-full my-1 " >
                                     <label class="block tracking-wide text-gray-800 pb-1">
                                         Year of Passing
                                     </label>
                                     <input class="appearance-none block w-full text-gray-700 border-2 border-gray-300 hover:border-blue-500 rounded p-3 leading-tight focus:outline-none" type="number" placeholder="Enter the year" name="yop">
                                 </div>
-    
+                    
                                 <div class="w-full my-1">
                                     <label class="block tracking-wide text-gray-800 pb-1">
                                         Class 10th Percentage
                                     </label>
                                     <input class="appearance-none block w-full text-gray-700 border-2 border-gray-300 hover:border-blue-500 rounded p-3 leading-tight focus:outline-none" type="number" placeholder="Enter the SSC percentage" name="class_10th">
                                 </div>
-    
+                    
                                 <div class="w-full my-1">
                                     <label class="block tracking-wide text-gray-800 pb-1">
                                         Class 12th Percentage
                                     </label>
                                     <input class="appearance-none block w-full text-gray-700 border-2 border-gray-300 hover:border-blue-500 rounded p-3 leading-tight focus:outline-none" type="number" placeholder="Enter the 12th percentage" name="class_12th">
                                 </div>
-    
+                    
                                 <div class="w-full my-1">
                                     <label class="block tracking-wide text-gray-800 pb-1">
                                         Graduation Percentage
                                     </label>
                                     <input class="appearance-none block w-full text-gray-700 border-2 border-gray-300 hover:border-blue-500 rounded p-3 leading-tight focus:outline-none" type="number" placeholder="Enter the graduation percentage" name="graduation">
                                 </div>
-                                
+                    
                                 <div class="w-full my-1">
                                     <label class="block tracking-wide text-gray-800 pb-1" >
                                         Branch
@@ -328,10 +328,10 @@
                                         </div>
                                     </div>
                                 </div> 
-
                             </div> 
                     
                             <button type="submit" class="bg-teal-600 hover:bg-teal-700 duration-300 shadow-md text-white rounded px-8 py-2 block w-full my-4">Submit</button>
+                    
                         </form>
                     </div>
                 </div>
