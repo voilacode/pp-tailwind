@@ -205,7 +205,6 @@
                     <div class="p-5 flex justify-center">
                         <form id="apply" action="{{ route('demo.apply') }}" method="POST" class="w-full ">   
                             @csrf                       
- 
                             <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-4">
                                 <div class="w-full my-1" >
                                     <label class="block tracking-wide text-gray-800 pb-1" >
@@ -260,7 +259,7 @@
                                         Preferred Training Mode
                                     </label>
                                     <div class="relative">
-                                        <select class="appearance-none block w-full text-gray-700 border-2 border-gray-300 hover:border-blue-500 rounded p-3 leading-tight focus:outline-none" id="grid-state" class="training-mode">
+                                        <select class="appearance-none block w-full text-gray-700 border-2 border-gray-300 hover:border-blue-500 rounded p-3 leading-tight focus:outline-none" id="grid-state" name="training_mode">
                                             <option value="offline">Offline (Classroom)</option>
                                             <option value="online">Online</option>                    
                                         </select>
@@ -304,36 +303,35 @@
                                     </label>
                                     <input class="appearance-none block w-full text-gray-700 border-2 border-gray-300 hover:border-blue-500 rounded p-3 leading-tight focus:outline-none" type="number" placeholder="Enter the graduation percentage" name="graduation">
                                 </div>
-    
-                            </div> 
-                            
-                            <div class="w-full my-1">
-                                <label class="block tracking-wide text-gray-800 pb-1" >
-                                    Branch
-                                </label>
-                                <div class="relative">
-                                    <select class="appearance-none block w-full text-gray-700 border-2 border-gray-300 hover:border-blue-500 rounded p-3 leading-tight focus:outline-none" id="grid-state" name="branch">
-                                            <option class="cse">CSE</option>
-                                            <option class="ece">ECE</option>
-                                            <option class="eee">EEE</option>
-                                            <option class="it">IT</option>
-                                            <option class="mech">MECH</option>
-                                            <option class="civil">CIVIL</option>
-                                            <option class="bsc">BSC</option>
-                                            <option class="bcom">BCOM</option>
-                                            <option class="bba">BBA</option>
-                                            <option class="mca">MCA</option>
-                                            <option class="mba">MBA</option>
-                                            <option class="others">OTHERS</option>
-                                    </select>
-                                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                                
+                                <div class="w-full my-1">
+                                    <label class="block tracking-wide text-gray-800 pb-1" >
+                                        Branch
+                                    </label>
+                                    <div class="relative">
+                                        <select class="appearance-none block w-full text-gray-700 border-2 border-gray-300 hover:border-blue-500 rounded p-3 leading-tight focus:outline-none" id="grid-state" name="branch">
+                                                <option class="cse">CSE</option>
+                                                <option class="ece">ECE</option>
+                                                <option class="eee">EEE</option>
+                                                <option class="it">IT</option>
+                                                <option class="mech">MECH</option>
+                                                <option class="civil">CIVIL</option>
+                                                <option class="bsc">BSC</option>
+                                                <option class="bcom">BCOM</option>
+                                                <option class="bba">BBA</option>
+                                                <option class="mca">MCA</option>
+                                                <option class="mba">MBA</option>
+                                                <option class="others">OTHERS</option>
+                                        </select>
+                                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                                        </div>
                                     </div>
-                                </div>
+                                </div> 
+
                             </div> 
                     
-                            <button type="button" class="bg-teal-600 hover:bg-teal-700 duration-300 shadow-md text-white rounded px-8 py-2 block w-full my-4">Submit</button>
-                    
+                            <button type="submit" class="bg-teal-600 hover:bg-teal-700 duration-300 shadow-md text-white rounded px-8 py-2 block w-full my-4">Submit</button>
                         </form>
                     </div>
                 </div>
