@@ -1,4 +1,3 @@
-
 //menu
 function toggleMobileMenu() {
     const mainMenu = document.getElementById('mainMenu');

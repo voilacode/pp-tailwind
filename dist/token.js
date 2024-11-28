@@ -67,5 +67,5 @@ function addFormListener(formId, handler) {
 
 // Event listeners for each form
 addFormListener('apply', function (event) {
-    handleForm(event, 'apply', '/mail/apply');
+    handleForm(event, 'apply', '/admin/mail/apply/send');
 });
